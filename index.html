@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👟 SoleStyle - Tienda de Zapatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="free-shipping">
+                <i class="fas fa-truck"></i> Envíos gratis arriba de 15,000 Bs.
+            </span>
+            <div class="top-right">
+                <span class="weather">
+                    <i class="fas fa-sun"></i> 30°C Despejado
+                </span>
+                <span class="separator">|</span>
+                <span class="language">ESP</span>
+                <span class="separator">|</span>
+                <span class="datetime">11:13 PM 8/10/2026</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shoe-prints"></i>
+                <span>SOLE<span>STYLE</span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="novedades.html" class="active">Novedades</a></li>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer</a></li>
+                    <li><a href="Top_Quality.html">Top Quality</a></li>
+                    <li><a href="Triple_A.html">Triple A</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== HERO CON IMAGEN PROTAGONISTA (ESTILO REFERENCIA) ====== -->
+    <section class="hero-banner" id="novedades">
+        <!-- IMAGEN DE FONDO PRINCIPAL -->
+        <div class="hero-background">
+            <!-- IMAGEN DE ZAPATOS EN PRIMER PLANO -->
+            <img src="imagenes/image.jpg" 
+            alt="Zapatos SoleStyle" 
+            class="hero-bg-image">
+            <!-- Overlay oscuro para legibilidad -->
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- CONTENIDO SUPERPUESTO SOBRE LA IMAGEN -->
+        <div class="container hero-content-wrapper">
+            <div class="hero-content">
+                <!-- Logo/Marca -->
+                <div class="hero-brand">
+                    <span class="brand-line">SOLE</span>
+                    <span class="brand-line highlight">STYLE</span>
+                </div>
+                
+                <!-- Título principal -->
+                <h1>NIKE</h1>
+                <p class="subtitle">Sofisticación discreta.</p>
+                
+                <!-- Botón de acción -->
+                <button class="btn-hero" onclick="document.querySelector('.catalogo').scrollIntoView({behavior:'smooth'})">
+                    EXPLORA →
+                </button>
+            </div>
+        </div>
+
+        <!-- Indicador de scroll (opcional) -->
+        <div class="scroll-indicator">
+            <span>DESCUBRE</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+    <!-- ====== VIDEO PUBLICITARIO ====== -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="video-header">
+                <h2>Nuestra <span>Colección en Movimiento</span></h2>
+                <p>Descubre la elegancia y comodidad de nuestros zapatos</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <!-- REEMPLAZA VIDEO_ID_AQUI con el ID de tu video de YouTube -->
+                    <iframe 
+                        src="videos/video2.mp4" 
+                        title="Publicidad SoleStyle"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="video-cta">
+                <p>¿Te gustó lo que viste?</p>
+                <button class="btn-video-cta" onclick="document.querySelector('.catalogo').scrollIntoView({behavior:'smooth'})">
+                    <i class="fas fa-shopping-bag"></i> Ver colección completa
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO / REDES -->
+    <section class="contacto">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="contact-info">
+                <i class="fas fa-phone"></i> +54 9 11 1234-5678
+            </p>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="shoeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+                <div class="modal-details">
+                    <h3 id="modalTitle">Zapato</h3>
+                    <p id="modalDescription">Descripción detallada</p>
+                    <p class="modal-price" id="modalPrice">$0</p>
+                    <button class="btn-comprar">
+                        <i class="fas fa-shopping-bag"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SoleStyle - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

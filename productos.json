@@ -1,0 +1,991 @@
+{
+  "productos": [
+    {
+      "nombre": "Air Fonce One",
+      "precio": "$45.00",
+      "categoria": "Top Quality",
+      "marca": "NIKE",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las clasicas Air Force One Blancas",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Air Force One.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    }, 
+        {
+      "nombre": "Air Force One Black",
+      "precio": "$45.00",
+      "categoria": "Top Quality",
+      "marca": "NIKE",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las clasicas Air Fon One Black",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Air Force One Black.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 3 Retro Black Cat",
+      "precio": "$47.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 3 Retro Black Cat son una edición especial que combina el estilo clásico de la silueta con un acabado elegante y minimalista. Inspiradas en el apodo de Michael Jordan, estas zapatillas presentan una construcción de cuero y gamuza premium en tonos negros, con detalles en gris oscuro y la icónica logo de Jumpman en el talón.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Air Jordan 3 Retro Black Cat.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 1 Low",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 1 Low son la versión más casual y versátil de la icónica silueta. Con su diseño de caña baja, estas zapatillas ofrecen comodidad y estilo para el día a día. El cuero premium y los detalles clásicos de la marca las convierten en un must-have para cualquier coleccionista.",
+      "stock": 8,
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low .jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 1 Low Jade Smoke",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 1 Low Jade Smoke combinan el estilo clásico de la silueta con un acabado en tonos jade y humo. Perfectas para quienes buscan un look único y sofisticado.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low Jade Smoke.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 1 Low x Eastside Golf",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Air Jordan y Eastside Golf trae una versión única de la clásica silueta. Con detalles inspirados en el golf y un diseño elegante, estas zapatillas son perfectas para destacar tanto en la ciudad como en el campo.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low x Eastside Golf en color azul marino.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 4 Retro Black Cat",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 4 Retro Black Cat son un homenaje a la leyenda del baloncesto. Con su diseño elegante en tonos negros y detalles en gris, estas zapatillas combinan estilo y comodidad. La amortiguación Air-Sole garantiza una experiencia superior en cada paso.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Air Jordan 4 Retro Black Cat.jpg",
+        "imagenes/Air Jordan 4 Retro Black Cat 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 4 Retro Military Black",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 4 Retro Military Black combinan el estilo militar con la elegancia del calzado deportivo. Su diseño en tonos negros y grises, junto con los detalles en rojo, las convierten en un clásico moderno.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Air Jordan 4 Retro Military Black.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan 4 Retro OG SP",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 4 Retro OG SP son una reedición de la silueta original con detalles premium. Su diseño icónico y su construcción de alta calidad las hacen perfectas para coleccionistas y amantes del sneaker.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/Air Jordan 4 Retro OG SP.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan Retro 3 White",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan Retro 3 White son un clásico atemporal. Su diseño en cuero blanco con detalles en gris y el icónico logo de Jumpman las convierten en una de las siluetas más queridas de la historia.",
+      "stock": 7,
+      "imagenes": [
+        "imagenes/Air Jordan Retro 3 White.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan Retro 3 Palomino",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan Retro 3 Palomino destacan por su elegante combinación de tonos marrones y crema. Con una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen estilo y confort en cada paso.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Air Jordan Retro 3 Palomino.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas Campus x Bad Bunny (The Last Campus)",
+      "precio": "$55.00",
+      "categoria": "Top Quality",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Gamuza + Cuero",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Adidas y Bad Bunny trae The Last Campus, una versión especial de la clásica silueta Campus. Con detalles únicos y un diseño que combina la estética urbana con el toque personal del artista puertorriqueño, estas zapatillas son un homenaje a la cultura del sneaker.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/adidas Campus x Bad Bunny The Last Campus.jpg",
+        "imagenes/adidas Campus x Bad Bunny The Last Campus 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43],
+      "tallas_agotadas": [44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas Response CL x Bad Bunny",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Adidas y Bad Bunny en las Response CL combina el estilo retro con la visión única del artista. Con su diseño inspirado en los años 2000 y detalles exclusivos, estas zapatillas son una celebración de la cultura urbana y la música.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/adidas Response CL x Bad Bunny .jpg",
+        "imagenes/adidas Response CL x Bad Bunny 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas AE 2",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Adidas AE 2 son el calzado perfecto para el día a día. Con su diseño moderno, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Adidas AE 2.jpg",
+        "imagenes/Adidas AE2 negras.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Yeezy Boost",
+      "precio": "$65.00",
+      "categoria": "Top Quality",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Primeknit + Boost",
+      "origen": "Importado",
+      "descripcion": "Las Yeezy Boost son el ícono del calzado moderno. Con su diseño vanguardista, tecnología Boost en la entresuela y construcción Primeknit, estas zapatillas ofrecen una comodidad y estilo inigualables.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/yeezy.jpeg",
+        "imagenes/yeezy 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low",
+      "precio": "$55.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low son el ícono del skateboarding y la cultura urbana. Con su diseño robusto, amortiguación Zoom Air y una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen el equilibrio perfecto entre estilo y funcionalidad.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/Nike SB Dunk Low azules.jpg",
+        "imagenes/Nike SB Dunk Low 2.jpg",
+        "imagenes/Nike SB Dunk Low 3.jpg",
+        "imagenes/Nike SB Dunk Low 4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low AE86",
+      "precio": "$65.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low AE86 son una edición especial inspirada en el mundo del automovilismo. Con detalles únicos y una construcción premium, estas zapatillas son perfectas para los amantes de la velocidad y el estilo.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Nike SB Dunk LowAE86.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Pro PRM",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low Pro PRM son la versión premium de la clásica silueta. Con materiales de primera calidad y una construcción superior, estas zapatillas ofrecen el máximo confort y estilo.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Nike SB Dunk Low Pro PRM.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Green Apple",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low Green Apple destacan por su vibrante combinación de colores verde manzana y blanco. Con una construcción de cuero y gamuza, estas zapatillas son perfectas para quienes buscan un look fresco y llamativo.",
+      "stock": 5,
+      "imagenes": [
+        "imagenes/Nike SB Dunk Low Green Apple.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low 85 Double Brown",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low 85 Double Brown son una edición especial con un elegante acabado en tonos marrones. Su construcción premium y su diseño clásico las convierten en una opción versátil para cualquier ocasión.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Nike SB Dunk Low 85 Double Brown.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Sabrina 1",
+      "precio": "$75.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Mujer",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Sabrina 1 son las zapatillas oficiales de la estrella de la WNBA Sabrina Ionescu. Con un diseño pensado para el máximo rendimiento en la cancha, estas zapatillas ofrecen agarre, estabilidad y estilo.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Nike Sabrina 1.jpg",
+        "imagenes/Nike Sabrina 1 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Zoom Fly 4",
+      "precio": "$55.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Espuma React",
+      "origen": "Importado",
+      "descripcion": "Las Nike Zoom Fly 4 son la evolución del running de alto rendimiento. Con su placa de fibra de carbono, espuma React y diseño aerodinámico, estas zapatillas están diseñadas para romper récords y llevar tu rendimiento al siguiente nivel.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Nike Zoom Fly 4.jpg",
+        "imagenes/Nike Zoom Fly 4 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Zoom Vomero Roam",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Zoom Vomero Roam combinan el estilo urbano con la tecnología de running. Con su amortiguación Zoom Air y su diseño versátil, estas zapatillas son perfectas para la ciudad.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Nike Zoom Vomero Roam.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Dn",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Max Dn son la nueva generación de Air Max. Con su diseño futurista y la innovadora tecnología Dynamic Air, estas zapatillas ofrecen una experiencia de amortiguación única.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Nike Air Max Dn.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max 97",
+      "precio": "$75.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Cuero",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Max 97 son un clásico del calzado deportivo. Con su diseño inspirado en los trenes bala japoneses, su amortiguación Air Max y su construcción de malla y cuero, estas zapatillas son un ícono de estilo.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/Nike Air Max 97.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Plus",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Max Plus son famosas por su diseño ondulado y su amortiguación Air Max. Con su estilo único y su construcción duradera, estas zapatillas son perfectas para quienes buscan destacar.",
+      "stock": 7,
+      "imagenes": [
+        "imagenes/Nike Air Max Plus.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Plus Drift",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Max Plus Drift son una evolución de la clásica silueta. Con un diseño más moderno y detalles únicos, estas zapatillas ofrecen el mismo confort y estilo que el original.",
+      "stock": 5,
+      "imagenes": [
+        "imagenes/Nike Air Max Plus Drift.jpg",
+        "imagenes/Nike Air Max Plus Drift 2.jpg",
+        "imagenes/Nike Air Plus Drift 3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Jordan 1 Low SE",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Jordan 1 Low SE son una edición especial de la clásica silueta. Con detalles únicos y una construcción de cuero premium, estas zapatillas ofrecen estilo y comodidad en cada paso.",
+      "stock": 8,
+      "imagenes": [
+        "imagenes/Nike Air Jordan 1 Low SE.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Force 1 Low Tiffany",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Nike Air Force 1 Low Tiffany son una versión especial de la icónica silueta. Con su elegante combinación de colores Tiffany y blanco, estas zapatillas son perfectas para quienes buscan un look sofisticado.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Nike Air Force 1 Low Tiffany.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Force 1 Low x Cactus Plant Flea Black",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Nike y Cactus Plant Flea Market trae una versión única de la Air Force 1. Con su diseño negro con detalles en verde, estas zapatillas son un homenaje a la cultura sneaker.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Nike Air Force x Cactus.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Force 1 Low x Cactus Plant Flea Market white",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Esta colaboración entre Nike y Cactus Plant Flea Market en color blanco es una de las más codiciadas. Con detalles únicos y una construcción premium, estas zapatillas son un must-have para coleccionistas.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Force 1 Low x Drake White",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Nike y Drake trae una versión blanca de la clásica Air Force 1. Con detalles exclusivos y una construcción de cuero premium, estas zapatillas son el epítome del estilo.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Nike Air Force 1 Low x Drake White.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Force 1 Low x Drake",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "La colaboración entre Nike y Drake en las Air Force 1 es una de las más icónicas. Con su diseño elegante y detalles exclusivos, estas zapatillas son un tributo a la cultura musical y sneaker.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Nike Air Force 1 Low x Drake.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike A´One",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Mujer",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike A´One son el calzado perfecto para la mujer moderna. Con su diseño elegante, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/Nike A´One rosa.jpg",
+        "imagenes/Nike A´One Blancas.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Hot Step 2 Drake NOCTA",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Hot Step 2 Drake NOCTA son parte de la colaboración entre Nike y Drake. Con su diseño moderno y detalles exclusivos de la marca NOCTA, estas zapatillas son un statement de estilo.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Nike Hot Step 2 Drake NOCTA.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Dunk Low",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike Dunk Low son un clásico del calzado urbano. Con su diseño versátil y su construcción de cuero y gamuza, estas zapatillas son perfectas para cualquier ocasión.",
+      "stock": 8,
+      "imagenes": [
+        "imagenes/Nike Dunk Low.jpg",
+        "imagenes/Nike Dunk Low naranja.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Dunk High",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike Dunk High son la versión de caña alta de la clásica silueta. Con su diseño robusto y su construcción premium, estas zapatillas ofrecen estilo y protección en cada paso.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Nike Dunk High.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Dunk Low SE 85",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Nike Dunk Low SE 85 son una edición especial de la clásica silueta. Con detalles únicos y una construcción de cuero premium, estas zapatillas son perfectas para coleccionistas.",
+      "stock": 5,
+      "imagenes": [
+        "imagenes/Nike Dunk Low SE 85 .jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Dunk Low Next Nature Alabaster",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Materiales reciclados",
+      "origen": "Importado",
+      "descripcion": "Las Nike Dunk Low Next Nature Alabaster son parte de la iniciativa sostenible de Nike. Con su diseño en tonos alabastro y materiales reciclados, estas zapatillas combinan estilo y responsabilidad ambiental.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Nike Dunk Low Next Nature Alabaster.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Ja 3",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike Ja 3 son las zapatillas oficiales de Ja Morant. Con un diseño pensado para el máximo rendimiento en la cancha, estas zapatillas ofrecen agarre, estabilidad y estilo.",
+      "stock": 7,
+      "imagenes": [
+        "imagenes/Nike Ja 3 azules.jpg",
+        "imagenes/Nike Ja 3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Dunk Low naranja",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike Dunk Low en color naranja son la opción perfecta para quienes buscan un look vibrante y llamativo. Su diseño clásico y su construcción premium las hacen únicas.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Nike Dunk Low naranja.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "New Balance 530 (Calidad Premium)",
+      "precio": "$50.00",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Malla + Cuero",
+      "origen": "Importado",
+      "descripcion": "Las New Balance 530 son un clásico del running retro. Con su diseño inspirado en los años 2000 y su construcción de malla y cuero, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/New Balance 530.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "New Balance 9060 negras",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las New Balance 9060 son la evolución del calzado urbano. Con su diseño moderno y su construcción de malla y caucho, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/New Balance 9060 negras.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "New Balance 9060 Blancas",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las New Balance 9060 en color blanco son la opción perfecta para quienes buscan un look limpio y moderno. Con su diseño elegante y construcción premium, estas zapatillas son un must-have.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/New Balance 9060 Blancas.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "New Balance 1906A",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las New Balance 1906A son una reinterpretación moderna de la silueta clásica. Con su diseño retro-futurista y su construcción de alta calidad, estas zapatillas son perfectas para los amantes del sneaker.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/New Balance 1906A.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Balenciaga Track LED",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Balenciaga",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Balenciaga Track LED son la evolución del calzado de lujo. Con su diseño futurista, luces LED integradas y una construcción de malla técnica y caucho de alta calidad, estas zapatillas son la declaración de estilo definitiva.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Balenciaga Track LED blancas.jpg",
+        "imagenes/Balenciaga Track LED negras.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Balenciaga Runner",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Balenciaga",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Balenciaga Runner combinan el estilo retro con la tecnología moderna. Con su diseño inspirado en los años 2000 y su construcción de alta calidad, estas zapatillas son perfectas para quienes buscan destacar.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Balenciaga Runner.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "On Running Cloudtilt",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "On Running",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Espuma",
+      "origen": "Importado",
+      "descripcion": "Las On Running Cloudtilt son la combinación perfecta de estilo y tecnología. Con su sistema de amortiguación CloudTec y su diseño minimalista, estas zapatillas ofrecen una experiencia de running única.",
+      "stock": 5,
+      "imagenes": [
+        "imagenes/On Running Cloudtilt 2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Dior B30",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Cuero",
+      "origen": "Importado",
+      "descripcion": "Las Dior B30 son el lujo hecho calzado. Con su diseño elegante y su construcción de malla técnica y cuero de alta calidad, estas zapatillas son la elección perfecta para quienes buscan sofisticación.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Dior B30..jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Louis Vuitton LV Skate Sneaker",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Louis Vuitton",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Louis Vuitton LV Skate Sneaker combinan el lujo de la firma francesa con el estilo urbano. Con su diseño elegante y su construcción de cuero premium, estas zapatillas son un símbolo de estatus.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Louis Vuitton LV Skate Sneaker.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "LV Skate Sneaker",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Louis Vuitton",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las LV Skate Sneaker son la versión más versátil del calzado de lujo. Con su diseño clásico y su construcción de cuero premium, estas zapatillas son perfectas para cualquier ocasión.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/LV Skate Sneaker.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Timberlands Premium 6-Inch",
+      "precio": "$90.00",
+      "categoria": "Top Quality",
+      "marca": "Timberland",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Timberlands Premium 6-Inch son el ícono del calzado resistente. Con su construcción de cuero premium, suela de caucho y diseño clásico, estas botas son perfectas para la ciudad y la naturaleza.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Timberlands.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Salomon XT-6",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Salomon",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Salomon XT-6 son el calzado perfecto para el trail running y la ciudad. Con su diseño robusto, sistema de amortiguación y construcción de malla técnica, estas zapatillas ofrecen rendimiento y estilo.",
+      "stock": 6,
+      "imagenes": [
+        "imagenes/Salomon XT-6.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Amiri MA Runner",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "Amiri",
+      "genero": "Unisex",
+      "material": "Malla + Cuero",
+      "origen": "Importado",
+      "descripcion": "Las Amiri MA Runner son la fusión perfecta entre lujo y streetwear. Con su diseño moderno y su construcción de malla y cuero, estas zapatillas son la elección de los más exigentes.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Amiri MA Runner.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "ASICS GEL-Kayano 14",
+      "precio": "$60.00",
+      "categoria": "Top Quality",
+      "marca": "ASICS",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las ASICS GEL-Kayano 14 son un clásico del running. Con su sistema de amortiguación GEL y su diseño retro, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 7,
+      "imagenes": [
+        "imagenes/ASICS GEL-Kayano 14.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Air Force One",
+      "precio": "$45.00",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero Premium",
+      "origen": "Importado",
+      "descripcion": "Las Air Force One son el ícono del calzado urbano. Con su diseño clásico, amortiguación Air-Sole y construcción de cuero premium, estas zapatillas han trascendido generaciones convirtiéndose en un símbolo de la cultura streetwear.",
+      "stock": 0,
+      "imagenes": [
+        "imagenes/Air Fonce One.jpg",
+        "imagenes/Air Force One 2.jpg",
+        "imagenes/Air Force One 3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "nombre": "Air Jordan 4 Retro Black",
+      "precio": "$95.00",
+      "categoria": "Triple A",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Las Air Jordan 4 Retro Black son un clásico atemporal. Con su diseño icónico, amortiguación Air-Sole y construcción de cuero y malla de alta calidad, estas zapatillas son un tributo a la leyenda del baloncesto.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/retro 4 black.jpeg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    }
+  ]
+}
