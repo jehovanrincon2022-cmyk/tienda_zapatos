@@ -34,8 +34,8 @@
 
         .product-card-box:hover {
             transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: var(--shadow);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
         }
 
         .product-img-container {
@@ -100,7 +100,7 @@
         .product-price {
             font-size: 22px;
             font-weight: 600;
-            color: var(--accent);
+            color: #00d4ff;
         }
 
         .product-detail-badge {
@@ -153,6 +153,56 @@
             color: #000;
         }
 
+        /* ===== ENCABEZADO TRIPLE A ===== */
+        .section-header {
+            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
+            border-bottom: 2px solid #00d4ff;
+            padding: 60px 0 40px;
+            margin-bottom: 40px;
+        }
+
+        .quality-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(0, 212, 255, 0.15);
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .quality-badge i {
+            color: #00d4ff;
+            font-size: 20px;
+        }
+
+        .quality-badge span {
+            color: #00d4ff;
+            font-size: 12px;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        .section-header h1 {
+            font-size: 42px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            color: var(--text-primary);
+        }
+
+        .section-header h1 span {
+            color: #00d4ff;
+            font-weight: 400;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .product-grid-catalog {
@@ -170,6 +220,10 @@
             
             .product-price {
                 font-size: 18px;
+            }
+
+            .section-header h1 {
+                font-size: 32px;
             }
         }
 
@@ -198,6 +252,10 @@
             
             .product-detail-badge {
                 font-size: 10px;
+            }
+
+            .section-header h1 {
+                font-size: 26px;
             }
         }
     </style>
@@ -244,7 +302,7 @@
     </header>
 
     <!-- ENCABEZADO ESPECIAL TRIPLE A -->
-    <section class="section-header triple-a">
+    <section class="section-header">
         <div class="container">
             <div class="quality-badge">
                 <i class="fas fa-award"></i>
@@ -258,11 +316,11 @@
     <!-- FILTROS -->
     <div class="container">
         <div class="filter-container">
-            <button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
-            <button class="filter-btn" onclick="filterProducts('nike')">Nike</button>
-            <button class="filter-btn" onclick="filterProducts('adidas')">Adidas</button>
-            <button class="filter-btn" onclick="filterProducts('jordan')">Jordan</button>
-            <button class="filter-btn" onclick="filterProducts('newbalance')">New Balance</button>
+            <button class="filter-btn active" onclick="window.filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="window.filterProducts('nike')">Nike</button>
+            <button class="filter-btn" onclick="window.filterProducts('adidas')">Adidas</button>
+            <button class="filter-btn" onclick="window.filterProducts('jordan')">Jordan</button>
+            <button class="filter-btn" onclick="window.filterProducts('newbalance')">New Balance</button>
         </div>
     </div>
 
@@ -270,151 +328,32 @@
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
 
-            <!-- ===== AIR FORCE ONE ===== -->
-            <a href="detalle.html?nombre=Air%20Force%20One&precio=%2445.00&img=imagenes/Air%20Fonce%20One.jpg" class="product-card-link" data-brand="nike">
+            <!-- AIR FORCE ONE BLANCAS (TRIPLE A) -->
+            <a href="detalle.html?nombre=Air%20Force%20One%20Blancas" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Air Fonce One.jpg" alt="Air Force One" class="product-img-catalog">
+                        <img src="imagenes/Air Force One Blancas TripleA.jpg" alt="Air Force One Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Air Force One</h3>
+                        <h3 class="product-name">Air Force One Blancas</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$45.00</span>
+                            <span class="product-price">$30.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- ===== NIKE ZOOM FLY 4 ===== -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20Fly%204&precio=%2455.00&img=imagenes/Nike%20Zoom%20Fly%204.jpg" class="product-card-link" data-brand="nike">
+            <!-- AIR JORDAN 4 RETRO BLACK -->
+            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Black" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Nike Zoom Fly 4.jpg" alt="Nike Zoom Fly 4" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Nike Zoom Fly 4</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== NIKE ZOOM FLY 4 (2) ===== -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20Fly%204&precio=%2455.00&img=imagenes/Nike%20Zoom%20Fly%204%202.jpg" class="product-card-link" data-brand="nike">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Zoom Fly 4 2.jpg" alt="Nike Zoom Fly 4" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Nike Zoom Fly 4</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== AIR JORDAN 4 RETRO BLACK ===== -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Black&precio=%2495.00&img=imagenes/retro%204%20black.jpeg" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/retro 4 black.jpeg" alt="Air Jordan 4 Retro Black" class="product-img-catalog">
+                        <img src="imagenes/retro 4 black.jpeg" alt="Air Jordan 4 Retro Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Triple A</span>
                         <h3 class="product-name">Air Jordan 4 Retro Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$95.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== NEW BALANCE 530 ===== -->
-            <a href="detalle.html?nombre=New%20Balance%20530&precio=%2495.00&img=imagenes/New%20Balance%20530.jpg" class="product-card-link" data-brand="newbalance">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/New Balance 530.jpg" alt="New Balance 530" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">New Balance 530</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$95.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== NIKE SB DUNK LOW AE86 ===== -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20AE86&precio=%2495.00&img=imagenes/Nike%20SB%20Dunk%20LowAE86.jpg" class="product-card-link" data-brand="nike">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike SB Dunk LowAE86.jpg" alt="Nike SB Dunk Low AE86" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Nike SB Dunk Low AE86</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$95.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== AIR JORDAN 4 RETRO MILITARY BLACK ===== -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Military%20Black&precio=%2495.00&img=imagenes/Air%20Jordan%204%20Retro%20Military%20Black.jpg" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 4 Retro Military Black.jpg" alt="Air Jordan 4 Retro Military Black" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Air Jordan 4 Retro Military Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$95.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== ADIDAS CAMPUS X BAD BUNNY ===== -->
-            <a href="detalle.html?nombre=Adidas%20Campus%20x%20Bad%20Bunny&precio=%2495.00&img=imagenes/adidas%20Campus%20x%20Bad%20Bunny%20The%20Last%20Campus.jpg" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/adidas Campus x Bad Bunny The Last Campus.jpg" alt="Adidas Campus x Bad Bunny" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Adidas Campus x Bad Bunny</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$95.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ===== ADIDAS RESPONSE CL X BAD BUNNY ===== -->
-            <a href="detalle.html?nombre=Adidas%20Response%20CL%20x%20Bad%20Bunny&precio=%2495.00&img=imagenes/adidas%20Response%20CL%20x%20Bad%20Bunny%20.jpg" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/adidas Response CL x Bad Bunny .jpg" alt="Adidas Response CL x Bad Bunny" class="product-img-catalog">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Triple A</span>
-                        <h3 class="product-name">Adidas Response CL x Bad Bunny</h3>
                         <div class="product-footer-row">
                             <span class="product-price">$95.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
@@ -461,11 +400,14 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- IMPORTANTE: NO cargamos script.js para evitar conflictos -->
     <script>
         // ====== FILTROS POR MARCA ======
-        function filterProducts(brand) {
+        window.filterProducts = function(brand) {
+            console.log('🔍 Filtrando por:', brand);
+            
             const cards = document.querySelectorAll('.product-card-link');
+            console.log('📦 Tarjetas encontradas:', cards.length);
             
             // Actualizar botones
             document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -475,31 +417,84 @@
             // Marcar el botón activo
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
-                if (btn.textContent.toLowerCase().includes('todos') && brand === 'todos') {
+                const btnText = btn.textContent.toLowerCase().trim();
+                if (brand === 'todos' && btnText.includes('todos')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('nike') && brand === 'nike') {
+                } else if (brand === 'nike' && btnText.includes('nike')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('adidas') && brand === 'adidas') {
+                } else if (brand === 'adidas' && btnText.includes('adidas')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('jordan') && brand === 'jordan') {
+                } else if (brand === 'jordan' && btnText.includes('jordan')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('new balance') && brand === 'newbalance') {
+                } else if (brand === 'newbalance' && btnText.includes('new balance')) {
                     btn.classList.add('active');
                 }
             });
             
+            // Mostrar/ocultar tarjetas
+            let visibleCount = 0;
             cards.forEach(card => {
                 if (brand === 'todos') {
                     card.style.display = 'block';
+                    visibleCount++;
                 } else {
-                    if (card.dataset.brand === brand) {
+                    const cardBrand = card.dataset.brand ? card.dataset.brand.toLowerCase() : '';
+                    if (cardBrand === brand) {
                         card.style.display = 'block';
+                        visibleCount++;
                     } else {
                         card.style.display = 'none';
                     }
                 }
             });
+            
+            console.log('👟 Productos visibles:', visibleCount);
+        };
+
+        // ====== TEMA CLARO/OSCURO ======
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (icon) {
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-moon';
+                } else {
+                    icon.className = 'fas fa-sun';
+                }
+            }
         }
+
+        // ====== MENÚ MÓVIL ======
+        document.querySelector('.menu-toggle')?.addEventListener('click', () => {
+            document.querySelector('.nav-links')?.classList.toggle('active');
+        });
+
+        // ====== CARRITO ======
+        let cartCount = 0;
+        document.getElementById('cart-count').textContent = cartCount;
+
+        // ====== FORZAR MOSTRAR TODOS LOS PRODUCTOS ======
+        (function() {
+            console.log('🚀 Triple A - Mostrando todos los productos...');
+            document.querySelectorAll('.product-card-link').forEach(card => {
+                card.style.display = 'block';
+            });
+            console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
+        })();
     </script>
 </body>
 </html>

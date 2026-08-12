@@ -1,25 +1,42 @@
 {
   "productos": [
-    {
-      "nombre": "Air Fonce One",
-      "precio": "$45.00",
+        {
+          "nombre": "Air Force One Blancas",
+          "precio": "$30.00",
+          "categoria": "Triple A",
+          "marca": "NIKE",
+          "genero": "Unisex",
+          "material": "Cuero Premium",
+          "origen": "Importado",
+          "descripcion": "Las Clasicas Air Force One",
+          "stock": 8,
+          "imagenes": [
+            "imagenes/Air Force One Blancas TripleA.jpg"
+          ],
+          "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+          "tallas_agotadas": [],
+          "categoria_link": "Triple_A.html"
+        },
+        {
+      "nombre": "Air Force One",
+      "precio": "$42.00",
       "categoria": "Top Quality",
-      "marca": "NIKE",
+      "marca": "Nike",
       "genero": "Unisex",
-      "material": "Cuero + Gamuza",
+      "material": "Cuero Premium",
       "origen": "Importado",
-      "descripcion": "Las clasicas Air Force One Blancas",
-      "stock": 1,
+      "descripcion": "Las Air Force One son el ícono del calzado urbano. Con su diseño clásico, amortiguación Air-Sole y construcción de cuero premium, estas zapatillas han trascendido generaciones convirtiéndose en un símbolo de la cultura streetwear.",
+      "stock": 2,
       "imagenes": [
-        "imagenes/Air Force One.jpg"
+        "imagenes/Air Fonce One.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
-    }, 
-        {
+    },
+    {
       "nombre": "Air Force One Black",
-      "precio": "$45.00",
+      "precio": "$42.00",
       "categoria": "Top Quality",
       "marca": "NIKE",
       "genero": "Unisex",
@@ -43,7 +60,7 @@
       "material": "Cuero + Gamuza",
       "origen": "Importado",
       "descripcion": "Las Air Jordan 3 Retro Black Cat son una edición especial que combina el estilo clásico de la silueta con un acabado elegante y minimalista. Inspiradas en el apodo de Michael Jordan, estas zapatillas presentan una construcción de cuero y gamuza premium en tonos negros, con detalles en gris oscuro y la icónica logo de Jumpman en el talón.",
-      "stock": 0,
+      "stock": 5,
       "imagenes": [
         "imagenes/Air Jordan 3 Retro Black Cat.jpg"
       ],
@@ -950,25 +967,6 @@
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
-    },
-    {
-      "nombre": "Air Force One",
-      "precio": "$45.00",
-      "categoria": "Triple A",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Cuero Premium",
-      "origen": "Importado",
-      "descripcion": "Las Air Force One son el ícono del calzado urbano. Con su diseño clásico, amortiguación Air-Sole y construcción de cuero premium, estas zapatillas han trascendido generaciones convirtiéndose en un símbolo de la cultura streetwear.",
-      "stock": 0,
-      "imagenes": [
-        "imagenes/Air Fonce One.jpg",
-        "imagenes/Air Force One 2.jpg",
-        "imagenes/Air Force One 3.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
-      "categoria_link": "Triple_A.html"
     },
     {
       "nombre": "Air Jordan 4 Retro Black",

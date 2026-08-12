@@ -632,7 +632,7 @@
         async function cargarProductos() {
             try {
                 console.log('📂 Cargando productos.json...');
-                const response = await fetch('productos.json');
+                const response = await fetch('productos.json?v=' + Date.now());
                 
                 if (!response.ok) {
                     throw new Error(`Error HTTP: ${response.status}`);

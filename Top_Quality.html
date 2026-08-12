@@ -316,13 +316,13 @@
     <!-- FILTROS -->
     <div class="container">
         <div class="filter-container">
-            <button class="filter-btn active" onclick="filterProducts('todos')">Todos</button>
-            <button class="filter-btn" onclick="filterProducts('nike')">Nike</button>
-            <button class="filter-btn" onclick="filterProducts('adidas')">Adidas</button>
-            <button class="filter-btn" onclick="filterProducts('jordan')">Jordan</button>
-            <button class="filter-btn" onclick="filterProducts('newbalance')">New Balance</button>
-            <button class="filter-btn" onclick="filterProducts('balenciaga')">Balenciaga</button>
-            <button class="filter-btn" onclick="filterProducts('other')">Otros</button>
+            <button class="filter-btn active" onclick="window.filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="window.filterProducts('nike')">Nike</button>
+            <button class="filter-btn" onclick="window.filterProducts('adidas')">Adidas</button>
+            <button class="filter-btn" onclick="window.filterProducts('jordan')">Jordan</button>
+            <button class="filter-btn" onclick="window.filterProducts('newbalance')">New Balance</button>
+            <button class="filter-btn" onclick="window.filterProducts('balenciaga')">Balenciaga</button>
+            <button class="filter-btn" onclick="window.filterProducts('other')">Otros</button>
         </div>
     </div>
 
@@ -331,7 +331,7 @@
         <div class="product-grid-catalog" id="productGrid">
 
             <!-- AIR FORCE ONE -->
-            <a href="detalle.html?nombre=Air%20Force%20One" class="product-card-link" data-brand="NIKE">
+            <a href="detalle.html?nombre=Air%20Force%20One" class="product-card-link" data-brand="nike"> 
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Fonce One.jpg" alt="Air Force One Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -340,7 +340,7 @@
                         <span class="product-brand-tag">Top Quality</span>
                         <h3 class="product-name">Air Force One</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$45.00</span>
+                            <span class="product-price">$42.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -348,7 +348,7 @@
             </a>
 
             <!-- AIR FORCE ONE NEGRAS -->
-            <a href="detalle.html?nombre=Air%20Force%20One%20Black" class="product-card-link" data-brand="NIKE">
+            <a href="detalle.html?nombre=Air%20Force%20One%20Black" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Force One Black.jpg" alt="Air Force One Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -357,7 +357,7 @@
                         <span class="product-brand-tag">Top Quality</span>
                         <h3 class="product-name">Air Force One Black</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$45.00</span>
+                            <span class="product-price">$42.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -1218,47 +1218,60 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- IMPORTANTE: NO cargamos script.js para evitar conflictos -->
     <script>
         // ====== FILTROS POR MARCA ======
-        function filterProducts(brand) {
-            const cards = document.querySelectorAll('.product-card-link');
+        window.filterProducts = function(brand) {
+            console.log('🔍 Filtrando por:', brand);
             
+            const cards = document.querySelectorAll('.product-card-link');
+            console.log('📦 Tarjetas encontradas:', cards.length);
+            
+            // Actualizar botones
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             
+            // Marcar el botón activo
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
-                if (btn.textContent.toLowerCase().includes('todos') && brand === 'todos') {
+                const btnText = btn.textContent.toLowerCase().trim();
+                if (brand === 'todos' && btnText.includes('todos')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('nike') && brand === 'nike') {
+                } else if (brand === 'nike' && btnText.includes('nike')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('adidas') && brand === 'adidas') {
+                } else if (brand === 'adidas' && btnText.includes('adidas')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('jordan') && brand === 'jordan') {
+                } else if (brand === 'jordan' && btnText.includes('jordan')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('new balance') && brand === 'newbalance') {
+                } else if (brand === 'newbalance' && btnText.includes('new balance')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('balenciaga') && brand === 'balenciaga') {
+                } else if (brand === 'balenciaga' && btnText.includes('balenciaga')) {
                     btn.classList.add('active');
-                } else if (btn.textContent.toLowerCase().includes('otros') && brand === 'other') {
+                } else if (brand === 'other' && btnText.includes('otros')) {
                     btn.classList.add('active');
                 }
             });
             
+            // Mostrar/ocultar tarjetas
+            let visibleCount = 0;
             cards.forEach(card => {
                 if (brand === 'todos') {
                     card.style.display = 'block';
+                    visibleCount++;
                 } else {
-                    if (card.dataset.brand === brand) {
+                    const cardBrand = card.dataset.brand ? card.dataset.brand.toLowerCase() : '';
+                    if (cardBrand === brand) {
                         card.style.display = 'block';
+                        visibleCount++;
                     } else {
                         card.style.display = 'none';
                     }
                 }
             });
-        }
+            
+            console.log('👟 Productos visibles:', visibleCount);
+        };
 
         // ====== TEMA CLARO/OSCURO ======
         const themeToggle = document.getElementById('themeToggle');
@@ -1295,6 +1308,15 @@
         // ====== CARRITO ======
         let cartCount = 0;
         document.getElementById('cart-count').textContent = cartCount;
+
+        // ====== FORZAR MOSTRAR TODOS LOS PRODUCTOS ======
+        (function() {
+            console.log('🚀 Top Quality - Mostrando todos los productos...');
+            document.querySelectorAll('.product-card-link').forEach(card => {
+                card.style.display = 'block';
+            });
+            console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
+        })();
     </script>
 </body>
 </html>
