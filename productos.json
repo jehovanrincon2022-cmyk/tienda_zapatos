@@ -984,6 +984,98 @@
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
       "categoria_link": "Triple_A.html"
+    },
+    {
+      "nombre": "Sb Dunk Low",
+      "precio": "$45.00",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Malla",
+      "origen": "Importado",
+      "descripcion": "Las Sb Dunk Low Amarillas, viste con estilo.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Sb Dunk Low Amarillos1.jpg",
+        "imagenes/Sb Dunk Low Amarillos2.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 40],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "nombre": "Sb Dunk Low Negros",
+      "precio": "$40.00",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Sb Dunk Low Negras, Viste con estilo.",
+      "stock": 5,
+      "imagenes":[
+        "imagenes/Sb Dunk Low Negras1.jpg",
+        "imagenes/Sb Dunk Low Negras2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [45],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Sb Dunk Low Celeste",
+      "precio": "$40.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Mujer",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Sb Dunk Low Celeste, Viste con estilo.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Sb Dunk Low celeste1.jpg",
+        "imagenes/Sb Dunk Low celeste2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Sb Dunk Low Moradas",
+      "precio": "$40.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Mujer",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Sb Dunk Low Moradas, Viste con estilo.",
+      "stock": 2,
+      "imagenes":[
+        "imagenes/Sb Dunk Low Morada1.jpg",
+        "imagenes/Sb Dunk Low Morada2.jpg",
+        "imagenes/Sb Dunk Low Morada3.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Sb Dunk Low Azules",
+      "precio": "$40.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Sb Dunk Low Azules, Viste con estilo.",
+      "stock": 2,
+      "imagenes":[
+        "imagenes/Sb Dunk Low AZUL1.jpg",
+        "imagenes/Sb Dunk Low AZUL2.jpg",
+        "imagenes/Sb Dunk Low AZUL3.jpg"
+      ],
+      "tallas": [37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36],
+      "categoria_link":"Triple_A.html"
     }
   ]
 }
