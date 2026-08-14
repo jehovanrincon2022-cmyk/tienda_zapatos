@@ -53,19 +53,22 @@
     },
     {
       "nombre": "Air Jordan 3 Retro Black Cat",
-      "precio": "$47.00",
+      "precio": "$67.00",
       "categoria": "Top Quality",
       "marca": "Jordan",
-      "genero": "Unisex",
+      "genero": "Hombre",
       "material": "Cuero + Gamuza",
       "origen": "Importado",
       "descripcion": "Las Air Jordan 3 Retro Black Cat son una edición especial que combina el estilo clásico de la silueta con un acabado elegante y minimalista. Inspiradas en el apodo de Michael Jordan, estas zapatillas presentan una construcción de cuero y gamuza premium en tonos negros, con detalles en gris oscuro y la icónica logo de Jumpman en el talón.",
       "stock": 5,
       "imagenes": [
-        "imagenes/Air Jordan 3 Retro Black Cat.jpg"
+        "imagenes/Air Jordan 3 Retro Black Cat1.jpg",
+        "imagenes/Air Jordan 3 Retro Black Cat2.jpg",
+        "imagenes/Air Jordan 3 Retro Black Cat3.jpg",
+        "imagenes/Air Jordan 3 Retro Black Cat4.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -165,7 +168,12 @@
       "descripcion": "Las Air Jordan 4 Retro OG SP son una reedición de la silueta original con detalles premium. Su diseño icónico y su construcción de alta calidad las hacen perfectas para coleccionistas y amantes del sneaker.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Air Jordan 4 Retro OG SP.jpg"
+        "imagenes/Air Jordan 4 Retro OG SP1.jpg",
+        "imagenes/Air Jordan 4 Retro OG SP2.jpg",
+        "imagenes/Air Jordan 4 Retro OG SP3.jpg",
+        "imagenes/Air Jordan 4 Retro OG SP4.jpg",
+        "imagenes/Air Jordan 4 Retro OG SP5.jpg",
+        "imagenes/Air Jordan 4 Retro OG SP6.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -288,10 +296,7 @@
       "descripcion": "Las Nike SB Dunk Low son el ícono del skateboarding y la cultura urbana. Con su diseño robusto, amortiguación Zoom Air y una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen el equilibrio perfecto entre estilo y funcionalidad.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Nike SB Dunk Low azules.jpg",
-        "imagenes/Nike SB Dunk Low 2.jpg",
-        "imagenes/Nike SB Dunk Low 3.jpg",
-        "imagenes/Nike SB Dunk Low 4.jpg"
+        "imagenes/Nike SB Dunk Low azules.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -730,23 +735,6 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "New Balance 530 (Calidad Premium)",
-      "precio": "$50.00",
-      "categoria": "Top Quality",
-      "marca": "New Balance",
-      "genero": "Unisex",
-      "material": "Malla + Cuero",
-      "origen": "Importado",
-      "descripcion": "Las New Balance 530 son un clásico del running retro. Con su diseño inspirado en los años 2000 y su construcción de malla y cuero, estas zapatillas ofrecen comodidad y estilo en cada paso.",
-      "stock": 6,
-      "imagenes": [
-        "imagenes/New Balance 530.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
       "nombre": "New Balance 9060 negras",
       "precio": "$60.00",
       "categoria": "Top Quality",
@@ -781,8 +769,8 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "New Balance 1906A",
-      "precio": "$60.00",
+      "nombre": "New Balance 1906AD",
+      "precio": "$62.00",
       "categoria": "Top Quality",
       "marca": "New Balance",
       "genero": "Unisex",
@@ -791,10 +779,14 @@
       "descripcion": "Las New Balance 1906A son una reinterpretación moderna de la silueta clásica. Con su diseño retro-futurista y su construcción de alta calidad, estas zapatillas son perfectas para los amantes del sneaker.",
       "stock": 2,
       "imagenes": [
-        "imagenes/New Balance 1906A.jpg"
+        "imagenes/New Balance 1906AD1.jpg",
+        "imagenes/New Balance 1906AD2.jpg",
+        "imagenes/New Balance 1906AD3.jpg",
+        "imagenes/New Balance 1906AD4.jpg",
+        "imagenes/New Balance 1906AD5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -850,20 +842,23 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Dior B30",
-      "precio": "$70.00",
+      "nombre": "Dior B30 Negras",
+      "precio": "$68.00",
       "categoria": "Top Quality",
       "marca": "Dior",
       "genero": "Unisex",
       "material": "Malla Técnica + Cuero",
       "origen": "Importado",
       "descripcion": "Las Dior B30 son el lujo hecho calzado. Con su diseño elegante y su construcción de malla técnica y cuero de alta calidad, estas zapatillas son la elección perfecta para quienes buscan sofisticación.",
-      "stock": 0,
+      "stock": 2,
       "imagenes": [
-        "imagenes/Dior B30..jpg"
+        "imagenes/Dior B30 Negra1.jpg",
+        "imagenes/Dior B30 Negra2.jpg",
+        "imagenes/Dior B30 Negra3.jpg",
+        "imagenes/Dior B30 Negra4.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42],
-      "tallas_agotadas": [43, 44, 45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -1076,6 +1071,321 @@
       "tallas": [37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas":[36],
       "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Mind 001",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Mind 001.",
+      "stock": 2,
+      "imagenes":[
+        "imagenes/Mind1.jpg",
+        "imagenes/Mind2.jpg",
+        "imagenes/Mind3.jpg",
+        "imagenes/Mind4.jpg"
+      ],
+      "tallas": [39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "New Balance 530",
+      "precio": "$45.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/New Balance 5302.jpg",
+        "imagenes/New Balance 5301.jpg",
+        "imagenes/New Balance 5303.jpg"
+      ],
+      "tallas": [37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Sb Dunk Swoosh",
+      "precio": "$55.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Sb Dunk Swoosh1.jpg",
+        "imagenes/Sb Dunk Swoosh2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas":[45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Marron",
+      "precio": "$60.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Azul y Marron1.jpg",
+        "imagenes/Sb Dunk Low Azul y Marron2.jpg"
+      ],
+      "tallas": [37, 38, 44, 45],
+      "tallas_agotadas":[36, 39, 40, 41, 42, 43],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Dior B22",
+      "precio": "$63.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/DIOR B221.jpg",
+        "imagenes/DIOR B222.jpg",
+        "imagenes/DIOR B223.jpg",
+        "imagenes/DIOR B224.jpg",
+        "imagenes/DIOR B225.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Air Force One x Drake Blancas",
+      "precio": "$67.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Force One x Drake Blancas1.jpg",
+        "imagenes/Air Force One x Drake Blancas2.jpg",
+        "imagenes/Air Force One x Drake Blancas3.jpg",
+        "imagenes/Air Force One x Drake Blancas4.jpg",
+        "imagenes/Air Force One x Drake Blancas5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Sb Force Snake",
+      "precio": "$42.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Sb Force Snake1.jpg",
+        "imagenes/Nike Sb Force Snake2.jpg",
+        "imagenes/Nike Sb Force Snake3.jpg",
+        "imagenes/Nike Sb Force Snake4.jpg",
+        "imagenes/Nike Sb Force Snake5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Air Max Portal",
+      "precio": "$42.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Max Portal1.jpg",
+        "imagenes/Air Max Portal2.jpg",
+        "imagenes/Air Max Portal3.jpg",
+        "imagenes/Air Max Portal4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Air Max Portal Negras",
+      "precio": "$42.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Max Portal Negras1.jpg",
+        "imagenes/Air Max Portal Negras2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Puma Suede",
+      "precio": "$42.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Puma Suede1.jpg",
+        "imagenes/Puma Suede2.jpg",
+        "imagenes/Puma Suede3.jpg",
+        "imagenes/Puma Suede4.jpg",
+        "imagenes/Puma Suede5.jpg"
+      ],
+      "tallas": [39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Puma Suede Verde",
+      "precio": "$42.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Puma Suede Verde1.jpg",
+        "imagenes/Puma Suede Verde2.jpg"
+      ],
+      "tallas": [39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Air Jordan Retro 1 Washing Ping",
+      "precio": "$42.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Mujer",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Jordan Retro 1 Washing Ping1.jpg",
+        "imagenes/Air Jordan Retro 1 Washing Ping2.jpg",
+        "imagenes/Air Jordan Retro 1 Washing Ping3.jpg",
+        "imagenes/Air Jordan Retro 1 Washing Ping4.jpg",
+        "imagenes/Air Jordan Retro 1 Washing Ping5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas":[45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas Response x Bad Bunny",
+      "precio": "$68.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Response x Bad Bunny1.jpg",
+        "imagenes/Adidas Response x Bad Bunny2.jpg",
+        "imagenes/Adidas Response x Bad Bunny3.jpg",
+        "imagenes/Adidas Response x Bad Bunny4.jpg",
+        "imagenes/Adidas Response x Bad Bunny5.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Dior B30 blancas",
+      "precio": "$68.00",
+      "categoria":"Top Quality",
+      "marca": "Dior",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Dior B30 blancas gris1.jpg",
+        "imagenes/Dior B30 blancas gris2.jpg",
+        "imagenes/Dior B30 blancas gris3.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Dior B30 Negras con Blanco",
+      "precio": "$68.00",
+      "categoria":"Top Quality",
+      "marca": "Dior",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Dior B30 Negras con Blanco1.jpg",
+        "imagenes/Dior B30 Negras con Blanco2.jpg",
+        "imagenes/Dior B30 Negras con Blanco3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Air Force x Nocta",
+      "precio": "$68.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Force 1 x Nocta1.jpg",
+        "imagenes/Air Force 1 x Nocta2.jpg",
+        "imagenes/Air Force 1 x Nocta3.jpg",
+        "imagenes/Air Force 1 x Nocta4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
     }
   ]
 }
