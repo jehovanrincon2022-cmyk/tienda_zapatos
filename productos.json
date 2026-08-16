@@ -107,7 +107,7 @@
     },
     {
       "nombre": "Air Jordan 1 Low x Eastside Golf",
-      "precio": "$60.00",
+      "precio": "$55.00",
       "categoria": "Top Quality",
       "marca": "Jordan",
       "genero": "Unisex",
@@ -116,10 +116,14 @@
       "descripcion": "La colaboración entre Air Jordan y Eastside Golf trae una versión única de la clásica silueta. Con detalles inspirados en el golf y un diseño elegante, estas zapatillas son perfectas para destacar tanto en la ciudad como en el campo.",
       "stock": 3,
       "imagenes": [
-        "imagenes/Air Jordan 1 Low x Eastside Golf en color azul marino.jpg"
+        "imagenes/Air Jordan 1 Low x Eastside Golf1.jpg",
+        "imagenes/Air Jordan 1 Low x Eastside Golf2.jpg",
+        "imagenes/Air Jordan 1 Low x Eastside Golf3.jpg",
+        "imagenes/Air Jordan 1 Low x Eastside Golf4.jpg",
+        "imagenes/Air Jordan 1 Low x Eastside Golf5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [36, 37, 38, 39, 43, 44],
+      "tallas_agotadas": [40, 41, 42, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -251,7 +255,7 @@
     },
     {
       "nombre": "Adidas AE 2",
-      "precio": "$60.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Adidas",
       "genero": "Unisex",
@@ -260,11 +264,37 @@
       "descripcion": "Las Adidas AE 2 son el calzado perfecto para el día a día. Con su diseño moderno, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
       "stock": 4,
       "imagenes": [
-        "imagenes/Adidas AE 2.jpg",
-        "imagenes/Adidas AE2 negras.jpg"
+        "imagenes/Adidas AE 21.jpg",
+        "imagenes/Adidas AE 22.jpg",
+        "imagenes/Adidas AE 23.jpg",
+        "imagenes/Adidas AE 24.jpg",
+        "imagenes/Adidas AE 25.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [40, 41, 42, 43, 44],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas AE2 Black",
+      "precio": "$70.00",
+      "categoria": "Top Quality",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Adidas AE 2 son el calzado perfecto para el día a día. Con su diseño moderno, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Adidas AE2 Black1.jpg",
+        "imagenes/Adidas AE2 Black2.jpg",
+        "imagenes/Adidas AE2 Black3.jpg",
+        "imagenes/Adidas AE2 Black4.jpg",
+        "imagenes/Adidas AE2 Black5.jpg",
+        "imagenes/Adidas AE2 Black6.jpg",
+        "imagenes/Adidas AE2 Black7.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44],
+      "tallas_agotadas": [36, 37, 38, 39],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -276,7 +306,7 @@
       "material": "Primeknit + Boost",
       "origen": "Importado",
       "descripcion": "Las Yeezy Boost son el ícono del calzado moderno. Con su diseño vanguardista, tecnología Boost en la entresuela y construcción Primeknit, estas zapatillas ofrecen una comodidad y estilo inigualables.",
-      "stock": 0,
+      "stock": 5,
       "imagenes": [
         "imagenes/yeezy.jpeg",
         "imagenes/yeezy 2.jpg"
@@ -286,7 +316,7 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Nike SB Dunk Low",
+      "nombre": "Nike SB Dunk Low Azul",
       "precio": "$55.00",
       "categoria": "Top Quality",
       "marca": "Nike",
@@ -296,10 +326,13 @@
       "descripcion": "Las Nike SB Dunk Low son el ícono del skateboarding y la cultura urbana. Con su diseño robusto, amortiguación Zoom Air y una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen el equilibrio perfecto entre estilo y funcionalidad.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Nike SB Dunk Low azules.jpg"
+        "imagenes/Nike SB Dunk Low Azul1.jpg",
+        "imagenes/Nike SB Dunk Low Azul2.jpg",
+        "imagenes/Nike SB Dunk Low Azul3.jpg",
+        "imagenes/Nike SB Dunk Low Azul4.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [36, 37, 38, 39],
+      "tallas_agotadas": [40, 41, 42, 43, 44, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -313,10 +346,14 @@
       "descripcion": "Las Nike SB Dunk Low AE86 son una edición especial inspirada en el mundo del automovilismo. Con detalles únicos y una construcción premium, estas zapatillas son perfectas para los amantes de la velocidad y el estilo.",
       "stock": 3,
       "imagenes": [
-        "imagenes/Nike SB Dunk LowAE86.jpg"
+        "imagenes/Nike SB Dunk LowAE861.jpg",
+        "imagenes/Nike SB Dunk LowAE862.jpg",
+        "imagenes/Nike SB Dunk LowAE863.jpg",
+        "imagenes/Nike SB Dunk LowAE864.jpg",
+        "imagenes/Nike SB Dunk LowAE865.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -330,9 +367,13 @@
       "descripcion": "Las Nike SB Dunk Low Pro PRM son la versión premium de la clásica silueta. Con materiales de primera calidad y una construcción superior, estas zapatillas ofrecen el máximo confort y estilo.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Nike SB Dunk Low Pro PRM.jpg"
+        "imagenes/Nike SB Dunk Low Pro PRM1.jpg",
+        "imagenes/Nike SB Dunk Low Pro PRM2.jpg",
+        "imagenes/Nike SB Dunk Low Pro PRM3.jpg",
+        "imagenes/Nike SB Dunk Low Pro PRM4.jpg",
+        "imagenes/Nike SB Dunk Low Pro PRM5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -364,7 +405,11 @@
       "descripcion": "Las Nike SB Dunk Low 85 Double Brown son una edición especial con un elegante acabado en tonos marrones. Su construcción premium y su diseño clásico las convierten en una opción versátil para cualquier ocasión.",
       "stock": 4,
       "imagenes": [
-        "imagenes/Nike SB Dunk Low 85 Double Brown.jpg"
+        "imagenes/Nike SB Dunk Low 85 Double Brown1.jpg",
+        "imagenes/Nike SB Dunk Low 85 Double Brown2.jpg",
+        "imagenes/Nike SB Dunk Low 85 Double Brown3.jpg",
+        "imagenes/Nike SB Dunk Low 85 Double Brown4.jpg",
+        "imagenes/Nike SB Dunk Low 85 Double Brown5.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -529,7 +574,7 @@
     },
     {
       "nombre": "Nike Air Force 1 Low x Cactus Plant Flea Black",
-      "precio": "$60.00",
+      "precio": "$80.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -538,15 +583,20 @@
       "descripcion": "La colaboración entre Nike y Cactus Plant Flea Market trae una versión única de la Air Force 1. Con su diseño negro con detalles en verde, estas zapatillas son un homenaje a la cultura sneaker.",
       "stock": 4,
       "imagenes": [
-        "imagenes/Nike Air Force x Cactus.jpg"
+        "imagenes/Nike Air Force x Cactus1.jpg",
+        "imagenes/Nike Air Force x Cactus2.jpg",
+        "imagenes/Nike Air Force x Cactus3.jpg",
+        "imagenes/Nike Air Force x Cactus4.jpg",
+        "imagenes/Nike Air Force x Cactus5.jpg",
+        "imagenes/Nike Air Force x Cactus6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
       "nombre": "Nike Air Force 1 Low x Cactus Plant Flea Market white",
-      "precio": "$60.00",
+      "precio": "$80.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -555,9 +605,14 @@
       "descripcion": "Esta colaboración entre Nike y Cactus Plant Flea Market en color blanco es una de las más codiciadas. Con detalles únicos y una construcción premium, estas zapatillas son un must-have para coleccionistas.",
       "stock": 3,
       "imagenes": [
-        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white.jpg"
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white1.jpg",
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white2.jpg",
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white3.jpg",
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white4.jpg",
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white5.jpg",
+        "imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -596,8 +651,8 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Nike A´One",
-      "precio": "$60.00",
+      "nombre": "Nike A´One Leo Lights",
+      "precio": "$80.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Mujer",
@@ -606,16 +661,38 @@
       "descripcion": "Las Nike A´One son el calzado perfecto para la mujer moderna. Con su diseño elegante, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Nike A´One rosa.jpg",
-        "imagenes/Nike A´One Blancas.jpg"
+        "imagenes/Nike A´One rosa1.jpg",
+        "imagenes/Nike A´One rosa2.jpg",
+        "imagenes/Nike A´One rosa3.jpg",
+        "imagenes/Nike A´One rosa4.jpg",
+        "imagenes/Nike A´One rosa5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43],
-      "tallas_agotadas": [],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 40],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike A´One",
+      "precio": "$80.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Mujer",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Nike A´One son el calzado perfecto para la mujer moderna. Con su diseño elegante, construcción ligera y amortiguación superior, estas zapatillas ofrecen comodidad y estilo en cada paso.",
+      "stock": 3,
+      "imagenes":[
+        "imagenes/Nike A One1.jpg",
+        "imagenes/Nike A One2.jpg",
+        "imagenes/Nike A One3.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 40],
       "categoria_link": "Top_Quality.html"
     },
     {
       "nombre": "Nike Hot Step 2 Drake NOCTA",
-      "precio": "$60.00",
+      "precio": "$65.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -624,10 +701,12 @@
       "descripcion": "Las Nike Hot Step 2 Drake NOCTA son parte de la colaboración entre Nike y Drake. Con su diseño moderno y detalles exclusivos de la marca NOCTA, estas zapatillas son un statement de estilo.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Nike Hot Step 2 Drake NOCTA.jpg"
+        "imagenes/Nike Hot Step 2 Drake NOCTA1.jpeg",
+        "imagenes/Nike Hot Step 2 Drake NOCTA2.jpg",
+        "imagenes/Nike Hot Step 2 Drake NOCTA3.jpeg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -736,7 +815,7 @@
     },
     {
       "nombre": "New Balance 9060 negras",
-      "precio": "$60.00",
+      "precio": "$50.00",
       "categoria": "Top Quality",
       "marca": "New Balance",
       "genero": "Unisex",
@@ -745,15 +824,19 @@
       "descripcion": "Las New Balance 9060 son la evolución del calzado urbano. Con su diseño moderno y su construcción de malla y caucho, estas zapatillas ofrecen comodidad y estilo en cada paso.",
       "stock": 4,
       "imagenes": [
-        "imagenes/New Balance 9060 negras.jpg"
+        "imagenes/New Balance 9060 negras1.jpg",
+        "imagenes/New Balance 9060 negras2.jpg",
+        "imagenes/New Balance 9060 negras3.jpg",
+        "imagenes/New Balance 9060 negras4.jpg",
+        "imagenes/New Balance 9060 negras5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
       "nombre": "New Balance 9060 Blancas",
-      "precio": "$60.00",
+      "precio": "$50.00",
       "categoria": "Top Quality",
       "marca": "New Balance",
       "genero": "Unisex",
@@ -762,9 +845,14 @@
       "descripcion": "Las New Balance 9060 en color blanco son la opción perfecta para quienes buscan un look limpio y moderno. Con su diseño elegante y construcción premium, estas zapatillas son un must-have.",
       "stock": 3,
       "imagenes": [
-        "imagenes/New Balance 9060 Blancas.jpg"
+        "imagenes/New Balance 9060 Blancas1.jpg",
+        "imagenes/New Balance 9060 Blancas2.jpg",
+        "imagenes/New Balance 9060 Blancas3.jpg",
+        "imagenes/New Balance 9060 Blancas4.jpg",
+        "imagenes/New Balance 9060 Blancas5.jpg",
+        "imagenes/New Balance 9060 Blancas6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -808,6 +896,29 @@
       "categoria_link": "Top_Quality.html"
     },
     {
+      "nombre": "Balenciaga Track 3.0 Black",
+      "precio": "$115.00",
+      "categoria": "Top Quality",
+      "marca": "Balenciaga",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Balenciaga Track 3.0 son la evolución del calzado de lujo. Con su diseño futurista, y una construcción de malla técnica y caucho de alta calidad, estas zapatillas son la declaración de estilo definitiva.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Balenciaga Track 3.0 Black1.jpg",
+        "imagenes/Balenciaga Track 3.0 Black2.jpg",
+        "imagenes/Balenciaga Track 3.0 Black3.jpg",
+        "imagenes/Balenciaga Track 3.0 Black4.jpg",
+        "imagenes/Balenciaga Track 3.0 Black5.jpg",
+        "imagenes/Balenciaga Track 3.0 Black6.jpg",
+        "imagenes/Balenciaga Track 3.0 Black7.jpg"
+      ],
+      "tallas": [38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
       "nombre": "Balenciaga Runner",
       "precio": "$60.00",
       "categoria": "Top Quality",
@@ -835,9 +946,14 @@
       "descripcion": "Las On Running Cloudtilt son la combinación perfecta de estilo y tecnología. Con su sistema de amortiguación CloudTec y su diseño minimalista, estas zapatillas ofrecen una experiencia de running única.",
       "stock": 5,
       "imagenes": [
-        "imagenes/On Running Cloudtilt 2.jpg"
+        "imagenes/On Running Cloudtilt 1.jpg",
+        "imagenes/On Running Cloudtilt 2.jpg",
+        "imagenes/On Running Cloudtilt 3.jpg",
+        "imagenes/On Running Cloudtilt 4.jpg",
+        "imagenes/On Running Cloudtilt 5.jpg",
+        "imagenes/On Running Cloudtilt 6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -862,8 +978,8 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Louis Vuitton LV Skate Sneaker",
-      "precio": "$60.00",
+      "nombre": "Louis Vuitton LV White Skate Sneaker",
+      "precio": "$65.00",
       "categoria": "Top Quality",
       "marca": "Louis Vuitton",
       "genero": "Unisex",
@@ -872,15 +988,15 @@
       "descripcion": "Las Louis Vuitton LV Skate Sneaker combinan el lujo de la firma francesa con el estilo urbano. Con su diseño elegante y su construcción de cuero premium, estas zapatillas son un símbolo de estatus.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Louis Vuitton LV Skate Sneaker.jpg"
+        "imagenes/Louis Vuitton LV White Skate Sneaker.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42],
-      "tallas_agotadas": [43, 44, 45],
+      "tallas": [41, 42, 43, 44],
+      "tallas_agotadas": [36, 37, 38, 39, 40, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "LV Skate Sneaker",
-      "precio": "$60.00",
+      "nombre": "Louis Vuitton Skate Sneaker",
+      "precio": "$75.00",
       "categoria": "Top Quality",
       "marca": "Louis Vuitton",
       "genero": "Unisex",
@@ -889,7 +1005,10 @@
       "descripcion": "Las LV Skate Sneaker son la versión más versátil del calzado de lujo. Con su diseño clásico y su construcción de cuero premium, estas zapatillas son perfectas para cualquier ocasión.",
       "stock": 3,
       "imagenes": [
-        "imagenes/LV Skate Sneaker.jpg"
+        "imagenes/Louis Vuitton Skate Sneaker1.jpg",
+        "imagenes/Louis Vuitton Skate Sneaker2.jpg",
+        "imagenes/Louis Vuitton Skate Sneaker3.jpg",
+        "imagenes/Louis Vuitton Skate Sneaker4.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42],
       "tallas_agotadas": [43, 44, 45],
@@ -904,17 +1023,21 @@
       "material": "Cuero Premium",
       "origen": "Importado",
       "descripcion": "Las Timberlands Premium 6-Inch son el ícono del calzado resistente. Con su construcción de cuero premium, suela de caucho y diseño clásico, estas botas son perfectas para la ciudad y la naturaleza.",
-      "stock": 4,
+      "stock": 3,
       "imagenes": [
-        "imagenes/Timberlands.jpg"
+        "imagenes/Botas Timberlands1.jpg",
+        "imagenes/Botas Timberland2.jpg",
+        "imagenes/Botas Timberland3.jpg",
+        "imagenes/Botas Timberland4.jpg"
+
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
+      "tallas": [38, 40],
+      "tallas_agotadas": [36, 37, 39, 41, 42, 43, 44, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
       "nombre": "Salomon XT-6",
-      "precio": "$60.00",
+      "precio": "$80.00",
       "categoria": "Top Quality",
       "marca": "Salomon",
       "genero": "Unisex",
@@ -923,9 +1046,15 @@
       "descripcion": "Las Salomon XT-6 son el calzado perfecto para el trail running y la ciudad. Con su diseño robusto, sistema de amortiguación y construcción de malla técnica, estas zapatillas ofrecen rendimiento y estilo.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Salomon XT-6.jpg"
+        "imagenes/Salomon XT-61.jpg",
+        "imagenes/Salomon XT-62.jpg",
+        "imagenes/Salomon XT-63.jpg",
+        "imagenes/Salomon XT-64.jpg",
+        "imagenes/Salomon XT-65.jpg",
+        "imagenes/Salomon XT-66.jpg",
+        "imagenes/Salomon XT-67.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -1289,7 +1418,7 @@
     },
     {
       "nombre": "Air Jordan Retro 1 Washing Ping",
-      "precio": "$42.00",
+      "precio": "$65.00",
       "categoria":"Top Quality",
       "marca": "Nike",
       "genero":"Mujer",
@@ -1302,10 +1431,11 @@
         "imagenes/Air Jordan Retro 1 Washing Ping2.jpg",
         "imagenes/Air Jordan Retro 1 Washing Ping3.jpg",
         "imagenes/Air Jordan Retro 1 Washing Ping4.jpg",
-        "imagenes/Air Jordan Retro 1 Washing Ping5.jpg"
+        "imagenes/Air Jordan Retro 1 Washing Ping5.jpg",
+        "imagenes/Air Jordan Retro 1 Washing Ping6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas":[45],
+      "tallas": [36, 37, 38, 39, 40],
+      "tallas_agotadas":[41, 42, 43, 44, 45],
       "categoria_link":"Top_Quality.html"
     },
     {
@@ -1382,6 +1512,361 @@
         "imagenes/Air Force 1 x Nocta2.jpg",
         "imagenes/Air Force 1 x Nocta3.jpg",
         "imagenes/Air Force 1 x Nocta4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Pegasus 2005",
+      "precio": "$45.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Air Pegasus 20051.jpg",
+        "imagenes/Nike Air Pegasus 20052.jpg",
+        "imagenes/Nike Air Pegasus 20053.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Nike Ja 3 Negras",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes": [
+        "imagenes/Nike Ja 3 Negras1.jpg",
+        "imagenes/Nike Ja 3 Negras2.jpg",
+        "imagenes/Nike Ja 3 Negras3.jpg",
+        "imagenes/Nike Ja 3 Negras4.jpg",
+        "imagenes/Nike Ja 3 Negras5.jpg",
+        "imagenes/Nike Ja 3 Negras6.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Ja 3 Azul Turquesa",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Ja 3 Azul Turquesa1.jpg",
+        "imagenes/Nike Ja 3 Azul Turquesa2.jpg",
+        "imagenes/Nike Ja 3 Azul Turquesa3.jpg",
+        "imagenes/Nike Ja 3 Azul Turquesa4.jpg",
+        "imagenes/Nike Ja 3 Azul Turquesa5.jpg",
+        "imagenes/Nike Ja 3 Azul Turquesa6.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Ja 3 Sound Check",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Ja 3 Sound Check1.jpg",
+        "imagenes/Nike Ja 3 Sound Check2.jpg",
+        "imagenes/Nike Ja 3 Sound Check3.jpg",
+        "imagenes/Nike Ja 3 Sound Check4.jpg",
+        "imagenes/Nike Ja 3 Sound Check5.jpg",
+        "imagenes/Nike Ja 3 Sound Check6.jpg",
+        "imagenes/Nike Ja 3 Sound Check7.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nocta Glide Black",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nocta Glide1.jpg",
+        "imagenes/Nocta Glide2.jpg",
+        "imagenes/Nocta Glide3.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nocta Glide",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nocta Glide Blancas1.jpg",
+        "imagenes/Nocta Glide Blancas2.jpg",
+        "imagenes/Nocta Glide Blancas3.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Vomero Roam",
+      "precio": "$55.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Vomero Roam1.jpg",
+        "imagenes/Nike Vomero Roam2.jpg",
+        "imagenes/Nike Vomero Roam3.jpg",
+        "imagenes/Nike Vomero Roam4.jpg",
+        "imagenes/Nike Vomero Roam5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Vomero Roam Summit White",
+      "precio": "$55.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Vomero Roam Summit White1.jpg",
+        "imagenes/Nike Vomero Roam Summit White2.jpg",
+        "imagenes/Nike Vomero Roam Summit White3.jpg",
+        "imagenes/Nike Vomero Roam Summit White4.jpg",
+        "imagenes/Nike Vomero Roam Summit White5.jpg",
+        "imagenes/Nike Vomero Roam Summit White6.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Air Jordan Retro 1 High Moka",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Jordan Retro 1 high Moka1.jpg",
+        "imagenes/Air Jordan Retro 1 high Moka2.jpg",
+        "imagenes/Air Jordan Retro 1 high Moka3.jpg",
+        "imagenes/Air Jordan Retro 1 high Moka4.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Argon",
+      "precio": "$60.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Argon1.jpg"
+      ],
+      "tallas": [38, 39, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 40, 41],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Aura Clear",
+      "precio": "$55.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Aura Clear1.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear2.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear3.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear4.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear5.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear6.jpg",
+        "imagenes/Nike SB Dunk Low Aura Clear7.jpg"
+      ],
+      "tallas": [40, 42, 43, 44],
+      "tallas_agotadas":[36, 37, 38, 39, 41, 45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Corteiz 95",
+      "precio": "$65.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Air Max Corteiz 951.jpg",
+        "imagenes/Nike Air Max Corteiz 952.jpg",
+        "imagenes/Nike Air Max Corteiz 953.jpg",
+        "imagenes/Nike Air Max Corteiz 954.jpg",
+        "imagenes/Nike Air Max Corteiz 955.jpg",
+        "imagenes/Nike Air Max Corteiz 956.jpg",
+        "imagenes/Nike Air Max Corteiz 957.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Louis Vuitton LV Skate Sneaker Marrones",
+      "precio": "$65.00",
+      "categoria":"Top Quality",
+      "marca": "Louis Vuitton",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Louis Vuitton LV Skate Sneaker Marrones1.jpg",
+        "imagenes/Louis Vuitton LV Skate Sneaker Marrones2.jpg",
+        "imagenes/Louis Vuitton LV Skate Sneaker Marrones3.jpg"
+      ],
+      "tallas": [42],
+      "tallas_agotadas":[36, 37, 38, 39, 40, 41, 43, 44, 45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Zoom x Invincible Run 3",
+      "precio": "$60.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Mujer",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Zoom x Invincible Run 31.jpg",
+        "imagenes/Nike Zoom x Invincible Run 32.jpg",
+        "imagenes/Nike Zoom x Invincible Run 33.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Adidas Yeezy 700 V3 Black",
+      "precio": "$75.00",
+      "categoria":"Top Quality",
+      "marca": "Adidas",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Yeezy 700 V3 Black1.jpg",
+        "imagenes/Adidas Yeezy 700 V3 Black2.jpg",
+        "imagenes/Adidas Yeezy 700 V3 Black3.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low Otomo Katsuhiro",
+      "precio": "$65.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro1.jpg",
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro2.jpg",
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro3.jpg",
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro4.jpg",
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro5.jpg",
+        "imagenes/Nike SB Dunk Low Otomo Katsuhiro6.jpg"
+      ],
+      "tallas": [36, 37, 38, 44],
+      "tallas_agotadas":[39, 40, 41, 42, 43, 45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Vans Knu Skool",
+      "precio": "$57.00",
+      "categoria":"Top Quality",
+      "marca": "Vans Knu",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Vans Knu Skool1.jpg",
+        "imagenes/Vans Knu Skool2.jpg",
+        "imagenes/Vans Knu Skool3.jpg",
+        "imagenes/Vans Knu Skool4.jpg",
+        "imagenes/Vans Knu Skool5.jpg",
+        "imagenes/Vans Knu Skool6.jpg",
+        "imagenes/Vans Knu Skool7.jpg",
+        "imagenes/Vans Knu Skool8.jpg",
+        "imagenes/Vans Knu Skool9.jpg",
+        "imagenes/Vans Knu Skool10.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas":[],
