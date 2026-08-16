@@ -52,7 +52,6 @@
             transform: scale(1.05);
         }
 
-        /* ===== OVERLAY DE AGOTADO ===== */
         .sold-out-overlay {
             position: absolute;
             top: 0;
@@ -122,7 +121,6 @@
             gap: 20px;
         }
 
-        /* ===== BADGE DE CALIDAD ===== */
         .quality-badge-detail {
             display: inline-flex;
             align-items: center;
@@ -159,7 +157,6 @@
             color: #000;
         }
 
-        /* ===== ESTADO DE STOCK ===== */
         .stock-status {
             display: inline-flex;
             align-items: center;
@@ -236,6 +233,146 @@
             font-size: 15px;
             color: var(--text-primary);
             font-weight: 500;
+        }
+
+        /* ===== MÉTODOS DE PAGO ===== */
+        .payment-methods {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            margin-top: 5px;
+        }
+
+        .payment-methods h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .payment-methods h4 i {
+            color: #2ecc71;
+            margin-right: 8px;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .payment-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .payment-item:hover {
+            border-color: #00d4ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.1);
+        }
+
+        .payment-item:active {
+            transform: scale(0.97);
+        }
+
+        .payment-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .payment-icon.pago-movil {
+            background: linear-gradient(135deg, #1a5276, #2e86c1);
+            color: #fff;
+        }
+
+        .payment-icon.pago-movil i {
+            font-size: 18px;
+        }
+
+        .payment-icon.dolar-fisico {
+            background: linear-gradient(135deg, #1a7a3a, #2ecc71);
+            color: #fff;
+        }
+
+        .payment-icon.dolar-fisico i {
+            font-size: 18px;
+        }
+
+        .payment-icon.binance {
+            background: #f0b90b;
+            color: #000;
+            font-weight: 900;
+            font-size: 14px;
+        }
+
+        .payment-icon.binance span {
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .payment-icon.zinli {
+            background: linear-gradient(135deg, #6c2bd9, #8b5cf6);
+            color: #fff;
+            font-weight: 900;
+            font-size: 13px;
+        }
+
+        .payment-icon.zinli span {
+            font-size: 13px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+        }
+
+        .payment-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .payment-info .payment-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .payment-info .payment-name small {
+            font-weight: 300;
+            font-size: 10px;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .payment-info .payment-click {
+            font-size: 9px;
+            color: var(--text-muted);
+            margin-top: 2px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .payment-info .payment-click i {
+            font-size: 10px;
         }
 
         .size-section {
@@ -419,6 +556,217 @@
             color: var(--text-secondary);
         }
 
+        /* ===== MODAL DE PAGO ===== */
+        .payment-modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s;
+        }
+
+        .payment-modal-content {
+            background: var(--bg-secondary);
+            margin: 5% auto;
+            padding: 25px;
+            width: 92%;
+            max-width: 460px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .payment-modal-close {
+            position: absolute;
+            right: 16px;
+            top: 12px;
+            font-size: 28px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: 0.3s;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .payment-modal-close:hover {
+            color: #ff4444;
+            transform: rotate(90deg);
+            background: rgba(255, 68, 68, 0.1);
+        }
+
+        .payment-modal-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-primary);
+            padding-right: 40px;
+        }
+
+        .payment-modal-title i {
+            font-size: 24px;
+        }
+
+        .payment-modal-body {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .payment-modal-body .bank-section {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .payment-modal-body .bank-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .payment-modal-body .bank-section .bank-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .payment-modal-body .bank-section .bank-title i {
+            color: #2e86c1;
+        }
+
+        .payment-modal-body .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            border-bottom: 1px solid var(--border-color);
+            gap: 10px;
+        }
+
+        .payment-modal-body .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .payment-modal-body .info-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .payment-modal-body .info-value {
+            font-weight: 500;
+            color: var(--text-primary);
+            text-align: right;
+            word-break: break-all;
+            font-size: 12px;
+            max-width: 60%;
+        }
+
+        .payment-modal-body .info-value.copyable {
+            cursor: pointer;
+            transition: 0.3s;
+            padding: 2px 8px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+        }
+
+        .payment-modal-body .info-value.copyable:hover {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+        }
+
+        .payment-modal-body .info-value .copy-hint {
+            font-size: 9px;
+            color: var(--text-muted);
+            font-weight: 300;
+            background: var(--bg-card);
+            padding: 1px 6px;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+
+        .payment-modal-body .dolar-image {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .payment-modal-body .dolar-image i {
+            font-size: 60px;
+            color: #2ecc71;
+        }
+
+        .payment-modal-body .dolar-message {
+            text-align: center;
+            padding: 14px;
+            background: rgba(231, 76, 60, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+            font-weight: 500;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .payment-modal-body .dolar-message i {
+            margin-right: 8px;
+        }
+
+        .payment-modal-body .dolar-subtext {
+            margin-top: 12px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .copy-notification {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2ecc71;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            z-index: 9999;
+            animation: slideUp 0.3s ease;
+            box-shadow: 0 10px 40px rgba(46, 204, 113, 0.3);
+            white-space: nowrap;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        /* ============================================================ */
+        /* ===== RESPONSIVE ===== */
+        /* ============================================================ */
+
         @media (max-width: 1024px) {
             .product-detail-wrapper {
                 grid-template-columns: 1fr;
@@ -435,22 +783,59 @@
 
         @media (max-width: 768px) {
             .product-detail-wrapper {
-                padding: 20px;
+                padding: 18px;
                 border-radius: 16px;
+                gap: 25px;
             }
 
             .product-title-detail {
-                font-size: 26px;
+                font-size: 24px;
             }
 
             .product-price-detail {
-                font-size: 30px;
+                font-size: 28px;
             }
 
             .specs-grid {
                 grid-template-columns: 1fr 1fr;
-                gap: 12px;
-                padding: 15px;
+                gap: 10px;
+                padding: 14px;
+            }
+
+            .spec-label {
+                font-size: 10px;
+            }
+
+            .spec-value {
+                font-size: 13px;
+            }
+
+            .payment-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .payment-item {
+                padding: 10px 12px;
+                gap: 10px;
+            }
+
+            .payment-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+
+            .payment-info .payment-name {
+                font-size: 12px;
+            }
+
+            .payment-info .payment-name small {
+                font-size: 9px;
+            }
+
+            .payment-info .payment-click {
+                font-size: 8px;
             }
 
             .btn-whatsapp {
@@ -468,36 +853,149 @@
                 letter-spacing: 5px;
                 border-width: 3px;
             }
+
+            .payment-modal-content {
+                margin: 8% auto;
+                padding: 20px;
+                width: 95%;
+                border-radius: 16px;
+            }
+
+            .payment-modal-title {
+                font-size: 18px;
+                padding-right: 35px;
+            }
+
+            .payment-modal-title i {
+                font-size: 20px;
+            }
+
+            .payment-modal-body .info-row {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 5px 0;
+                gap: 2px;
+            }
+
+            .payment-modal-body .info-label {
+                font-size: 12px;
+            }
+
+            .payment-modal-body .info-value {
+                text-align: left;
+                font-size: 12px;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .payment-modal-body .info-value.copyable {
+                font-size: 12px;
+                padding: 2px 0;
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .payment-modal-body .bank-section {
+                padding: 12px 14px;
+            }
+
+            .payment-modal-body .bank-section .bank-title {
+                font-size: 13px;
+            }
+
+            .copy-notification {
+                font-size: 13px;
+                padding: 10px 20px;
+                bottom: 20px;
+            }
         }
 
         @media (max-width: 480px) {
             .product-detail-wrapper {
-                padding: 15px;
+                padding: 12px;
                 border-radius: 12px;
+                gap: 20px;
             }
 
             .product-title-detail {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             .product-price-detail {
-                font-size: 26px;
+                font-size: 24px;
+            }
+
+            .product-description-detail {
+                font-size: 14px;
             }
 
             .specs-grid {
-                grid-template-columns: 1fr;
-                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+                padding: 12px;
+            }
+
+            .spec-label {
+                font-size: 9px;
+            }
+
+            .spec-value {
+                font-size: 12px;
+            }
+
+            .payment-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 6px;
+            }
+
+            .payment-item {
+                padding: 8px 10px;
+                gap: 8px;
+                border-radius: 8px;
+            }
+
+            .payment-icon {
+                width: 28px;
+                height: 28px;
+                font-size: 12px;
+                border-radius: 6px;
+            }
+
+            .payment-icon.pago-movil i,
+            .payment-icon.dolar-fisico i {
+                font-size: 14px;
+            }
+
+            .payment-info .payment-name {
+                font-size: 11px;
+            }
+
+            .payment-info .payment-name small {
+                font-size: 8px;
+            }
+
+            .payment-info .payment-click {
+                font-size: 7px;
+            }
+
+            .payment-info .payment-click i {
+                font-size: 8px;
+            }
+
+            .payment-methods h4 {
+                font-size: 13px;
             }
 
             .size-btn {
-                width: 42px;
-                height: 42px;
+                width: 38px;
+                height: 38px;
                 font-size: 12px;
             }
 
             .btn-whatsapp {
                 font-size: 14px;
                 padding: 12px 16px;
+                gap: 10px;
             }
 
             .btn-whatsapp i {
@@ -505,26 +1003,96 @@
             }
 
             .sold-out-overlay span {
-                font-size: 20px;
-                padding: 10px 18px;
+                font-size: 18px;
+                padding: 8px 14px;
                 letter-spacing: 3px;
                 border-width: 3px;
             }
+
+            .breadcrumb {
+                font-size: 12px;
+                padding: 12px 0 8px;
+            }
+
+            .payment-modal-content {
+                margin: 5% auto;
+                padding: 16px;
+                width: 98%;
+                border-radius: 14px;
+            }
+
+            .payment-modal-close {
+                right: 12px;
+                top: 10px;
+                font-size: 22px;
+                width: 30px;
+                height: 30px;
+            }
+
+            .payment-modal-title {
+                font-size: 16px;
+                padding-right: 30px;
+                margin-bottom: 14px;
+            }
+
+            .payment-modal-title i {
+                font-size: 18px;
+            }
+
+            .payment-modal-body .info-row {
+                padding: 4px 0;
+            }
+
+            .payment-modal-body .info-label {
+                font-size: 11px;
+            }
+
+            .payment-modal-body .info-value {
+                font-size: 11px;
+            }
+
+            .payment-modal-body .info-value.copyable {
+                font-size: 11px;
+            }
+
+            .payment-modal-body .info-value .copy-hint {
+                font-size: 8px;
+                padding: 1px 5px;
+            }
+
+            .payment-modal-body .bank-section {
+                padding: 10px 12px;
+                margin-bottom: 10px;
+            }
+
+            .payment-modal-body .bank-section .bank-title {
+                font-size: 12px;
+            }
+
+            .payment-modal-body .dolar-image i {
+                font-size: 40px;
+            }
+
+            .payment-modal-body .dolar-message {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            .payment-modal-body .dolar-subtext {
+                font-size: 11px;
+            }
+
+            .copy-notification {
+                font-size: 12px;
+                padding: 8px 16px;
+                bottom: 16px;
+                white-space: normal;
+            }
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .product-detail-wrapper {
-            animation: fadeInUp 0.5s ease;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
@@ -585,6 +1153,160 @@
                 <p style="margin-top:20px;color:var(--text-secondary);">Cargando producto...</p>
             </div>
         </section>
+    </div>
+
+    <!-- ===== MODALES DE PAGO ===== -->
+
+    <!-- Modal Pago Móvil (CON DOS BANCOS) -->
+    <div class="payment-modal" id="modalPagoMovil">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalPagoMovil')">&times;</span>
+            <div class="payment-modal-title">
+                <i class="fas fa-university" style="color:#2e86c1;"></i>
+                Pago Móvil
+            </div>
+            <div class="payment-modal-body">
+                <!-- BANCO 1: Banesco -->
+                <div class="bank-section">
+                    <div class="bank-title">
+                        <i class="fas fa-university" style="color:hsl(128, 98%, 32%);"></i> Banesco
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🪪 Cédula</span>
+                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-university" style="color:hsl(128, 98%, 32%);"></i>Banco</span>
+                        <span class="info-value copyable" onclick="copyText('Banesco')">Banesco<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">📱 Teléfono</span>
+                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
+                    </div>    
+                </div>
+
+                <!-- BANCO 2: Mercantil -->
+                <div class="bank-section">
+                    <div class="bank-title">
+                        <i class="fas fa-university" style="color:#409aeef5;"></i> Mercantil
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🪪 Cédula</span>
+                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-university" style="color:#409aeef5;"></i>Banco</span>
+                        <span class="info-value copyable" onclick="copyText('Mercantil')">Mercantil<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">📱 Teléfono</span>
+                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
+                    </div>    
+                </div>
+
+                <!-- BANCO 3: Venezuela -->
+                <div class="bank-section">
+                    <div class="bank-title">
+                        <i class="fas fa-university" style="color:hwb(0 1% 37%);"></i> Venezuela
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🪪 Cédula</span>
+                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label"><i class="fas fa-university" style="color:#a30404;"></i>Banco</span>
+                        <span class="info-value copyable" onclick="copyText('Venezuela')">Venezuela<span class="copy-hint">copiar</span></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">📱 Teléfono</span>
+                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dólar Físico -->
+    <div class="payment-modal" id="modalDolarFisico">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalDolarFisico')">&times;</span>
+            <div class="payment-modal-title">
+                <i class="fas fa-dollar-sign" style="color:#2ecc71;"></i>
+                Dólar Físico
+            </div>
+            <div class="payment-modal-body">
+                <div class="dolar-image">
+                    <i class="fas fa-dollar-sign"></i>
+                    <i class="fas fa-dollar-sign" style="font-size:50px;margin:0 8px;"></i>
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="dolar-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Por favor, dólar en buen estado
+                </div>
+                <div class="dolar-subtext">
+                    Sin manchas, roturas, rayones ni escrituras
+                </div>
+                <div class="dolar-subtext" style="margin-top:8px;font-size:12px;">
+                    Aceptamos billetes de $1, $5, $10, $20, $50 y $100
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Binance -->
+    <div class="payment-modal" id="modalBinance">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalBinance')">&times;</span>
+            <div class="payment-modal-title">
+                <i class="fab fa-bitcoin" style="color:#f0b90b;"></i>
+                Binance
+            </div>
+            <div class="payment-modal-body">
+                <div class="info-row">
+                    <span class="info-label">🆔 ID</span>
+                    <span class="info-value copyable" onclick="copyText('123456789')">123456789 <span class="copy-hint">copiar</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">📧 Correo</span>
+                    <span class="info-value copyable" onclick="copyText('jehovanrincon2022@gmail.com')">jehovanrincon2022@gmail.com <span class="copy-hint">copiar</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Zinli -->
+    <div class="payment-modal" id="modalZinli">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalZinli')">&times;</span>
+            <div class="payment-modal-title">
+                <i class="fas fa-credit-card" style="color:#8b5cf6;"></i>
+                Zinli
+            </div>
+            <div class="payment-modal-body">
+                <div class="info-row">
+                    <span class="info-label">📱 Teléfono</span>
+                    <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">📧 Correo</span>
+                    <span class="info-value copyable" onclick="copyText('zinli@ejemplo.com')">zinli@ejemplo.com <span class="copy-hint">copiar</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">👤 Titular</span>
+                    <span class="info-value">[TU NOMBRE]</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">📋 Cédula</span>
+                    <span class="info-value">[TU CÉDULA]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NOTIFICACIÓN DE COPIA ===== -->
+    <div id="copyNotification" style="display:none;" class="copy-notification">
+        <i class="fas fa-check-circle"></i> ¡Copiado!
     </div>
 
     <!-- CONTACTO -->
@@ -820,7 +1542,6 @@
                             ${qualityEmoji} ${categoria}
                         </div>` : ''}
                         
-                        <!-- ===== ESTADO DE STOCK ===== -->
                         <div class="stock-status ${stockStatusClass}">
                             <i class="fas ${stockStatusIcon}"></i>
                             ${stockStatusText}
@@ -847,6 +1568,49 @@
                             <div class="spec-item">
                                 <span class="spec-label">Origen</span>
                                 <span class="spec-value">${productoEncontrado.origen || 'N/A'}</span>
+                            </div>
+                        </div>
+
+                        <!-- ===== MÉTODOS DE PAGO ===== -->
+                        <div class="payment-methods">
+                            <h4><i class="fas fa-credit-card"></i> Métodos de Pago</h4>
+                            <div class="payment-grid">
+                                <div class="payment-item" onclick="openPaymentModal('modalPagoMovil')">
+                                    <div class="payment-icon pago-movil">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Pago Móvil <small>3 cuentas disponibles</small></span>
+                                        <span class="payment-click"><i class="fas fa-hand-pointer"></i> Toca para ver datos</span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalDolarFisico')">
+                                    <div class="payment-icon dolar-fisico">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Dólar Físico <small>Efectivo en USD</small></span>
+                                        <span class="payment-click"><i class="fas fa-hand-pointer"></i> Toca para ver requisitos</span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalBinance')">
+                                    <div class="payment-icon binance">
+                                        <span>B</span>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Binance <small>USDT</small></span>
+                                        <span class="payment-click"><i class="fas fa-hand-pointer"></i> Toca para ver datos</span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalZinli')">
+                                    <div class="payment-icon zinli">
+                                        <span>Z</span>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Zinli <small>Transferencia</small></span>
+                                        <span class="payment-click"><i class="fas fa-hand-pointer"></i> Toca para ver datos</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -889,15 +1653,18 @@
                         ? productoEncontrado.imagenes[0] 
                         : '';
 
-                    const message = `Hola 👋, ¡bienvenido a SoleStyle! 🏬%0A%0A` +
+                    const message = `Hola 👋, ¡bienvenido a SoleStyle! %0A%0A` +
                     `Estoy interesado en este producto:%0A` +
                     `📌 *${productName}*%0A` +
                     `🏷️ *Calidad:* ${productQuality}%0A` +
                     `💰 Precio: *${productPrice}*%0A` +
                     `👟 Talla: *${size}*%0A%0A` +
-                    `🖼️ *Foto del producto:*%0A` +
-                    `${imageUrl}%0A%0A` +
-                    `¿Podrían confirmar disponibilidad y formas de pago? 🙏`;
+                    `💳 *Métodos de pago disponibles:*%0A` +
+                    `🏦 Pago Móvil (Banesco / Mercantil)%0A` +
+                    `💵 Dólar Físico (Efectivo)%0A` +
+                    `₿ Binance (USDT/BNB/BTC)%0A` +
+                    `💳 Zinli (Tarjeta prepagada)%0A%0A` +
+                    `¿Podrían confirmar disponibilidad?`;
 
                     whatsappBtn.href = `https://wa.me/${phoneNumber}?text=${message}`;
                 }
@@ -928,6 +1695,65 @@
                 btn.classList.remove('active');
             });
             element.classList.add('active');
+        }
+
+        // ====== FUNCIONES PARA MODALES DE PAGO ======
+        function openPaymentModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePaymentModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('click', function(e) {
+            document.querySelectorAll('.payment-modal').forEach(modal => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // ====== FUNCIÓN PARA COPIAR TEXTO ======
+        function copyText(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showCopyNotification();
+                }).catch(() => {
+                    fallbackCopy(text);
+                });
+            } else {
+                fallbackCopy(text);
+            }
+        }
+
+        function fallbackCopy(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            textarea.style.top = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showCopyNotification();
+            } catch (e) {
+                console.error('Error al copiar:', e);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function showCopyNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.style.display = 'block';
+            clearTimeout(notification._timeout);
+            notification._timeout = setTimeout(() => {
+                notification.style.display = 'none';
+            }, 2000);
         }
 
         // ====== TEMA CLARO/OSCURO ======

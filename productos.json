@@ -145,7 +145,7 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Air Jordan 4 Retro Military Black",
+      "nombre": "Air Jordan Retro 4",
       "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Jordan",
@@ -155,10 +155,15 @@
       "descripcion": "Las Air Jordan 4 Retro Military Black combinan el estilo militar con la elegancia del calzado deportivo. Su diseño en tonos negros y grises, junto con los detalles en rojo, las convierten en un clásico moderno.",
       "stock": 4,
       "imagenes": [
-        "imagenes/Air Jordan 4 Retro Military Black.jpg"
+        "imagenes/Air Jordan Retro 41.jpg",
+        "imagenes/Air Jordan Retro 42.jpg",
+        "imagenes/Air Jordan Retro 43.jpg",
+        "imagenes/Air Jordan Retro 44.jpg",
+        "imagenes/Air Jordan Retro 45.jpg",
+        "imagenes/Air Jordan Retro 46.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -209,7 +214,7 @@
       "material": "Cuero + Gamuza",
       "origen": "Importado",
       "descripcion": "Las Air Jordan Retro 3 Palomino destacan por su elegante combinación de tonos marrones y crema. Con una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen estilo y confort en cada paso.",
-      "stock": 0,
+      "stock": 3,
       "imagenes": [
         "imagenes/Air Jordan Retro 3 Palomino.jpg"
       ],
@@ -228,11 +233,18 @@
       "descripcion": "La colaboración entre Adidas y Bad Bunny trae The Last Campus, una versión especial de la clásica silueta Campus. Con detalles únicos y un diseño que combina la estética urbana con el toque personal del artista puertorriqueño, estas zapatillas son un homenaje a la cultura del sneaker.",
       "stock": 2,
       "imagenes": [
-        "imagenes/adidas Campus x Bad Bunny The Last Campus.jpg",
-        "imagenes/adidas Campus x Bad Bunny The Last Campus 2.jpg"
+        "imagenes/adidas Campus1.jpg",
+        "imagenes/adidas Campus2.jpg",
+        "imagenes/adidas Campus3.jpg",
+        "imagenes/adidas Campus4.jpg",
+        "imagenes/adidas Campus5.jpg",
+        "imagenes/adidas Campus6.jpg",
+        "imagenes/adidas Campus7.jpg",
+        "imagenes/adidas Campus8.jpg",
+        "imagenes/adidas Campus9.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43],
-      "tallas_agotadas": [44, 45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -354,6 +366,26 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Nike SB Dunk Low AE86 Marrones",
+      "precio": "$50.00",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Las Nike SB Dunk Low AE86 Marrones son una edición especial inspirada en el mundo del automovilismo. Con detalles únicos y una construcción premium, estas zapatillas son perfectas para los amantes de la velocidad y el estilo.",
+      "stock": 3,
+      "imagenes": [
+        "imagenes/Nike SB Dunk Low AE86 Marrones1.jpg",
+        "imagenes/Nike SB Dunk Low AE86 Marrones2.jpg",
+        "imagenes/Nike SB Dunk Low AE86 Marrones3.jpg",
+        "imagenes/Nike SB Dunk Low AE86 Marrones4.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -479,7 +511,14 @@
       "descripcion": "Las Nike Air Max Dn son la nueva generación de Air Max. Con su diseño futurista y la innovadora tecnología Dynamic Air, estas zapatillas ofrecen una experiencia de amortiguación única.",
       "stock": 4,
       "imagenes": [
-        "imagenes/Nike Air Max Dn.jpg"
+        "imagenes/Nike Air Max Dn1.jpg",
+        "imagenes/Nike Air Max Dn2.jpg",
+        "imagenes/Nike Air Max Dn3.jpg",
+        "imagenes/Nike Air Max Dn4.jpg",
+        "imagenes/Nike Air Max Dn5.jpg",
+        "imagenes/Nike Air Max Dn6.jpg",
+        "imagenes/Nike Air Max Dn7.jpg",
+        "imagenes/Nike Air Max Dn8.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -878,21 +917,45 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "nombre": "Balenciaga Track LED",
-      "precio": "$60.00",
+      "nombre": "Balenciaga Track LED blancas",
+      "precio": "$155.00",
       "categoria": "Top Quality",
       "marca": "Balenciaga",
       "genero": "Unisex",
       "material": "Malla Técnica + Caucho",
       "origen": "Importado",
       "descripcion": "Las Balenciaga Track LED son la evolución del calzado de lujo. Con su diseño futurista, luces LED integradas y una construcción de malla técnica y caucho de alta calidad, estas zapatillas son la declaración de estilo definitiva.",
-      "stock": 0,
+      "stock": 2,
       "imagenes": [
-        "imagenes/Balenciaga Track LED blancas.jpg",
-        "imagenes/Balenciaga Track LED negras.jpg"
+        "imagenes/Balenciaga Track LED blancas1.jpg",
+        "imagenes/Balenciaga Track LED blancas2.jpg",
+        "imagenes/Balenciaga Track LED blancas3.jpg",
+        "imagenes/Balenciaga Track LED blancas4.jpg",
+        "imagenes/Balenciaga Track LED blancas5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42],
-      "tallas_agotadas": [43, 44, 45],
+      "tallas": [39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [36, 37, 38, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Balenciaga Track LED Negras",
+      "precio": "$155.00",
+      "categoria": "Top Quality",
+      "marca": "Balenciaga",
+      "genero": "Unisex",
+      "material": "Malla Técnica + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Balenciaga Track LED son la evolución del calzado de lujo. Con su diseño futurista, luces LED integradas y una construcción de malla técnica y caucho de alta calidad, estas zapatillas son la declaración de estilo definitiva.",
+      "stock": 2,
+      "imagenes": [
+        "imagenes/Balenciaga Track LED Negras1.jpg",
+        "imagenes/Balenciaga Track LED Negras2.jpg",
+        "imagenes/Balenciaga Track LED Negras3.jpg",
+        "imagenes/Balenciaga Track LED Negras4.jpg",
+        "imagenes/Balenciaga Track LED Negras5.jpg"
+      ],
+      "tallas": [39, 40, 41, 42, 43, 44],
+      "tallas_agotadas": [36, 37, 38, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -920,7 +983,7 @@
     },
     {
       "nombre": "Balenciaga Runner",
-      "precio": "$60.00",
+      "precio": "$135.00",
       "categoria": "Top Quality",
       "marca": "Balenciaga",
       "genero": "Unisex",
@@ -929,10 +992,37 @@
       "descripcion": "Las Balenciaga Runner combinan el estilo retro con la tecnología moderna. Con su diseño inspirado en los años 2000 y su construcción de alta calidad, estas zapatillas son perfectas para quienes buscan destacar.",
       "stock": 1,
       "imagenes": [
-        "imagenes/Balenciaga Runner.jpg"
+        "imagenes/Balenciaga Runner1.jpg",
+        "imagenes/Balenciaga Runner2.jpg",
+        "imagenes/Balenciaga Runner3.jpg",
+        "imagenes/Balenciaga Runner4.jpg",
+        "imagenes/Balenciaga Runner5.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42],
       "tallas_agotadas": [43, 44, 45],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "nombre": "Balenciaga Runner Black",
+      "precio": "$135.00",
+      "categoria": "Top Quality",
+      "marca": "Balenciaga",
+      "genero": "Unisex",
+      "material": "Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Las Balenciaga Runner combinan el estilo retro con la tecnología moderna. Con su diseño inspirado en los años 2000 y su construcción de alta calidad, estas zapatillas son perfectas para quienes buscan destacar.",
+      "stock": 1,
+      "imagenes": [
+        "imagenes/Balenciaga Runner Black1.jpg",
+        "imagenes/Balenciaga Runner Black2.jpg",
+        "imagenes/Balenciaga Runner Black3.jpg",
+        "imagenes/Balenciaga Runner Black4.jpg",
+        "imagenes/Balenciaga Runner Black5.jpg",
+        "imagenes/Balenciaga Runner Black6.jpg",
+        "imagenes/Balenciaga Runner Black7.jpg"
+      ],
+      "tallas": [39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -1086,7 +1176,11 @@
       "descripcion": "Las ASICS GEL-Kayano 14 son un clásico del running. Con su sistema de amortiguación GEL y su diseño retro, estas zapatillas ofrecen comodidad y estilo en cada paso.",
       "stock": 7,
       "imagenes": [
-        "imagenes/ASICS GEL-Kayano 14.jpg"
+        "imagenes/ASICS GEL-Kayano 141.jpg",
+        "imagenes/ASICS GEL-Kayano 142.jpg",
+        "imagenes/ASICS GEL-Kayano 143.jpg",
+        "imagenes/ASICS GEL-Kayano 144.jpg",
+        "imagenes/ASICS GEL-Kayano 145.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -1292,6 +1386,28 @@
         "imagenes/DIOR B223.jpg",
         "imagenes/DIOR B224.jpg",
         "imagenes/DIOR B225.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Dior B22 Negras",
+      "precio": "$63.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Cuero + Gamuza",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/DIOR B22 Negras1.jpg",
+        "imagenes/DIOR B22 Negras2.jpg",
+        "imagenes/DIOR B22 Negras3.jpg",
+        "imagenes/DIOR B22 Negras4.jpg",
+        "imagenes/DIOR B22 Negras5.jpg"
+
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas":[],
@@ -1825,6 +1941,25 @@
       "categoria_link":"Top_Quality.html"
     },
     {
+      "nombre": "Adidas Yeezy 700 V3",
+      "precio": "$75.00",
+      "categoria":"Top Quality",
+      "marca": "Adidas",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Yeezy 700 V31.jpg",
+        "imagenes/Adidas Yeezy 700 V32.jpg",
+        "imagenes/Adidas Yeezy 700 V33.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
       "nombre": "Nike SB Dunk Low Otomo Katsuhiro",
       "precio": "$65.00",
       "categoria":"Top Quality",
@@ -1870,6 +2005,95 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Pulse",
+      "precio": "$60.00",
+      "categoria":"Top Quality",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Air Max Pulse1.jpg",
+        "imagenes/Nike Air Max Pulse2.jpg",
+        "imagenes/Nike Air Max Pulse3.jpg",
+        "imagenes/Nike Air Max Pulse4.jpg",
+        "imagenes/Nike Air Max Pulse5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "Nike Air Max Patta",
+      "precio": "$40.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Air Max Patta1.jpg",
+        "imagenes/Nike Air Max Patta2.jpg",
+        "imagenes/Nike Air Max Patta3.jpg",
+        "imagenes/Nike Air Max Patta4.jpg",
+        "imagenes/Nike Air Max Patta5.jpg",
+        "imagenes/Nike Air Max Patta6.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "New Balance CT302",
+      "precio": "$38.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/New Balance CT3021.jpg",
+        "imagenes/New Balance CT3022.jpg",
+        "imagenes/New Balance CT3023.jpg",
+        "imagenes/New Balance CT3024.jpg",
+        "imagenes/New Balance CT3025.jpg",
+        "imagenes/New Balance CT3026.jpg",
+        "imagenes/New Balance CT3027.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Adidas Ozelia",
+      "precio": "$70.00",
+      "categoria":"Top Quality",
+      "marca": "Adidas",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Ozelia1.jpg",
+        "imagenes/Adidas Ozelia2.jpg",
+        "imagenes/Adidas Ozelia3.jpg",
+        "imagenes/Adidas Ozelia4.jpg",
+        "imagenes/Adidas Ozelia5.jpg",
+        "imagenes/Adidas Ozelia6.jpg",
+        "imagenes/Adidas Ozelia7.jpg"
+      ],
+      "tallas": [42, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40, 41, 43, 44],
       "categoria_link":"Top_Quality.html"
     }
   ]

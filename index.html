@@ -11,17 +11,9 @@
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
-            <span class="free-shipping">
-                <i class="fas fa-truck"></i> Bienvenidos!.
-            </span>
+            <span class="free-shipping"> Bienvenidos!.</span>
             <div class="top-right">
                 <span class="weather">
-                    <i class="fas fa-sun"></i> 30°C Despejado
-                </span>
-                <span class="separator">|</span>
-                <span class="language">ESP</span>
-                <span class="separator">|</span>
-                <span class="datetime">11:13 PM 8/10/2026</span>
             </div>
         </div>
     </div>
@@ -55,43 +47,33 @@
         </div>
     </header>
 
-    <!-- ====== HERO CON IMAGEN PROTAGONISTA (ESTILO REFERENCIA) ====== -->
+    <!-- ====== HERO CON IMAGEN PROTAGONISTA ====== -->
     <section class="hero-banner" id="novedades">
-        <!-- IMAGEN DE FONDO PRINCIPAL -->
         <div class="hero-background">
-            <!-- IMAGEN DE ZAPATOS EN PRIMER PLANO -->
             <img src="imagenes/image.jpg" 
             alt="Zapatos SoleStyle" 
             class="hero-bg-image">
-            <!-- Overlay oscuro para legibilidad -->
             <div class="hero-overlay"></div>
         </div>
         
-        <!-- CONTENIDO SUPERPUESTO SOBRE LA IMAGEN -->
         <div class="container hero-content-wrapper">
             <div class="hero-content">
-                <!-- Logo/Marca -->
                 <div class="hero-brand">
                     <span class="brand-line">SOLE</span>
                     <span class="brand-line highlight">STYLE</span>
                 </div>
-                
-                <!-- Título principal -->
                 <h1>NIKE</h1>
                 <p class="subtitle">Sofisticación discreta.</p>
-
             </div>
         </div>
 
-        <!-- Indicador de scroll (opcional) -->
         <div class="scroll-indicator">
             <span>DESCUBRE</span>
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-
-    <!-- ====== VIDEO PUBLICITARIO ====== -->
+    <!-- ====== VIDEO PUBLICITARIO (CON LOOP) ====== -->
     <section class="video-section" id="video">
         <div class="container">
             <div class="video-header">
@@ -101,22 +83,12 @@
             
             <div class="video-container">
                 <div class="video-wrapper">
-                    <!-- REEMPLAZA VIDEO_ID_AQUI con el ID de tu video de YouTube -->
-                    <iframe 
-                        src="videos/video2.mp4" 
-                        title="Publicidad SoleStyle"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                    <!-- 🔥 VIDEO EN BUCLE INFINITO CON LOOP 🔥 -->
+                    <video loop autoplay muted playsinline>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
                 </div>
-            </div>
-
-            <div class="video-cta">
-                <p>¿Te gustó lo que viste?</p>
-                <button class="btn-video-cta" onclick="document.querySelector('.catalogo').scrollIntoView({behavior:'smooth'})">
-                    <i class="fas fa-shopping-bag"></i> Ver colección completa
-                </button>
             </div>
         </div>
     </section>
@@ -125,14 +97,8 @@
     <section class="contacto">
         <div class="container">
             <div class="social-icons">
-                <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
-                <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+                <!-- Tus iconos de redes sociales aquí -->
             </div>
-            <p class="contact-info">
-                <i class="fas fa-phone"></i> +54 9 11 1234-5678
-            </p>
         </div>
     </section>
 
@@ -158,7 +124,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 SoleStyle - Todos los derechos reservados</p>
+            <p>&copy; SoleStyle - Jehovan Rincón</p>
         </div>
     </footer>
 

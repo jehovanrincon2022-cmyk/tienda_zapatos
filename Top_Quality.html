@@ -264,14 +264,7 @@
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
-            <span class="free-shipping"><i class="fas fa-truck"></i> Bienvenidos!.</span>
-            <div class="top-right">
-                <span class="weather"><i class="fas fa-sun"></i> 30°C Despejado</span>
-                <span class="separator">|</span>
-                <span class="language">ESP</span>
-                <span class="separator">|</span>
-                <span class="datetime">11:13 PM 8/10/2026</span>
-            </div>
+            <span class="free-shipping">Bienvenidos!.</span>
         </div>
     </div>
 
@@ -293,9 +286,7 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <div class="search-icon"><i class="fas fa-search"></i></div>
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count">0</span></div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -322,6 +313,7 @@
             <button class="filter-btn" onclick="window.filterProducts('jordan')">Jordan</button>
             <button class="filter-btn" onclick="window.filterProducts('newbalance')">New Balance</button>
             <button class="filter-btn" onclick="window.filterProducts('balenciaga')">Balenciaga</button>
+            <button class="filter-btn" onclick="window.filterProducts('louis')">Louis Vuitton</button>
             <button class="filter-btn" onclick="window.filterProducts('other')">Otros</button>
         </div>
     </div>
@@ -329,6 +321,10 @@
     <!-- PRODUCTOS TOP QUALITY -->
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
+
+            <!-- ============================================================ -->
+            <!-- ===== NIKE ===== -->
+            <!-- ============================================================ -->
 
             <!-- AIR FORCE ONE -->
             <a href="detalle.html?nombre=Air%20Force%20One" class="product-card-link" data-brand="nike"> 
@@ -364,244 +360,6 @@
                 </div>
             </a>
 
-            <!-- JORDAN RETRO 3 -->
-            <a href="detalle.html?nombre=Air%20Jordan%203%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 3 Retro Black Cat1.jpg" alt="Air Jordan 3 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 3 Retro Black Cat</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$67.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 1 LOW -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 1 Low .jpg" alt="Air Jordan 1 Low" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 1 Low</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 1 LOW JADE SMOKE -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20Jade%20Smoke" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 1 Low Jade Smoke.jpg" alt="Air Jordan 1 Low Jade Smoke" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 1 Low Jade Smoke</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 1 LOW X EASTSIDE GOLF -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20x%20Eastside%20Golf" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 1 Low x Eastside Golf1.jpg" alt="Air Jordan 1 Low x Eastside Golf" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 1 Low x Eastside Golf</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 4 RETRO BLACK CAT -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 4 Retro Black Cat.jpg" alt="Air Jordan 4 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 4 Retro Black Cat</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 4 RETRO MILITARY BLACK -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Military%20Black" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 4 Retro Military Black.jpg" alt="Air Jordan 4 Retro Military Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 4 Retro Military Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN 4 RETRO OG SP -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20OG%20SP" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan 4 Retro OG SP1.jpg" alt="Air Jordan 4 Retro OG SP" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan 4 Retro OG SP</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN RETRO 3 WHITE -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20White" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan Retro 3 White.jpg" alt="Air Jordan Retro 3 White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan Retro 3 White</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN RETRO 3 PALOMINO -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20Palomino" class="product-card-link" data-brand="jordan">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan Retro 3 Palomino.jpg" alt="Air Jordan Retro 3 Palomino" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan Retro 3 Palomino</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS -->
-            <a href="detalle.html?nombre=Adidas%20Campus%20x%20Bad%20Bunny%20(The%20Last%20Campus)" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/adidas Campus x Bad Bunny The Last Campus.jpg" alt="Adidas Campus x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas Campus x Bad Bunny</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS RESPONSE CL X BAD BUNNY -->
-            <a href="detalle.html?nombre=Adidas%20Response%20CL%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/adidas Response CL x Bad Bunny .jpg" alt="Adidas Response CL x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas Response CL x Bad Bunny</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS AE 2 -->
-            <a href="detalle.html?nombre=Adidas%20AE%202" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Adidas AE 21.jpg" alt="Adidas AE 2" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas AE 2</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS AE 2 NEGRAS -->
-            <a href="detalle.html?nombre=Adidas%20AE2%20Black" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Adidas AE2 Black1.jpg" alt="Adidas AE2 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas AE2 Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- YEEZY BOOST -->
-            <a href="detalle.html?nombre=Yeezy%20Boost" class="product-card-link" data-brand="adidas">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/yeezy.jpeg" alt="Yeezy Boost" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Yeezy Boost</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
             <!-- NIKE SB DUNK LOW AZUL -->
             <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Azul" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
@@ -630,6 +388,23 @@
                         <h3 class="product-name">Nike SB Dunk Low AE86</h3>
                         <div class="product-footer-row">
                             <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE SB DUNK LOW AE86 MARRONES -->
+            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20AE86%20Marrones" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike SB Dunk Low AE86 Marrones1.jpg" alt="Nike SB Dunk Low AE86 Marrones" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike SB Dunk Low AE86 Marrones</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$50.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -742,7 +517,7 @@
             <a href="detalle.html?nombre=Nike%20Air%20Max%20Dn" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Nike Air Max Dn.jpg" alt="Nike Air Max Dn" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Nike Air Max Dn1.jpg" alt="Nike Air Max Dn" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
@@ -899,7 +674,7 @@
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike A´One Leo Lights</h3>
+                        <h3 class="product-name">Nike A´One</h3>
                         <div class="product-footer-row">
                             <span class="product-price">$80.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
@@ -907,8 +682,6 @@
                     </div>
                 </div>
             </a>
-
-
 
             <!-- NIKE HOT STEP 2 DRAKE NOCTA -->
             <a href="detalle.html?nombre=Nike%20Hot%20Step%202%20Drake%20NOCTA" class="product-card-link" data-brand="nike">
@@ -927,7 +700,6 @@
                 </div>
             </a>
 
-
             <!-- NIKE DUNK HIGH -->
             <a href="detalle.html?nombre=Nike%20Dunk%20High" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
@@ -944,6 +716,579 @@
                     </div>
                 </div>
             </a>
+
+            <!-- NIKE VOMERO ROAM -->
+            <a href="detalle.html?nombre=Nike%20Vomero%20Roam" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Vomero Roam1.jpg" alt="Nike Vomero Roam" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Vomero Roam</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$55.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE VOMERO ROAM SUMMIT WHITE -->
+            <a href="detalle.html?nombre=Nike%20Vomero%20Roam%20Summit%20White" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Vomero Roam Summit White1.jpg" alt="Nike Vomero Roam Summit White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Vomero Roam Summit White</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$55.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE SB DUNK LOW ARGON -->
+            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Argon" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike SB Dunk Low Argon1.jpg" alt="Nike SB Dunk Low Argon" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike SB Dunk Low Argon</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE SB DUNK LOW AURA CLEAR -->
+            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Aura%20Clear" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike SB Dunk Low Aura Clear1.jpg" alt="Nike SB Dunk Low Aura Clear" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike SB Dunk Low Aura Clear</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$55.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE AIR MAX CORTEIZ 95 -->
+            <a href="detalle.html?nombre=Nike%20Air%20Max%20Corteiz%2095" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Air Max Corteiz 951.jpg" alt="Nike Air Max Corteiz 95" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Air Max Corteiz 95</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE ZOOM X INVINCIBLE RUN 3 -->
+            <a href="detalle.html?nombre=Nike%20Zoom%20x%20Invincible%20Run%203" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Zoom x Invincible Run 31.jpg" alt="Nike Zoom x Invincible Run 3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Zoom x Invincible Run 3</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE SB DUNK LOW OTOMO KATSUHIRO -->
+            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Otomo%20Katsuhiro" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike SB Dunk Low Otomo Katsuhiro1.jpg" alt="Nike SB Dunk Low Otomo Katsuhiro" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike SB Dunk Low Otomo Katsuhiro</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE AIR MAX PULSE -->
+            <a href="detalle.html?nombre=Nike%20Air%20Max%20Pulse" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Air Max Pulse1.jpg" alt="Nike Air Max Pulse" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Air Max Pulse</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE JA 3 NEGRAS -->
+            <a href="detalle.html?nombre=Nike%20Ja%203%20Negras" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Ja 3 Negras1.jpg" alt="Nike Ja 3 Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Ja 3 Negras</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE JA 3 AZUL TURQUESA -->
+            <a href="detalle.html?nombre=Nike%20Ja%203%20Azul%20Turquesa" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Ja 3 Azul Turquesa1.jpg" alt="Nike Ja 3 Azul Turquesa" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Ja 3 Azul Turquesa</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NIKE JA 3 SOUND CHECK -->
+            <a href="detalle.html?nombre=Nike%20Ja%203%20Sound%20Check" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nike Ja 3 Sound Check1.jpg" alt="Nike Ja 3 Sound Check" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nike Ja 3 Sound Check</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NOCTA GLIDE BLACK -->
+            <a href="detalle.html?nombre=Nocta%20Glide%20Black" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nocta Glide1.jpg" alt="Nocta Glide Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nocta Glide Black</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- NOCTA GLIDE BLANCAS -->
+            <a href="detalle.html?nombre=Nocta%20Glide%20Blancas" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Nocta Glide Blancas1.jpg" alt="Nocta Glide" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Nocta Glide</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== ADIDAS ===== -->
+            <!-- ============================================================ -->
+
+            <!-- ADIDAS CAMPUS X BAD BUNNY -->
+            <a href="detalle.html?nombre=Adidas%20Campus%20x%20Bad%20Bunny%20(The%20Last%20Campus)" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas Campus1.jpg" alt="Adidas Campus x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Campus x Bad Bunny</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$55.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS RESPONSE CL X BAD BUNNY -->
+            <a href="detalle.html?nombre=Adidas%20Response%20CL%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/adidas Response CL x Bad Bunny .jpg" alt="Adidas Response CL x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Response CL x Bad Bunny</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS AE 2 -->
+            <a href="detalle.html?nombre=Adidas%20AE%202" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas AE 21.jpg" alt="Adidas AE 2" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas AE 2</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS AE 2 NEGRAS -->
+            <a href="detalle.html?nombre=Adidas%20AE2%20Black" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas AE2 Black1.jpg" alt="Adidas AE2 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas AE2 Black</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- YEEZY BOOST -->
+            <a href="detalle.html?nombre=Yeezy%20Boost" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/yeezy.jpeg" alt="Yeezy Boost" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Yeezy Boost</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS RESPONSE X BAD BUNNY -->
+            <a href="detalle.html?nombre=Adidas%20Response%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas Response x Bad Bunny1.jpg" alt="Adidas Response x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Response x Bad Bunny</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$68.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS YEEZY 700 V3 -->
+            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas Yeezy 700 V31.jpg" alt="Adidas Yeezy 700 V3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Yeezy 700 V3</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$75.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS YEEZY 700 V3 BLACK -->
+            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3%20Black" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas Yeezy 700 V3 Black1.jpg" alt="Adidas Yeezy 700 V3 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Yeezy 700 V3 Black</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$75.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ADIDAS OZELIA -->
+            <a href="detalle.html?nombre=Adidas%20Ozelia" class="product-card-link" data-brand="adidas">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Adidas Ozelia1.jpg" alt="Adidas Ozelia" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Adidas Ozelia</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== JORDAN ===== -->
+            <!-- ============================================================ -->
+
+            <!-- JORDAN RETRO 3 -->
+            <a href="detalle.html?nombre=Air%20Jordan%203%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 3 Retro Black Cat1.jpg" alt="Air Jordan 3 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 3 Retro Black Cat</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$67.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN 1 LOW -->
+            <a href="detalle.html?nombre=Air%20Jordan%201%20Low" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 1 Low .jpg" alt="Air Jordan 1 Low" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 1 Low</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN 1 LOW JADE SMOKE -->
+            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20Jade%20Smoke" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 1 Low Jade Smoke.jpg" alt="Air Jordan 1 Low Jade Smoke" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 1 Low Jade Smoke</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN 1 LOW X EASTSIDE GOLF -->
+            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20x%20Eastside%20Golf" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 1 Low x Eastside Golf1.jpg" alt="Air Jordan 1 Low x Eastside Golf" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 1 Low x Eastside Golf</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$55.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN 4 RETRO BLACK CAT -->
+            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 4 Retro Black Cat.jpg" alt="Air Jordan 4 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 4 Retro Black Cat</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN RETRO 4 -->
+            <a href="detalle.html?nombre=Air%20Jordan%20Retro%204" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan Retro 41.jpg" alt="Air Jordan Retro 4" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan Retro 4</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN 4 RETRO OG SP -->
+            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20OG%20SP" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan 4 Retro OG SP1.jpg" alt="Air Jordan 4 Retro OG SP" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan 4 Retro OG SP</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN RETRO 3 WHITE -->
+            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20White" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan Retro 3 White.jpg" alt="Air Jordan Retro 3 White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan Retro 3 White</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN RETRO 3 PALOMINO -->
+            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20Palomino" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan Retro 3 Palomino.jpg" alt="Air Jordan Retro 3 Palomino" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan Retro 3 Palomino</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$60.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN RETRO 1 WASHING PING -->
+            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20Washing%20Ping" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan Retro 1 Washing Ping1.jpg" alt="Air Jordan Retro 1 Washing Ping" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan Retro 1 Washing Ping</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- AIR JORDAN RETRO 1 HIGH MOKA -->
+            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20High%20Moka" class="product-card-link" data-brand="jordan">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Air Jordan Retro 1 high Moka1.jpg" alt="Air Jordan Retro 1 High Moka" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Air Jordan Retro 1 High Moka</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$70.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== NEW BALANCE ===== -->
+            <!-- ============================================================ -->
 
             <!-- NEW BALANCE 9060 NEGRAS -->
             <a href="detalle.html?nombre=New%20Balance%209060%20negras" class="product-card-link" data-brand="newbalance">
@@ -996,17 +1341,38 @@
                 </div>
             </a>
 
-            <!-- BALENCIAGA TRAD LED -->
-            <a href="detalle.html?nombre=Balenciaga%20Track%20LED" class="product-card-link" data-brand="balenciaga">
+            <!-- ============================================================ -->
+            <!-- ===== BALENCIAGA ===== -->
+            <!-- ============================================================ -->
+
+            <!-- BALENCIAGA TRACK LED BLANCAS -->
+            <a href="detalle.html?nombre=Balenciaga%20Track%20LED%20blancas" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Balenciaga Track LED blancas.jpg" alt="Balenciaga Track LED" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Balenciaga Track LED blancas1.jpg" alt="Balenciaga Track LED" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
                         <h3 class="product-name">Balenciaga Track LED</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
+                            <span class="product-price">$155.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- BALENCIAGA TRACK LED NEGRAS -->
+            <a href="detalle.html?nombre=Balenciaga%20Track%20LED%20Negras" class="product-card-link" data-brand="balenciaga">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Balenciaga Track LED Negras1.jpg" alt="Balenciaga Track LED Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Balenciaga Track LED Negras</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$155.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -1034,18 +1400,94 @@
             <a href="detalle.html?nombre=Balenciaga%20Runner" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Balenciaga Runner.jpg" alt="Balenciaga Runner" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Balenciaga Runner1.jpg" alt="Balenciaga Runner" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
                         <h3 class="product-name">Balenciaga Runner</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
+                            <span class="product-price">$135.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
                 </div>
             </a>
+
+            <!-- BALENCIAGA RUNNER BLACK -->
+            <a href="detalle.html?nombre=Balenciaga%20Runner%20Black" class="product-card-link" data-brand="balenciaga">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Balenciaga Runner Black1.jpg" alt="Balenciaga Runner Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Balenciaga Runner Black</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$135.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== LOUIS VUITTON ===== -->
+            <!-- ============================================================ -->
+
+            <!-- LOUIS VUITTON LV WHITE SKATE SNEAKER -->
+            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20White%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Louis Vuitton LV White Skate Sneaker.jpg" alt="Louis Vuitton LV White Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Louis Vuitton LV White Skate</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LOUIS VUITTON SKATE SNEAKER -->
+            <a href="detalle.html?nombre=Louis%20Vuitton%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Louis Vuitton Skate Sneaker1.jpg" alt="Louis Vuitton Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Louis Vuitton Skate Sneaker</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$75.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LOUIS VUITTON LV SKATE SNEAKER MARRONES -->
+            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20Skate%20Sneaker%20Marrones1" class="product-card-link" data-brand="louis">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Louis Vuitton LV Skate Sneaker Marrones1.jpg" alt="Louis Vuitton LV Skate Sneaker Marrones" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Louis Vuitton LV Skate Sneaker Marrones</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$65.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== OTROS (Other) ===== -->
+            <!-- ============================================================ -->
 
             <!-- ON RUNNING CLOUDTILT -->
             <a href="detalle.html?nombre=On%20Running%20Cloudtilt" class="product-card-link" data-brand="other">
@@ -1081,34 +1523,34 @@
                 </div>
             </a>
 
-            <!-- LOUIS VUITTON LV WHITE SKATE SNEAKER -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20White%20Skate%20Sneaker" class="product-card-link" data-brand="other">
+            <!-- DIOR B30 BLANCAS CON GRIS -->
+            <a href="detalle.html?nombre=Dior%20B30%20blancas%20gris" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Louis Vuitton LV White Skate Sneaker.jpg" alt="Louis Vuitton LV White Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Dior B30 blancas gris1.jpg" alt="Dior B30 Blancas con Gris" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Louis Vuitton LV White Skate</h3>
+                        <h3 class="product-name">Dior B30 Blancas con Gris</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
+                            <span class="product-price">$68.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
                 </div>
             </a>
 
-            <!-- LOUIS VUITTON SKATE SNEAKER -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20Skate%20Sneaker" class="product-card-link" data-brand="other">
+            <!-- DIOR B30 NEGRAS CON BLANCO -->
+            <a href="detalle.html?nombre=Dior%20B30%20Negras%20con%20Blanco" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Louis Vuitton Skate Sneaker1.jpg" alt="Louis Vuitton Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Dior B30 Negras con Blanco1.jpg" alt="Dior B30 Negras con Blanco" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Louis Vuitton Skate Sneaker</h3>
+                        <h3 class="product-name">Dior B30 Negras con Blanco</h3>
                         <div class="product-footer-row">
-                            <span class="product-price">$75.00</span>
+                            <span class="product-price">$68.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -1170,7 +1612,7 @@
             <a href="detalle.html?nombre=ASICS%20GEL-Kayano%2014" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/ASICS GEL-Kayano 14.jpg" alt="ASICS GEL-Kayano 14" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/ASICS GEL-Kayano 141.jpg" alt="ASICS GEL-Kayano 14" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
@@ -1199,7 +1641,7 @@
                     </div>
                 </div>
             </a>
-            
+
             <!-- SB DUNK SWOOSH -->
             <a href="detalle.html?nombre=Sb%20Dunk%20Swoosh" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
@@ -1221,7 +1663,7 @@
             <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Marron" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/Nike SB Dunk Low Azul y Marron1.jpg" alt="Sb Dunk Low Marron" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/Nike SB Dunk Low Azul y Marron1.jpg" alt="Nike SB Dunk Low Marron" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
                         <span class="product-brand-tag">Top Quality</span>
@@ -1251,6 +1693,23 @@
                 </div>
             </a>
 
+            <!-- DIOR B22 NEGRAS -->
+            <a href="detalle.html?nombre=Dior%20B22%20Negras" class="product-card-link" data-brand="other">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/DIOR B22 Negras1.jpg" alt="DIOR B22 Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Top Quality</span>
+                        <h3 class="product-name">Dior B22 Negras</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$63.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
             <!-- AIR FORCE ONE X DRAKE BLANCAS -->
             <a href="detalle.html?nombre=Air%20Force%20One%20x%20Drake%20Blancas" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
@@ -1268,75 +1727,6 @@
                 </div>
             </a>
 
-            
-            <!-- AIR JORDAN RETRO 1 WASHING PING -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20Washing%20Ping" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan Retro 1 Washing Ping1.jpg" alt="Air Jordan Retro 1 Washing Ping" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan Retro 1 Washing Ping</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS RESPONSE x BAD BUNNY -->
-            <a href="detalle.html?nombre=Adidas%20Response%20x%20Bad%20Bunny" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Adidas Response x Bad Bunny1.jpg" alt="Adidas Response x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas Response x Bad Bunny</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$68.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- DIOR B30 BLANCAS CON GRIS -->
-            <a href="detalle.html?nombre=Dior%20B30%20blancas%20gris" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Dior B30 blancas gris1.jpg" alt="Dior B30 Blancas con Gris" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Dior B30 Blancas con Gris</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$68.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- DIOR B30 NEGRAS CON BLANCO -->
-            <a href="detalle.html?nombre=Dior%20B30%20Negras%20con%20Blanco" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Dior B30 Negras con Blanco1.jpg" alt="Dior B30 Blancas con Gris" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Dior B30 Negras con Blanco</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$68.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
             <!-- AIR FORCE 1 X NOCTA -->
             <a href="detalle.html?nombre=Air%20Force%20x%20Nocta" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
@@ -1348,278 +1738,6 @@
                         <h3 class="product-name">Air Force x Nocta</h3>
                         <div class="product-footer-row">
                             <span class="product-price">$68.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- NIKE JA 3 -->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Negras" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Ja 3 Negras1.jpg" alt="Nike Ja 3 Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Ja 3 Negras</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE JA 3 AZUL TURQUESA-->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Azul%20Turquesa" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Ja 3 Azul Turquesa1.jpg" alt="Nike Ja 3 Azul Turquesa" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Ja 3 Azul Turquesa</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE JA 3 SOUND CHECK-->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Sound%20Check" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Ja 3 Sound Check1.jpg" alt="NNike Ja 3 Sound Check" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Ja 3 Sound Check</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NOCTA GLIDE BLACK-->
-            <a href="detalle.html?nombre=Nocta%20Glide" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nocta Glide1.jpg" alt="Nocata Glide Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nocta Glide Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NOCTA GLIDE BLANCAS-->
-            <a href="detalle.html?nombre=Nocta%20Glide%20Blancas" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nocta Glide Blancas1.jpg" alt="Nocata Glide" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nocta Glide</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE VOMERO ROAM-->
-            <a href="detalle.html?nombre=Nike%20Vomero%20Roam" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Vomero Roam1.jpg" alt="Nike Vomero Roam" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Vomero Roam</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE VOMERO ROAM SUMMIT WHITE-->
-            <a href="detalle.html?nombre=Nike%20Vomero%20Roam%20Summit%20White" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Vomero Roam Summit White1.jpg" alt="Nike Vomero Roam Summit White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Vomero Roam Summit White</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- AIR JORDAN RETRO 1 HIGH MOKA-->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20High%20Moka" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Air Jordan Retro 1 high Moka1.jpg" alt="Air Jordan Retro 1 High Moka" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Air Jordan Retro 1 High Moka</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$70.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE SB DUNK LOW ARGON-->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Argon" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike SB Dunk Low Argon1.jpg" alt=Nike SB Dunk Low Argon" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike SB Dunk Low Argon</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE SB DUNK LOW AURA CLEAR -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Aura%20Clear" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike SB Dunk Low Aura Clear1.jpg" alt="Nike SB Dunk Low Aura Clear" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike SB Dunk Low Aura Clear</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$55.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE AIR MAX CORTEIZ 95 -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Corteiz%2095" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Air Max Corteiz 951.jpg" alt="Nike Air Max Corteiz 95" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Air Max Corteiz 95</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- LOUIS VUITTON LV SKATE SNEAKER MARRONES -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20Skate%20Sneaker%20Marrones1" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Louis Vuitton LV Skate Sneaker Marrones1.jpg" alt="Louis Vuitton LV Skate Sneaker Marrones" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Louis Vuitton LV Skate Sneaker Marrones</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE ZOOM X INVINCIBLE RUN 3 -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20x%20Invincible%20Run%203" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike Zoom x Invincible Run 31.jpg" alt="Nike Zoom x Invincible Rum 3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike Zoom x Invincible Run 3</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$60.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS YEEZY 700 V3 -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Adidas Yeezy 700 V31.jpg" alt="Adidas Yeezy 700 V3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas Yeezy 700 V3</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$75.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ADIDAS YEEZY 700 V3 BLACK -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3%20Black" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Adidas Yeezy 700 V3 Black1.jpg" alt="Adidas Yeezy 700 V3 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Adidas Yeezy 700 V3 Black</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$75.00</span>
-                            <span class="product-detail-badge">Ver detalles</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- NIKE SB DUNK LOW OTOMO KATSUHIRO -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Otomo%20Katsuhiro" class="product-card-link" data-brand="other">
-                <div class="product-card-box">
-                    <div class="product-img-container">
-                        <img src="imagenes/Nike SB Dunk Low Otomo Katsuhiro1.jpg" alt="Nike SB Dunk Low Otomo Katsuhiro" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                    </div>
-                    <div class="product-info-box">
-                        <span class="product-brand-tag">Top Quality</span>
-                        <h3 class="product-name">Nike SB Dunk Low Otomo Katsuhiro</h3>
-                        <div class="product-footer-row">
-                            <span class="product-price">$65.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
                         </div>
                     </div>
@@ -1710,6 +1828,8 @@
                 } else if (brand === 'newbalance' && btnText.includes('new balance')) {
                     btn.classList.add('active');
                 } else if (brand === 'balenciaga' && btnText.includes('balenciaga')) {
+                    btn.classList.add('active');
+                } else if (brand === 'louis' && btnText.toLowerCase().includes('louis vuitton')) {
                     btn.classList.add('active');
                 } else if (brand === 'other' && btnText.includes('otros')) {
                     btn.classList.add('active');
