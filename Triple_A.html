@@ -266,11 +266,6 @@
         <div class="container">
             <span class="free-shipping"><i class="fas fa-truck"></i> Bienvenidos!.</span>
             <div class="top-right">
-                <span class="weather"><i class="fas fa-sun"></i> 30°C Despejado</span>
-                <span class="separator">|</span>
-                <span class="language">ESP</span>
-                <span class="separator">|</span>
-                <span class="datetime">11:13 PM 8/10/2026</span>
             </div>
         </div>
     </div>
@@ -286,16 +281,15 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="hombre.html">Hombre</a></li>
-                    <li><a href="mujer.html">Mujer</a></li>
+                 
                     <li><a href="Top_Quality.html">Top Quality</a></li>
                     <li><a href="Triple_A.html" class="active">Triple A</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <div class="search-icon"><i class="fas fa-search"></i></div>
+              
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count">0</span></div>
+               
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -321,6 +315,7 @@
             <button class="filter-btn" onclick="window.filterProducts('adidas')">Adidas</button>
             <button class="filter-btn" onclick="window.filterProducts('jordan')">Jordan</button>
             <button class="filter-btn" onclick="window.filterProducts('newbalance')">New Balance</button>
+            <button class="filter-btn" onclick="window.filterProducts('puma')">Puma</button>
         </div>
     </div>
 
@@ -614,7 +609,7 @@
                 <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
                 <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
             </div>
-            <p class="contact-info"><i class="fas fa-phone"></i> +54 9 11 1234-5678</p>
+            
         </div>
     </section>
 
@@ -636,7 +631,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 SoleStyle - Todos los derechos reservados</p>
+            <p>&copy; 2026 SoleStyle - Jehovan Rincón</p>
         </div>
     </footer>
 
@@ -668,7 +663,8 @@
                     btn.classList.add('active');
                 } else if (brand === 'newbalance' && btnText.includes('new balance')) {
                     btn.classList.add('active');
-                }
+                } 
+                
             });
             
             // Mostrar/ocultar tarjetas

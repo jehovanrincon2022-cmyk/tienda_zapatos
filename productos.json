@@ -137,8 +137,7 @@
       "descripcion": "Las Air Jordan 4 Retro Black Cat son un homenaje a la leyenda del baloncesto. Con su diseño elegante en tonos negros y detalles en gris, estas zapatillas combinan estilo y comodidad. La amortiguación Air-Sole garantiza una experiencia superior en cada paso.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Air Jordan 4 Retro Black Cat.jpg",
-        "imagenes/Air Jordan 4 Retro Black Cat 2.jpg"
+        "imagenes/Air Jordan Retro 4 Black top quality1.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -474,7 +473,7 @@
       "material": "Malla Técnica + Espuma React",
       "origen": "Importado",
       "descripcion": "Las Nike Zoom Fly 4 son la evolución del running de alto rendimiento. Con su placa de fibra de carbono, espuma React y diseño aerodinámico, estas zapatillas están diseñadas para romper récords y llevar tu rendimiento al siguiente nivel.",
-      "stock": 0,
+      "stock": 3,
       "imagenes": [
         "imagenes/Nike Zoom Fly 4.jpg",
         "imagenes/Nike Zoom Fly 4 2.jpg"
@@ -1518,7 +1517,7 @@
       "nombre": "Puma Suede Verde",
       "precio": "$42.00",
       "categoria":"Triple A",
-      "marca": "Nike",
+      "marca": "puma",
       "genero":"Unisex",
       "material":"Cuero + Gamuza",
       "origen": "Importado",
