@@ -2095,6 +2095,74 @@
       "tallas": [42, 45],
       "tallas_agotadas":[36, 37, 38, 39, 40, 41, 43, 44],
       "categoria_link":"Top_Quality.html"
+    },
+    {
+      "nombre": "deportivas chunky grises",
+      "precio": "$18.00",
+      "categoria":"Doble A",
+      "marca": "",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/zapatillas depotivas chunky.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"doble_A.html"
+    },
+    {
+      "nombre": "deportivas chunky negras",
+      "precio": "$18.00",
+      "categoria":"Doble A",
+      "marca": "",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/deportivas chunky negras.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"doble_A.html"
+    },
+    {
+      "nombre": "deportivas chunky gris con blanco",
+      "precio": "$18.00",
+      "categoria":"Doble A",
+      "marca": "",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/deportivas chunky.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"doble_A.html"
+    },
+    {
+      "nombre": "deportivas chunky 1",
+      "precio": "$18.00",
+      "categoria":"Doble A",
+      "marca": "",
+      "genero":"Hombre",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/deportivas chunky 1.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"doble_A.html"
     }
   ]
 }

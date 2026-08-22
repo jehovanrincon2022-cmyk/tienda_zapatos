@@ -34,8 +34,8 @@
 
         .product-card-box:hover {
             transform: translateY(-10px);
-            border-color: #ff6b35;
-            box-shadow: 0 10px 40px rgba(255, 107, 53, 0.15);
+            border-color: #3553ff;
+            box-shadow: 0 10px 40px rgba(53, 83, 255, 0.15);
         }
 
         .product-img-container {
@@ -64,10 +64,8 @@
             padding: 18px 20px 20px;
         }
 
-        .product-brand-tag {
+        .product-quality-tag {
             display: inline-block;
-            background: #ff6b35;
-            color: #fff;
             font-size: 10px;
             font-weight: 700;
             letter-spacing: 1px;
@@ -75,6 +73,11 @@
             border-radius: 20px;
             text-transform: uppercase;
             margin-bottom: 8px;
+        }
+
+        .product-quality-tag.doble-a {
+            background: #3553ff;
+            color: #fff;
         }
 
         .product-name {
@@ -100,7 +103,7 @@
         .product-price {
             font-size: 22px;
             font-weight: 600;
-            color: #ff6b35;
+            color: #3553ff;
         }
 
         .product-detail-badge {
@@ -121,10 +124,42 @@
             transform: translateX(5px);
         }
 
-        /* ===== ENCABEZADO DOBLE A ===== */
+        /* ===== BOTONES DE FILTRO ===== */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 28px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-btn:hover {
+            border-color: #3553ff;
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: #3553ff;
+            border-color: #3553ff;
+            color: #fff;
+        }
+
+        /* ===== ENCABEZADO ===== */
         .section-header {
-            background: linear-gradient(135deg, #1a0a0a, #2d1a1a);
-            border-bottom: 3px solid #ff6b35;
+            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
+            border-bottom: 3px solid #3553ff;
             padding: 10px 0 10px;
             margin-bottom: 30px;
         }
@@ -133,20 +168,20 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255, 107, 53, 0.15);
+            background: rgba(53, 83, 255, 0.15);
             padding: 8px 10px;
             border-radius: 20px;
             margin-bottom: 5px;
-            border: 1px solid rgba(255, 107, 53, 0.2);
+            border: 1px solid rgba(53, 83, 255, 0.2);
         }
 
         .quality-badge i {
-            color: #ff6b35;
+            color: #3553ff;
             font-size: 20px;
-        }  
+        }
 
         .quality-badge span {
-            color: #ff6b35;
+            color: #3553ff;
             font-size: 12px;
             letter-spacing: 3px;
             font-weight: 600;
@@ -160,7 +195,7 @@
         }
 
         .section-header h1 span {
-            color: #ff6b35;
+            color: #3553ff;
             font-weight: 400;
         }
 
@@ -239,7 +274,7 @@
                 font-size: 16px;
             }
             
-            .product-brand-tag {
+            .product-quality-tag {
                 font-size: 8px;
                 padding: 2px 10px;
             }
@@ -277,11 +312,12 @@
                     <li><a href="novedades.html">Novedades</a></li>
                     <li><a href="Top_Quality.html">Top Quality</a></li>
                     <li><a href="Triple_A.html">Triple A</a></li>
-                    <li><a href="Doble_A.html">Doble A</a></li>
+                    <li><a href="Doble_A.html" class="active">Doble A</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
+                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count">0</span></div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -294,23 +330,39 @@
                 <i class="fas fa-tag"></i>
                 <span>ECONÓMICO</span>
             </div>
-            <h1>🟠 <span>Doble A</span></h1>
+            <h1>🔵 <span>Doble A</span></h1>
             <p>Calidad accesible. Estilo para todos</p>
         </div>
     </section>
 
-    <!-- ===== PRODUCTOS DOBLE A ===== -->
+    <!-- FILTROS -->
+    <div class="container">
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="window.filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="window.filterProducts('nike')">Nike</button>
+            <button class="filter-btn" onclick="window.filterProducts('adidas')">Adidas</button>
+            <button class="filter-btn" onclick="window.filterProducts('jordan')">Jordan</button>
+            <button class="filter-btn" onclick="window.filterProducts('newbalance')">New Balance</button>
+            <button class="filter-btn" onclick="window.filterProducts('puma')">Puma</button>
+            <button class="filter-btn" onclick="window.filterProducts('other')">Otros</button>
+        </div>
+    </div>
+
+    <!-- PRODUCTOS DOBLE A -->
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
-                            <!-- Zambas -->
-            <a href="detalle.html?nombre=Air%20Force%20One%20Blancas" class="product-card-link" data-brand="nike">
+
+            <!-- ============================================================ -->
+            <!-- ===== ZAPATILLAS DEPORTIVAS CHUNKY GRISES ===== -->
+            <!-- ============================================================ -->
+            <a href="detalle.html?nombre=zapatillas%20deportivas%20chunky%20grises" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
-                        <img src="imagenes/zamba.jpg" alt="Zamba" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <img src="imagenes/zapatillas depotivas chunky.jpg" alt="chunky grises" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
                     </div>
                     <div class="product-info-box">
-                        <span class="product-brand-tag">Doble A</span>
-                        <h3 class="product-name">Zamba</h3>
+                        <span class="product-quality-tag doble-a">🔵 Doble A</span>
+                        <h3 class="product-name">Zapatillas Chunky Grises</h3>
                         <div class="product-footer-row">
                             <span class="product-price">$30.00</span>
                             <span class="product-detail-badge">Ver detalles</span>
@@ -318,11 +370,66 @@
                     </div>
                 </div>
             </a>
-            
+
+            <!-- ============================================================ -->
+            <!-- ===== DEPORTIVAS CHUNKY NEGRAS ===== -->
+            <!-- ============================================================ -->
+            <a href="detalle.html?nombre=deportivas%20chunky%20negras" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/deportivas chunky negras.jpg" alt="chunky negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-quality-tag doble-a">🔵 Doble A</span>
+                        <h3 class="product-name">Chunky Negras</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$18.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== DEPORTIVAS CHUNKY GRIS CON BLANCO ===== -->
+            <!-- ============================================================ -->
+            <a href="detalle.html?nombre=deportivas%20chunky%20gris%20con%20blanco" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/deportivas chunky.jpg" alt="chunky gris con Blanco" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-quality-tag doble-a">🔵 Doble A</span>
+                        <h3 class="product-name">Chunky Gris con Blanco</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$18.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ===== DEPORTIVAS CHUNKY 1 ===== -->
+            <!-- ============================================================ -->
+            <a href="detalle.html?nombre=deportivas%20chunky%201" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/deportivas chunky 1.jpg" alt="chunky 1" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-quality-tag doble-a">🔵 Doble A</span>
+                        <h3 class="product-name">Chunky 1</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$18.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </div>
-
-
 
     <!-- CONTACTO -->
     <section class="contacto">
@@ -360,6 +467,56 @@
 
     <!-- ===== SCRIPT ===== -->
     <script>
+        // ====== FILTROS POR MARCA ======
+        window.filterProducts = function(brand) {
+            console.log('🔍 Filtrando por:', brand);
+            
+            const cards = document.querySelectorAll('.product-card-link');
+            console.log('📦 Tarjetas encontradas:', cards.length);
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                const btnText = btn.textContent.toLowerCase().trim();
+                if (brand === 'todos' && btnText.includes('todos')) {
+                    btn.classList.add('active');
+                } else if (brand === 'nike' && btnText.includes('nike')) {
+                    btn.classList.add('active');
+                } else if (brand === 'adidas' && btnText.includes('adidas')) {
+                    btn.classList.add('active');
+                } else if (brand === 'jordan' && btnText.includes('jordan')) {
+                    btn.classList.add('active');
+                } else if (brand === 'newbalance' && btnText.includes('new balance')) {
+                    btn.classList.add('active');
+                } else if (brand === 'puma' && btnText.includes('puma')) {
+                    btn.classList.add('active');
+                } else if (brand === 'other' && btnText.includes('otros')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            let visibleCount = 0;
+            cards.forEach(card => {
+                if (brand === 'todos') {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    const cardBrand = card.dataset.brand ? card.dataset.brand.toLowerCase() : '';
+                    if (cardBrand === brand) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+            
+            console.log('👟 Productos visibles:', visibleCount);
+        };
+
         // ====== TEMA CLARO/OSCURO ======
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
@@ -396,75 +553,14 @@
         let cartCount = 0;
         document.getElementById('cart-count').textContent = cartCount;
 
-        // ============================================================
-        // ===== CARGAR PRODUCTOS DESDE JSON (SOLO DOBLE A) =====
-        // ============================================================
-        async function cargarProductosDobleA() {
-            try {
-                const response = await fetch('productos.json?v=' + Date.now());
-                if (!response.ok) {
-                    throw new Error(`Error HTTP: ${response.status}`);
-                }
-                const data = await response.json();
-                
-                if (data && data.productos && Array.isArray(data.productos)) {
-                    const container = document.getElementById('productGrid');
-                    container.innerHTML = '';
-                    
-                    // Filtrar productos con categoría "Doble A"
-                    const productosDobleA = data.productos.filter(p => 
-                        p.categoria && p.categoria.toLowerCase() === 'doble a'
-                    );
-                    
-                    if (productosDobleA.length === 0) {
-                        container.innerHTML = `
-                            <div class="no-products">
-                                <i class="fas fa-box-open"></i>
-                                <h3>Próximamente</h3>
-                                <p>Estamos preparando nuestra colección Doble A</p>
-                            </div>
-                        `;
-                        return;
-                    }
-                    
-                    productosDobleA.forEach(producto => {
-                        const card = document.createElement('a');
-                        card.href = `detalle.html?nombre=${encodeURIComponent(producto.nombre)}`;
-                        card.className = 'product-card-link';
-                        
-                        const mainImage = producto.imagenes && producto.imagenes.length > 0 
-                            ? producto.imagenes[0] 
-                            : '';
-                        
-                        card.innerHTML = `
-                            <div class="product-card-box">
-                                <div class="product-img-container">
-                                    <img src="${mainImage}" alt="${producto.nombre}" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                                </div>
-                                <div class="product-info-box">
-                                    <span class="product-brand-tag">Doble A</span>
-                                    <h3 class="product-name">${producto.nombre}</h3>
-                                    <div class="product-footer-row">
-                                        <span class="product-price">${producto.precio || '$0.00'}</span>
-                                        <span class="product-detail-badge">Ver detalles</span>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        container.appendChild(card);
-                    });
-                }
-            } catch (error) {
-                console.error('Error al cargar productos:', error);
-            }
-        }
-
-        // ====== INICIALIZAR ======
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', cargarProductosDobleA);
-        } else {
-            cargarProductosDobleA();
-        }
+        // ====== FORZAR MOSTRAR TODOS LOS PRODUCTOS ======
+        (function() {
+            console.log('🚀 Doble A - Mostrando todos los productos...');
+            document.querySelectorAll('.product-card-link').forEach(card => {
+                card.style.display = 'block';
+            });
+            console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
+        })();
     </script>
 </body>
 </html>
