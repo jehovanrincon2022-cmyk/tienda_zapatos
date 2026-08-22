@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👟 SoleStyle - Novedades</title>
+    <title>👟 SoleStyle - Doble A</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -34,8 +34,8 @@
 
         .product-card-box:hover {
             transform: translateY(-10px);
-            border-color: #00d4ff;
-            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+            border-color: #ff6b35;
+            box-shadow: 0 10px 40px rgba(255, 107, 53, 0.15);
         }
 
         .product-img-container {
@@ -66,8 +66,8 @@
 
         .product-brand-tag {
             display: inline-block;
-            background: #00d4ff;
-            color: #000;
+            background: #ff6b35;
+            color: #fff;
             font-size: 10px;
             font-weight: 700;
             letter-spacing: 1px;
@@ -100,7 +100,7 @@
         .product-price {
             font-size: 22px;
             font-weight: 600;
-            color: #00d4ff;
+            color: #ff6b35;
         }
 
         .product-detail-badge {
@@ -121,42 +121,35 @@
             transform: translateX(5px);
         }
 
-        /* ===== ETIQUETAS DE PROMOCIÓN Y NUEVO ===== */
-        .promo-tag {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 4px 14px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            z-index: 5;
-            animation: pulsePromo 2s infinite;
-        }
-
-        .promo-tag.nuevo {
-            background: #2ecc71;
-            color: #fff;
-        }
-
-        .promo-tag.oferta {
-            background: #e74c3c;
-            color: #fff;
-        }
-
-        @keyframes pulsePromo {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        /* ===== ENCABEZADO ===== */
+        /* ===== ENCABEZADO DOBLE A ===== */
         .section-header {
-            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
-            border-bottom: 3px solid #00d4ff;
+            background: linear-gradient(135deg, #1a0a0a, #2d1a1a);
+            border-bottom: 3px solid #ff6b35;
             padding: 10px 0 10px;
             margin-bottom: 30px;
+        }
+
+        .quality-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 107, 53, 0.15);
+            padding: 8px 10px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+
+        .quality-badge i {
+            color: #ff6b35;
+            font-size: 20px;
+        }  
+
+        .quality-badge span {
+            color: #ff6b35;
+            font-size: 12px;
+            letter-spacing: 3px;
+            font-weight: 600;
         }
 
         .section-header h1 {
@@ -167,7 +160,7 @@
         }
 
         .section-header h1 span {
-            color: #00d4ff;
+            color: #ff6b35;
             font-weight: 400;
         }
 
@@ -178,9 +171,9 @@
             font-weight: 300;
         }
 
-        /* ===== MENSAJE DE NO HAY PRODUCTOS ===== */
+        /* ===== MENSAJE DE SIN PRODUCTOS ===== */
         .no-products {
-            grid-column: 1/-1;
+            grid-column: 1 / -1;
             text-align: center;
             padding: 80px 20px;
             color: var(--text-secondary);
@@ -197,6 +190,11 @@
             font-size: 24px;
             font-weight: 300;
             margin-bottom: 10px;
+        }
+
+        .no-products p {
+            font-size: 16px;
+            opacity: 0.7;
         }
 
         /* ===== RESPONSIVE ===== */
@@ -253,11 +251,6 @@
             .section-header h1 {
                 font-size: 26px;
             }
-
-            .promo-tag {
-                font-size: 9px;
-                padding: 3px 10px;
-            }
         }
     </style>
 </head>
@@ -281,38 +274,55 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="novedades.html" class="active">Novedades</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
                     <li><a href="Top_Quality.html">Top Quality</a></li>
                     <li><a href="Triple_A.html">Triple A</a></li>
+                    <li><a href="Doble_A.html">Doble A</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count"></span></div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
     </header>
 
-    <!-- ENCABEZADO -->
+    <!-- ENCABEZADO ESPECIAL DOBLE A -->
     <section class="section-header">
         <div class="container">
-            <h1><span>Novedades</span></h1>
-            <p>Los últimos lanzamientos y promociones.</p>
+            <div class="quality-badge">
+                <i class="fas fa-tag"></i>
+                <span>ECONÓMICO</span>
+            </div>
+            <h1>🟠 <span>Doble A</span></h1>
+            <p>Calidad accesible. Estilo para todos</p>
         </div>
     </section>
 
-    <!-- PRODUCTOS NOVEDADES (FILTRADOS POR OFERTA Y NUEVO) -->
+    <!-- ===== PRODUCTOS DOBLE A ===== -->
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
-            <!-- Los productos se generan con JavaScript -->
-            <div class="loading-spinner">
-                <i class="fas fa-spinner fa-spin"></i>
-                <p style="margin-top:20px;color:var(--text-secondary);">Cargando novedades...</p>
-            </div>
+                            <!-- Zambas -->
+            <a href="detalle.html?nombre=Air%20Force%20One%20Blancas" class="product-card-link" data-brand="nike">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/zamba.jpg" alt="Zamba" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Doble A</span>
+                        <h3 class="product-name">Zamba</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">$30.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
         </div>
     </div>
+
+
 
     <!-- CONTACTO -->
     <section class="contacto">
@@ -323,7 +333,6 @@
                 <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
                 <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
             </div>
-        
         </div>
     </section>
 
@@ -349,131 +358,8 @@
         </div>
     </footer>
 
+    <!-- ===== SCRIPT ===== -->
     <script>
-        // ============================================================
-        // ===== CARGAR PRODUCTOS DESDE JSON =====
-        // ============================================================
-        let productosData = [];
-
-        async function cargarProductos() {
-            try {
-                console.log('📂 Cargando productos.json...');
-                const response = await fetch('productos.json?v=' + Date.now());
-                
-                if (!response.ok) {
-                    throw new Error(`Error HTTP: ${response.status}`);
-                }
-                
-                const data = await response.json();
-                console.log('✅ Datos cargados:', data);
-                
-                if (data && data.productos && Array.isArray(data.productos)) {
-                    productosData = data.productos;
-                    console.log(`✅ ${productosData.length} productos cargados`);
-                } else {
-                    console.error('❌ Estructura de JSON incorrecta');
-                    productosData = [];
-                }
-                
-                return productosData;
-            } catch (error) {
-                console.error('❌ Error al cargar productos:', error);
-                productosData = [];
-                return [];
-            }
-        }
-
-        // ============================================================
-        // ===== RENDERIZAR SOLO NOVEDADES (Oferta y Nuevo) =====
-        // ============================================================
-        function renderNovedades() {
-            const container = document.getElementById('productGrid');
-            container.innerHTML = '';
-
-            // Filtrar productos que tengan "Nuevo" o "Oferta" en el badge
-            const novedades = productosData.filter(producto => {
-                // Buscar en el badge (puede estar en diferentes campos)
-                const badge = producto.badge || producto.etiqueta || '';
-                const descripcion = producto.descripcion || '';
-                const nombre = producto.nombre || '';
-                
-                // Buscar palabras clave
-                const esNuevo = badge.toLowerCase().includes('nuevo') || 
-                               nombre.toLowerCase().includes('nuevo') ||
-                               descripcion.toLowerCase().includes('nuevo lanzamiento');
-                
-                const esOferta = badge.toLowerCase().includes('oferta') || 
-                                badge.toLowerCase().includes('descuento') ||
-                                badge.toLowerCase().includes('promoción');
-                
-                return esNuevo || esOferta;
-            });
-
-            console.log(`🎯 Novedades encontradas: ${novedades.length}`);
-
-            if (novedades.length === 0) {
-                container.innerHTML = `
-                    <div class="no-products">
-                        <i class="fas fa-box-open"></i>
-                        <h3>No hay novedades disponibles</h3>
-                        <p>Pronto tendremos nuevos lanzamientos y promociones</p>
-                        <a href="index.html" style="display:inline-block;margin-top:20px;color:#00d4ff;text-decoration:none;border:1px solid #00d4ff;padding:10px 30px;border-radius:30px;transition:0.3s;" onmouseover="this.style.background='#00d4ff';this.style.color='#000';" onmouseout="this.style.background='transparent';this.style.color='#00d4ff';">Volver al inicio</a>
-                    </div>
-                `;
-                return;
-            }
-
-            novedades.forEach((producto, index) => {
-                const card = document.createElement('a');
-                card.href = `detalle.html?nombre=${encodeURIComponent(producto.nombre)}`;
-                card.className = 'product-card-link';
-                
-                // Determinar si es Oferta o Nuevo para la etiqueta
-                const badge = producto.badge || producto.etiqueta || '';
-                let tipoPromo = 'nuevo';
-                let textoPromo = 'Nuevo';
-                
-                if (badge.toLowerCase().includes('oferta') || 
-                    badge.toLowerCase().includes('descuento') ||
-                    badge.toLowerCase().includes('promoción')) {
-                    tipoPromo = 'oferta';
-                    textoPromo = '🔥 Oferta';
-                }
-
-                // Obtener la primera imagen
-                const mainImage = producto.imagenes && producto.imagenes.length > 0 
-                    ? producto.imagenes[0] 
-                    : '';
-
-                // Determinar la etiqueta de calidad (Top Quality o Triple A)
-                let qualityTag = producto.categoria || 'Novedad';
-                let qualityClass = '';
-                if (producto.categoria === 'Top Quality') {
-                    qualityClass = '⭐ Top Quality';
-                } else if (producto.categoria === 'Triple A') {
-                    qualityClass = '🔝 Triple A';
-                }
-
-                card.innerHTML = `
-                    <div class="product-card-box">
-                        <div class="product-img-container">
-                            <img src="${mainImage}" alt="${producto.nombre}" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                            <span class="promo-tag ${tipoPromo}">${textoPromo}</span>
-                        </div>
-                        <div class="product-info-box">
-                            <span class="product-brand-tag">${qualityClass || qualityTag}</span>
-                            <h3 class="product-name">${producto.nombre}</h3>
-                            <div class="product-footer-row">
-                                <span class="product-price">${producto.precio || '$0.00'}</span>
-                                <span class="product-detail-badge">Ver detalles</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-        }
-
         // ====== TEMA CLARO/OSCURO ======
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
@@ -511,17 +397,73 @@
         document.getElementById('cart-count').textContent = cartCount;
 
         // ============================================================
-        // ===== INICIALIZAR =====
+        // ===== CARGAR PRODUCTOS DESDE JSON (SOLO DOBLE A) =====
         // ============================================================
-        async function init() {
-            await cargarProductos();
-            renderNovedades();
+        async function cargarProductosDobleA() {
+            try {
+                const response = await fetch('productos.json?v=' + Date.now());
+                if (!response.ok) {
+                    throw new Error(`Error HTTP: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                if (data && data.productos && Array.isArray(data.productos)) {
+                    const container = document.getElementById('productGrid');
+                    container.innerHTML = '';
+                    
+                    // Filtrar productos con categoría "Doble A"
+                    const productosDobleA = data.productos.filter(p => 
+                        p.categoria && p.categoria.toLowerCase() === 'doble a'
+                    );
+                    
+                    if (productosDobleA.length === 0) {
+                        container.innerHTML = `
+                            <div class="no-products">
+                                <i class="fas fa-box-open"></i>
+                                <h3>Próximamente</h3>
+                                <p>Estamos preparando nuestra colección Doble A</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    productosDobleA.forEach(producto => {
+                        const card = document.createElement('a');
+                        card.href = `detalle.html?nombre=${encodeURIComponent(producto.nombre)}`;
+                        card.className = 'product-card-link';
+                        
+                        const mainImage = producto.imagenes && producto.imagenes.length > 0 
+                            ? producto.imagenes[0] 
+                            : '';
+                        
+                        card.innerHTML = `
+                            <div class="product-card-box">
+                                <div class="product-img-container">
+                                    <img src="${mainImage}" alt="${producto.nombre}" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                                </div>
+                                <div class="product-info-box">
+                                    <span class="product-brand-tag">Doble A</span>
+                                    <h3 class="product-name">${producto.nombre}</h3>
+                                    <div class="product-footer-row">
+                                        <span class="product-price">${producto.precio || '$0.00'}</span>
+                                        <span class="product-detail-badge">Ver detalles</span>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        container.appendChild(card);
+                    });
+                }
+            } catch (error) {
+                console.error('Error al cargar productos:', error);
+            }
         }
 
+        // ====== INICIALIZAR ======
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
+            document.addEventListener('DOMContentLoaded', cargarProductosDobleA);
         } else {
-            init();
+            cargarProductosDobleA();
         }
     </script>
 </body>
