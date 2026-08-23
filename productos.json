@@ -11,7 +11,7 @@
           "descripcion": "Las Clasicas Air Force One",
           "stock": 8,
           "imagenes": [
-            "imagenes/Air Force One Blancas TripleA.jpg"
+            "imagenes/Air Force One Blancas TripleA1.jpg"
           ],
           "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
           "tallas_agotadas": [],
@@ -667,23 +667,6 @@
       "stock": 1,
       "imagenes": [
         "imagenes/Nike Air Force 1 Low x Drake White.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
-      "nombre": "Nike Air Force 1 Low x Drake",
-      "precio": "$60.00",
-      "categoria": "Top Quality",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Cuero Premium",
-      "origen": "Importado",
-      "descripcion": "La colaboración entre Nike y Drake en las Air Force 1 es una de las más icónicas. Con su diseño elegante y detalles exclusivos, estas zapatillas son un tributo a la cultura musical y sneaker.",
-      "stock": 0,
-      "imagenes": [
-        "imagenes/Nike Air Force 1 Low x Drake.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -2406,6 +2389,112 @@
       ],
       "tallas": [40, 41, 43, 44, 42, 45],
       "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Adidas Yeezy 700 V3 Azael",
+      "precio": "$38.00",
+      "categoria":"Triple A",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Yeezy 700 V3 Azael1.jpg",
+        "imagenes/Adidas Yeezy 700 V3 Azael2.jpg"
+      ],
+      "tallas": [40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Adidas Sambas",
+      "precio": "$32.00",
+      "categoria":"Triple A",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Malla + Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Sambas1.jpg",
+        "imagenes/Adidas Sambas2.jpg"
+      ],
+      "tallas": [40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Adidas Response Super 3.0 Core Black",
+      "precio": "$39.00",
+      "categoria":"Triple A",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Malla + Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Response Super 3.0 Core Black.jpg"
+      ],
+      "tallas": [40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Adidas Response Super 3.0 Gris Plata",
+      "precio": "$39.00",
+      "categoria":"Triple A",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Malla + Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Response Super 3.0 Gris Plata.jpg"
+      ],
+      "tallas": [40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Nike Mind 001",
+      "precio": "$35.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Nike Mind 001 Negras.jpg",
+        "imagenes/Nike Mind 001 Blancas.jpg",
+        "imagenes/Nike Mind 001 Verdes.jpg"
+      ],
+      "tallas": [40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "nombre": "Air Force One x Drake Blancas TripleA",
+      "precio": "$45.00",
+      "categoria":"Triple A",
+      "marca": "Nike",
+      "genero":"Unisex",
+      "material":"Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Air Force One x Drake Blancas TripleA.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
       "categoria_link":"Triple_A.html"
     }
   ]

@@ -103,6 +103,7 @@ header {
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 header .container {
@@ -219,7 +220,7 @@ header .container {
     font-size: 20px;
 }
 
-/* ====== HERO CON IMAGEN PROTAGONISTA (ESTILO REFERENCIA) ====== */
+/* ====== HERO CON IMAGEN PROTAGONISTA ====== */
 .hero-banner {
     position: relative;
     min-height: 90vh;
@@ -230,7 +231,6 @@ header .container {
     background: #000;
 }
 
-/* Contenedor de la imagen de fondo */
 .hero-background {
     position: absolute;
     top: 0;
@@ -248,7 +248,6 @@ header .container {
     display: block;
 }
 
-/* Overlay oscuro para mejorar legibilidad */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -265,7 +264,6 @@ header .container {
     z-index: 2;
 }
 
-/* Contenido superpuesto */
 .hero-content-wrapper {
     position: relative;
     z-index: 3;
@@ -278,7 +276,6 @@ header .container {
     padding: 40px 0;
 }
 
-/* Logo de marca en el hero */
 .hero-brand {
     display: flex;
     flex-direction: column;
@@ -328,6 +325,7 @@ header .container {
     transition: all 0.4s ease;
     text-transform: uppercase;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .btn-hero:hover {
@@ -337,7 +335,6 @@ header .container {
     box-shadow: 0 10px 50px rgba(255, 255, 255, 0.15);
 }
 
-/* Indicador de scroll */
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -415,6 +412,7 @@ header .container {
     color: #fff;
 }
 
+/* ===== SHOE GRID OPTIMIZADO ===== */
 .shoe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -641,6 +639,7 @@ header .container {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     animation: fadeIn 0.3s;
 }
 
@@ -731,7 +730,10 @@ footer {
     font-size: 13px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ============================================================ */
+/* ===== RESPONSIVE OPTIMIZADO PARA MÓVIL ===== */
+/* ============================================================ */
+
 @media (max-width: 1024px) {
     .hero-content h1 {
         font-size: 65px;
@@ -746,6 +748,11 @@ footer {
     .brand-line {
         font-size: 26px;
         letter-spacing: 8px;
+    }
+
+    .shoe-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
     }
 }
 
@@ -855,17 +862,48 @@ footer {
     }
     
     .shoe-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .shoe-card {
+        padding: 20px 15px;
+    }
+
+    .shoe-icon {
+        font-size: 55px;
+    }
+
+    .shoe-card h3 {
+        font-size: 16px;
+    }
+
+    .shoe-card .price {
+        font-size: 20px;
+    }
+
+    .filter-container {
+        gap: 8px;
+        margin: 25px 0 30px;
+    }
+
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 11px;
     }
 }
 
+/* ============================================================ */
+/* ===== MÓVIL PEQUEÑO (menos de 480px) ===== */
+/* ============================================================ */
+
 @media (max-width: 480px) {
     .hero-banner {
-        min-height: 70vh;
+        min-height: 60vh;
     }
     
     .hero-content h1 {
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: 4px;
     }
     
@@ -888,22 +926,205 @@ footer {
     .brand-line.highlight {
         letter-spacing: 6px;
     }
-    
+
+    .container {
+        padding: 0 15px;
+    }
+
     .shoe-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 12px;
     }
     
     .shoe-card {
-        padding: 20px 15px;
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+
+    .shoe-card .btn-add {
+        padding: 8px 16px;
+        font-size: 11px;
     }
     
     .shoe-icon {
+        font-size: 40px;
+        margin: 5px 0 10px;
+    }
+
+    .shoe-card h3 {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+
+    .shoe-card .price {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .shoe-card .category {
+        font-size: 9px;
+        padding: 2px 10px;
+    }
+
+    .catalogo h2 {
+        font-size: 26px;
+    }
+
+    .catalogo {
+        padding: 40px 0;
+    }
+
+    .video-section {
+        padding: 40px 0 30px;
+    }
+
+    .video-header h2 {
+        font-size: 22px;
+    }
+
+    .video-header p {
+        font-size: 14px;
+    }
+
+    .header-actions {
+        gap: 15px;
+    }
+
+    .header-actions i {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 20px;
+        gap: 8px;
+    }
+
+    .logo i {
+        font-size: 18px;
+    }
+
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+
+    .filter-container {
+        gap: 6px;
+        margin: 15px 0 20px;
+    }
+
+    .modal-content {
+        padding: 20px;
+        margin: 10% auto;
+        width: 95%;
+    }
+
+    .modal-image {
         font-size: 50px;
+    }
+
+    .modal-details h3 {
+        font-size: 20px;
+    }
+
+    .modal-price {
+        font-size: 22px;
+    }
+
+    .btn-comprar {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .contacto {
+        padding: 30px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+        font-size: 11px;
     }
 }
 
+/* ============================================================ */
+/* ===== MÓVIL MUY PEQUEÑO (menos de 380px) ===== */
+/* ============================================================ */
+
+@media (max-width: 380px) {
+    .shoe-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .shoe-card {
+        padding: 10px 8px;
+    }
+
+    .shoe-icon {
+        font-size: 32px;
+    }
+
+    .shoe-card h3 {
+        font-size: 11px;
+    }
+
+    .shoe-card .price {
+        font-size: 13px;
+    }
+
+    .shoe-card .btn-add {
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .btn-hero {
+        padding: 10px 22px;
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logo i {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .filter-btn {
+        padding: 4px 10px;
+        font-size: 9px;
+    }
+}
+
+/* ============================================================ */
 /* ===== ANIMACIONES ===== */
+/* ============================================================ */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
