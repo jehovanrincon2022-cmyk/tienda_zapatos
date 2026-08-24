@@ -326,7 +326,7 @@
     },
     {
       "numero": "17",
-      "nombre": "Yeezy Boost",
+      "nombre": "Adidas Yeezy 350 Zebra",
       "precio": "$65.00",
       "categoria": "Top Quality",
       "marca": "Adidas",
@@ -336,8 +336,9 @@
       "descripcion": "Las Yeezy Boost son el ícono del calzado moderno. Con su diseño vanguardista, tecnología Boost en la entresuela y construcción Primeknit, estas zapatillas ofrecen una comodidad y estilo inigualables.",
       "stock": 5,
       "imagenes": [
-        "imagenes/yeezy.jpeg",
-        "imagenes/yeezy 2.jpg"
+        "imagenes/Yeezy  350 Zebra1.jpeg",
+        "imagenes/Yeezy  350 Zebra2.jpg",
+        "imagenes/Yeezy  350 Zebra3.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [45],
@@ -2624,6 +2625,115 @@
       "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
       "tallas_agotadas":[],
       "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "130",
+      "nombre": "Adidas Yeezy Boost 350 V2 Earth",
+      "precio": "$65.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/Adidas Yeezy Boost 350 V2 Earth1.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "131",
+      "nombre": "BAPE STA Blancas con Verde",
+      "precio": "$58.00",
+      "badge":"Nuevo",
+      "categoria":"Triple A",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/BAPE STA Blancas con Verde1.jpg",
+        "imagenes/BAPE STA Blancas con Verde2.jpg",
+        "imagenes/BAPE STA Blancas con Verde3.jpg",
+        "imagenes/BAPE STA Blancas con Verde4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "132",
+      "nombre": "BAPE STA SHARK WHITE",
+      "precio": "$58.00",
+      "badge":"Nuevo",
+      "categoria":"Triple A",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/BAPE STA SHARK WHITE1.jpg",
+        "imagenes/BAPE STA SHARK WHITE2.jpg",
+        "imagenes/BAPE STA SHARK WHITE3.jpg",
+        "imagenes/BAPE STA SHARK WHITE4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 43, 44, 42, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "133",
+      "nombre": "New Balance 993",
+      "precio": "$56.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "New Balance",
+      "genero":"Mujer",
+      "material":"Caucho + malla + algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/New Balance 9931.jpg",
+        "imagenes/New Balance 9932.jpg",
+        "imagenes/New Balance 9933.jpg",
+        "imagenes/New Balance 9934.jpg",
+        "imagenes/New Balance 9935.jpg"
+      ],
+      "tallas": [41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "134",
+      "nombre": "New Balance 1906R",
+      "precio": "$56.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "New Balance",
+      "genero":"Mujer",
+      "material":"Caucho + malla + algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": 4,
+      "imagenes":[
+        "imagenes/New Balance 1906R1.jpg",
+        "imagenes/New Balance 1906R2.jpg",
+        "imagenes/New Balance 1906R3.jpg",
+        "imagenes/New Balance 1906R4.jpg",
+        "imagenes/New Balance 1906R5.jpg"
+      ],
+      "tallas": [41, 43, 44, 42, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
     }
   ]
 }
