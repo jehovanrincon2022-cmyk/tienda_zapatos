@@ -35,6 +35,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -48,6 +49,14 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
+}
+
+/* ===== OPTIMIZACIÓN DE IMÁGENES ===== */
+img, video {
+    max-width: 100%;
+    height: auto;
+    content-visibility: auto;
+    contain-intrinsic-size: 300px;
 }
 
 /* ===== TOP BAR ===== */
@@ -428,6 +437,7 @@ header .container {
     transition: all 0.4s ease;
     cursor: pointer;
     position: relative;
+    contain: layout style paint;
 }
 
 .shoe-card:hover {
@@ -731,32 +741,43 @@ footer {
 }
 
 /* ============================================================ */
-/* ===== RESPONSIVE OPTIMIZADO PARA MÓVIL ===== */
+/* ===== OPTIMIZACIONES PARA MÓVIL ===== */
 /* ============================================================ */
 
-@media (max-width: 1024px) {
-    .hero-content h1 {
-        font-size: 65px;
-        letter-spacing: 10px;
-    }
-    
-    .hero-content .subtitle {
-        font-size: 20px;
-        letter-spacing: 4px;
-    }
-    
-    .brand-line {
-        font-size: 26px;
-        letter-spacing: 8px;
-    }
-
-    .shoe-grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 25px;
-    }
-}
-
 @media (max-width: 768px) {
+    /* REDUCIR ANIMACIONES EN MÓVIL (AHORRO DE CPU) */
+    .product-card-box:hover {
+        transform: none !important;
+    }
+    
+    .main-image-container:hover img {
+        transform: none !important;
+    }
+    
+    .product-card-box:hover .product-img-catalog {
+        transform: none !important;
+    }
+    
+    .product-card-box {
+        transition: none !important;
+    }
+    
+    .payment-item:hover {
+        transform: none !important;
+    }
+    
+    .btn-whatsapp:hover {
+        transform: none !important;
+    }
+    
+    .shoe-card:hover {
+        transform: none !important;
+    }
+    
+    .shoe-card:hover .shoe-icon {
+        transform: none !important;
+    }
+
     .hero-banner {
         min-height: 80vh;
     }
@@ -890,6 +911,11 @@ footer {
     .filter-btn {
         padding: 8px 18px;
         font-size: 11px;
+    }
+
+    /* OPTIMIZACIÓN PARA IMÁGENES EN MÓVIL */
+    .product-card-link {
+        contain: layout style paint;
     }
 }
 

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👟 SoleStyle - Novedades</title>
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* ===== ESTILOS PARA LAS TARJETAS DE PRODUCTOS ===== */
         .product-grid-catalog {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -19,6 +22,7 @@
             text-decoration: none;
             color: inherit;
             display: block;
+            contain: layout style paint;
         }
 
         .product-card-box {
@@ -121,7 +125,6 @@
             transform: translateX(5px);
         }
 
-        /* ===== ETIQUETAS DE PROMOCIÓN Y NUEVO ===== */
         .promo-tag {
             position: absolute;
             top: 10px;
@@ -151,7 +154,6 @@
             50% { transform: scale(1.05); }
         }
 
-        /* ===== ENCABEZADO ===== */
         .section-header {
             background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
             border-bottom: 3px solid #00d4ff;
@@ -178,7 +180,6 @@
             font-weight: 300;
         }
 
-        /* ===== MENSAJE DE NO HAY PRODUCTOS ===== */
         .no-products {
             grid-column: 1/-1;
             text-align: center;
@@ -199,7 +200,47 @@
             margin-bottom: 10px;
         }
 
-        /* ===== RESPONSIVE ===== */
+        .loading-spinner {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .loading-spinner i {
+            font-size: 48px;
+            color: #00d4ff;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .load-more-btn {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .load-more-btn button {
+            padding: 14px 45px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .load-more-btn button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(200, 168, 124, 0.3);
+        }
+
         @media (max-width: 768px) {
             .product-grid-catalog {
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -220,6 +261,14 @@
 
             .section-header h1 {
                 font-size: 32px;
+            }
+            
+            .product-card-box:hover {
+                transform: none !important;
+            }
+            
+            .product-card-box:hover .product-img-catalog {
+                transform: none !important;
             }
         }
 
@@ -258,6 +307,11 @@
                 font-size: 9px;
                 padding: 3px 10px;
             }
+
+            .load-more-btn button {
+                padding: 12px 30px;
+                font-size: 13px;
+            }
         }
     </style>
 </head>
@@ -265,9 +319,7 @@
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
-          
-            <div class="top-right">
-            </div>
+            <div class="top-right"></div>
         </div>
     </div>
 
@@ -288,9 +340,8 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count"></span></div>
+                <!-- ===== ÍCONO DEL CARRITO ELIMINADO ===== -->
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -304,10 +355,9 @@
         </div>
     </section>
 
-    <!-- PRODUCTOS NOVEDADES (FILTRADOS POR OFERTA Y NUEVO) -->
+    <!-- PRODUCTOS NOVEDADES -->
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
-            <!-- Los productos se generan con JavaScript -->
             <div class="loading-spinner">
                 <i class="fas fa-spinner fa-spin"></i>
                 <p style="margin-top:20px;color:var(--text-secondary);">Cargando novedades...</p>
@@ -318,10 +368,7 @@
     <!-- CONTACTO -->
     <section class="contacto">
         <div class="container">
-            <div class="social-icons">
-             
-            </div>
-        
+            <div class="social-icons"></div>
         </div>
     </section>
 
@@ -382,20 +429,21 @@
         }
 
         // ============================================================
-        // ===== RENDERIZAR SOLO NOVEDADES (Oferta y Nuevo) =====
+        // ===== VARIABLES DE PAGINACIÓN =====
         // ============================================================
-        function renderNovedades() {
-            const container = document.getElementById('productGrid');
-            container.innerHTML = '';
+        let productosCargados = 0;
+        const PRODUCTOS_POR_PAGINA = 8;
+        let todosLosNovedades = [];
 
-            // Filtrar productos que tengan "Nuevo" o "Oferta" en el badge
-            const novedades = productosData.filter(producto => {
-                // Buscar en el badge (puede estar en diferentes campos)
+        // ============================================================
+        // ===== FILTRAR NOVEDADES =====
+        // ============================================================
+        function filtrarNovedades() {
+            return productosData.filter(producto => {
                 const badge = producto.badge || producto.etiqueta || '';
                 const descripcion = producto.descripcion || '';
                 const nombre = producto.nombre || '';
                 
-                // Buscar palabras clave
                 const esNuevo = badge.toLowerCase().includes('nuevo') || 
                                nombre.toLowerCase().includes('nuevo') ||
                                descripcion.toLowerCase().includes('nuevo lanzamiento');
@@ -406,10 +454,68 @@
                 
                 return esNuevo || esOferta;
             });
+        }
 
-            console.log(`🎯 Novedades encontradas: ${novedades.length}`);
+        // ============================================================
+        // ===== CREAR CARD DE PRODUCTO =====
+        // ============================================================
+        function crearCardProducto(producto) {
+            const card = document.createElement('a');
+            card.href = `detalle.html?nombre=${encodeURIComponent(producto.nombre)}`;
+            card.className = 'product-card-link';
+            
+            const mainImage = producto.imagenes && producto.imagenes.length > 0 
+                ? producto.imagenes[0] 
+                : '';
+            
+            const badge = producto.badge || producto.etiqueta || '';
+            let tipoPromo = 'nuevo';
+            let textoPromo = 'Nuevo';
+            
+            if (badge.toLowerCase().includes('oferta') || 
+                badge.toLowerCase().includes('descuento') ||
+                badge.toLowerCase().includes('promoción')) {
+                tipoPromo = 'oferta';
+                textoPromo = '🔥 Oferta';
+            }
 
-            if (novedades.length === 0) {
+            let qualityTag = producto.categoria || 'Novedad';
+            let qualityClass = '';
+            if (producto.categoria === 'Top Quality') {
+                qualityClass = '⭐ Top Quality';
+            } else if (producto.categoria === 'Triple A') {
+                qualityClass = '🔝 Triple A';
+            }
+
+            card.innerHTML = `
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="${mainImage}" alt="${producto.nombre}" class="product-img-catalog" loading="lazy" decoding="async" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                        <span class="promo-tag ${tipoPromo}">${textoPromo}</span>
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">${qualityClass || qualityTag}</span>
+                        <h3 class="product-name">${producto.nombre}</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">${producto.precio || '$0.00'}</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        // ============================================================
+        // ===== RENDERIZAR CON PAGINACIÓN =====
+        // ============================================================
+        function renderNovedades() {
+            const container = document.getElementById('productGrid');
+            container.innerHTML = '';
+
+            todosLosNovedades = filtrarNovedades();
+
+            if (todosLosNovedades.length === 0) {
                 container.innerHTML = `
                     <div class="no-products">
                         <i class="fas fa-box-open"></i>
@@ -421,56 +527,52 @@
                 return;
             }
 
-            novedades.forEach((producto, index) => {
-                const card = document.createElement('a');
-                card.href = `detalle.html?nombre=${encodeURIComponent(producto.nombre)}`;
-                card.className = 'product-card-link';
-                
-                // Determinar si es Oferta o Nuevo para la etiqueta
-                const badge = producto.badge || producto.etiqueta || '';
-                let tipoPromo = 'nuevo';
-                let textoPromo = 'Nuevo';
-                
-                if (badge.toLowerCase().includes('oferta') || 
-                    badge.toLowerCase().includes('descuento') ||
-                    badge.toLowerCase().includes('promoción')) {
-                    tipoPromo = 'oferta';
-                    textoPromo = '🔥 Oferta';
-                }
-
-                // Obtener la primera imagen
-                const mainImage = producto.imagenes && producto.imagenes.length > 0 
-                    ? producto.imagenes[0] 
-                    : '';
-
-                // Determinar la etiqueta de calidad (Top Quality o Triple A)
-                let qualityTag = producto.categoria || 'Novedad';
-                let qualityClass = '';
-                if (producto.categoria === 'Top Quality') {
-                    qualityClass = '⭐ Top Quality';
-                } else if (producto.categoria === 'Triple A') {
-                    qualityClass = '🔝 Triple A';
-                }
-
-                card.innerHTML = `
-                    <div class="product-card-box">
-                        <div class="product-img-container">
-                            <img src="${mainImage}" alt="${producto.nombre}" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
-                            <span class="promo-tag ${tipoPromo}">${textoPromo}</span>
-                        </div>
-                        <div class="product-info-box">
-                            <span class="product-brand-tag">${qualityClass || qualityTag}</span>
-                            <h3 class="product-name">${producto.nombre}</h3>
-                            <div class="product-footer-row">
-                                <span class="product-price">${producto.precio || '$0.00'}</span>
-                                <span class="product-detail-badge">Ver detalles</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(card);
+            // Cargar solo los primeros 8
+            const iniciales = todosLosNovedades.slice(0, PRODUCTOS_POR_PAGINA);
+            productosCargados = iniciales.length;
+            
+            iniciales.forEach(producto => {
+                container.appendChild(crearCardProducto(producto));
             });
+
+            // Agregar botón "Cargar más" si hay más productos
+            if (todosLosNovedades.length > PRODUCTOS_POR_PAGINA) {
+                const btnMas = document.createElement('div');
+                btnMas.className = 'load-more-btn';
+                btnMas.innerHTML = `
+                    <button onclick="cargarMasNovedades()">
+                        Cargar más productos (${todosLosNovedades.length - productosCargados} restantes)
+                    </button>
+                `;
+                container.appendChild(btnMas);
+            }
         }
+
+        // ============================================================
+        // ===== CARGAR MÁS NOVEDADES =====
+        // ============================================================
+        window.cargarMasNovedades = function() {
+            const container = document.getElementById('productGrid');
+            const siguienteLote = todosLosNovedades.slice(productosCargados, productosCargados + PRODUCTOS_POR_PAGINA);
+            
+            siguienteLote.forEach(producto => {
+                container.appendChild(crearCardProducto(producto));
+            });
+            
+            productosCargados += siguienteLote.length;
+            
+            // Quitar botón si ya no hay más
+            if (productosCargados >= todosLosNovedades.length) {
+                const btn = container.querySelector('.load-more-btn');
+                if (btn) btn.remove();
+            } else {
+                // Actualizar el contador del botón
+                const btn = container.querySelector('.load-more-btn button');
+                if (btn) {
+                    btn.innerHTML = `Cargar más productos (${todosLosNovedades.length - productosCargados} restantes)`;
+                }
+            }
+        };
 
         // ====== TEMA CLARO/OSCURO ======
         const themeToggle = document.getElementById('themeToggle');
@@ -504,9 +606,16 @@
             document.querySelector('.nav-links')?.classList.toggle('active');
         });
 
-        // ====== CARRITO ======
-        let cartCount = 0;
-        document.getElementById('cart-count').textContent = cartCount;
+        // ====== CARRITO ELIMINADO ======
+        // let cartCount = 0;
+        // document.getElementById('cart-count').textContent = cartCount;
+
+        // ====== SERVICE WORKER ======
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('✅ Service Worker registrado'))
+                .catch(() => console.log('⚠️ Service Worker no disponible'));
+        }
 
         // ============================================================
         // ===== INICIALIZAR =====

@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👟 SoleStyle - Detalle del Producto</title>
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ===== ESTILOS PARA DETALLE DEL PRODUCTO ===== */
         .product-detail-section {
@@ -30,7 +34,7 @@
 
         .main-image-container {
             width: 100%;
-            padding-top: 100%;
+            height: 500px;
             position: relative;
             border-radius: 16px;
             overflow: hidden;
@@ -39,17 +43,50 @@
         }
 
         .main-image-container img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
+            object-fit: contain;
+            transition: transform 0.6s ease;
+            display: block;
+            padding: 20px;
         }
 
         .main-image-container:hover img {
             transform: scale(1.05);
+        }
+
+        .main-image-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background: radial-gradient(circle, rgba(200, 168, 124, 0.08), transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .main-image-container img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-number-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            z-index: 10;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            letter-spacing: 0.5px;
         }
 
         .sold-out-overlay {
@@ -157,6 +194,17 @@
             color: #000;
         }
 
+        .quality-badge-detail.doble-a {
+            background: linear-gradient(135deg, #3553ff, #1a2b8a);
+            color: #fff;
+            border: 1px solid #3553ff;
+            box-shadow: 0 5px 25px rgba(53, 83, 255, 0.3);
+        }
+
+        .quality-badge-detail.doble-a i {
+            color: #fff;
+        }
+
         .stock-status {
             display: inline-flex;
             align-items: center;
@@ -235,7 +283,6 @@
             font-weight: 500;
         }
 
-        /* ===== MÉTODOS DE PAGO ===== */
         .payment-methods {
             background: var(--bg-secondary);
             border-radius: 16px;
@@ -763,10 +810,7 @@
             to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
-        /* ============================================================ */
-        /* ===== RESPONSIVE ===== */
-        /* ============================================================ */
-
+        /* ===== OPTIMIZACIONES PARA MÓVIL ===== */
         @media (max-width: 1024px) {
             .product-detail-wrapper {
                 grid-template-columns: 1fr;
@@ -774,10 +818,19 @@
                 padding: 25px;
             }
 
+            .main-image-container {
+                height: 450px;
+            }
+
             .sold-out-overlay span {
                 font-size: 36px;
                 padding: 15px 30px;
                 letter-spacing: 6px;
+            }
+            
+            /* Desactivar hover en móvil */
+            .main-image-container:hover img {
+                transform: none !important;
             }
         }
 
@@ -786,6 +839,14 @@
                 padding: 18px;
                 border-radius: 16px;
                 gap: 25px;
+            }
+
+            .main-image-container {
+                height: 400px;
+            }
+
+            .main-image-container img {
+                padding: 15px;
             }
 
             .product-title-detail {
@@ -819,6 +880,10 @@
                 padding: 10px 12px;
                 gap: 10px;
             }
+            
+            .payment-item:hover {
+                transform: none !important;
+            }
 
             .payment-icon {
                 width: 32px;
@@ -841,6 +906,10 @@
             .btn-whatsapp {
                 font-size: 16px;
                 padding: 14px 20px;
+            }
+            
+            .btn-whatsapp:hover {
+                transform: none !important;
             }
 
             .thumbnail-grid {
@@ -908,6 +977,11 @@
                 padding: 10px 20px;
                 bottom: 20px;
             }
+
+            .product-number-badge {
+                font-size: 12px;
+                padding: 4px 12px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -915,6 +989,14 @@
                 padding: 12px;
                 border-radius: 12px;
                 gap: 20px;
+            }
+
+            .main-image-container {
+                height: 320px;
+            }
+
+            .main-image-container img {
+                padding: 10px;
             }
 
             .product-title-detail {
@@ -1088,6 +1170,13 @@
                 bottom: 16px;
                 white-space: normal;
             }
+
+            .product-number-badge {
+                font-size: 10px;
+                padding: 3px 10px;
+                top: 10px;
+                left: 10px;
+            }
         }
 
         @keyframes fadeIn {
@@ -1100,10 +1189,7 @@
     <!-- TOP BAR -->
     <div class="top-bar">
         <div class="container">
-          
-            <div class="top-right">
-            
-            </div>
+            <div class="top-right"></div>
         </div>
     </div>
 
@@ -1118,16 +1204,14 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="novedades.html">Novedades</a></li>
-            
                     <li><a href="Top_Quality.html">Top Quality</a></li>
                     <li><a href="Triple_A.html">Triple A</a></li>
                     <li><a href="doble_A.html">Doble A</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="cart-icon"><i class="fas fa-shopping-bag"></i><span id="cart-count"></span></div>
+                <!-- ===== ÍCONO DEL CARRITO ELIMINADO ===== -->
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -1153,7 +1237,7 @@
 
     <!-- ===== MODALES DE PAGO ===== -->
 
-    <!-- Modal Pago Móvil (CON DOS BANCOS) -->
+    <!-- Modal Pago Móvil -->
     <div class="payment-modal" id="modalPagoMovil">
         <div class="payment-modal-content">
             <span class="payment-modal-close" onclick="closePaymentModal('modalPagoMovil')">&times;</span>
@@ -1162,7 +1246,6 @@
                 Pago Móvil
             </div>
             <div class="payment-modal-body">
-                <!-- BANCO 1: Banesco -->
                 <div class="bank-section">
                     <div class="bank-title">
                         <i class="fas fa-university" style="color:hsl(128, 98%, 32%);"></i> Banesco
@@ -1180,8 +1263,6 @@
                         <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
                     </div>    
                 </div>
-
-                <!-- BANCO 2: Mercantil -->
                 <div class="bank-section">
                     <div class="bank-title">
                         <i class="fas fa-university" style="color:#409aeef5;"></i> Mercantil
@@ -1199,8 +1280,6 @@
                         <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
                     </div>    
                 </div>
-
-                <!-- BANCO 3: Venezuela -->
                 <div class="bank-section">
                     <div class="bank-title">
                         <i class="fas fa-university" style="color:hwb(0 1% 37%);"></i> Venezuela
@@ -1284,7 +1363,6 @@
                     <span class="info-label">📧 Correo</span>
                     <span class="info-value copyable" onclick="copyText('jehovanrincon2022@gmail.com')">jehovanrincon2022@gmail.com <span class="copy-hint">copiar</span></span>
                 </div>
-    
             </div>
         </div>
     </div>
@@ -1297,10 +1375,7 @@
     <!-- CONTACTO -->
     <section class="contacto">
         <div class="container">
-            <div class="social-icons">
-              
-            </div>
-            
+            <div class="social-icons"></div>
         </div>
     </section>
 
@@ -1326,7 +1401,7 @@
         </div>
     </footer>
 
-    <!-- ===== SCRIPT PRINCIPAL ===== -->
+    <!-- ===== SCRIPT PRINCIPAL OPTIMIZADO ===== -->
     <script>
         // ============================================================
         // ===== CARGAR PRODUCTOS DESDE JSON =====
@@ -1386,7 +1461,7 @@
         }
 
         // ============================================================
-        // ===== FUNCIÓN PARA RENDERIZAR DETALLE =====
+        // ===== FUNCIÓN PARA RENDERIZAR DETALLE OPTIMIZADA =====
         // ============================================================
         async function renderProductDetail() {
             const params = new URLSearchParams(window.location.search);
@@ -1449,24 +1524,22 @@
             document.getElementById('breadcrumbCategory').textContent = productoEncontrado.categoria || 'Categoría';
             document.getElementById('breadcrumbCategory').href = productoEncontrado.categoria_link || '#';
 
+            const numeroProducto = productoEncontrado.numero || '?';
+
             const mainImage = productoEncontrado.imagenes && productoEncontrado.imagenes.length > 0 
                 ? productoEncontrado.imagenes[0] 
                 : '';
 
+            // Generar thumbnails HTML (se cargarán después)
             let thumbnailsHTML = '';
-            if (productoEncontrado.imagenes && productoEncontrado.imagenes.length > 0) {
-                productoEncontrado.imagenes.forEach((img, index) => {
-                    const isActive = index === 0 ? 'active' : '';
-                    thumbnailsHTML += `
-                        <div class="thumbnail-item ${isActive}" onclick="changeImage(this, '${img}')">
-                            <img src="${img}" alt="Vista ${index + 1}" onerror="this.src='https://via.placeholder.com/100/333/666?text=No+Image'">
-                        </div>
-                    `;
-                });
+            if (productoEncontrado.imagenes && productoEncontrado.imagenes.length > 1) {
+                thumbnailsHTML = `<div class="thumbnail-grid" id="thumbnailGrid"></div>`;
             } else {
                 thumbnailsHTML = `
-                    <div class="thumbnail-item active">
-                        <img src="https://via.placeholder.com/100/333/666?text=No+Image" alt="Sin imagen">
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail-item active">
+                            <img src="${mainImage}" alt="Imagen principal" loading="lazy" decoding="async" onerror="this.src='https://via.placeholder.com/100/333/666?text=No+Image'">
+                        </div>
                     </div>
                 `;
             }
@@ -1489,13 +1562,25 @@
                 `;
             });
 
-            // ===== DETERMINAR CALIDAD =====
             const categoria = productoEncontrado.categoria || 'General';
-            const qualityClass = categoria === 'Top Quality' ? 'top-quality' : categoria === 'Triple A' ? 'triple-a' : '';
-            const qualityIcon = categoria === 'Top Quality' ? 'fa-crown' : categoria === 'Triple A' ? 'fa-award' : 'fa-tag';
-            const qualityEmoji = categoria === 'Top Quality' ? '⭐' : categoria === 'Triple A' ? '🔝' : '';
+            let qualityClass = '';
+            let qualityIcon = 'fa-tag';
+            let qualityEmoji = '';
+            
+            if (categoria === 'Top Quality') {
+                qualityClass = 'top-quality';
+                qualityIcon = 'fa-crown';
+                qualityEmoji = '⭐';
+            } else if (categoria === 'Triple A') {
+                qualityClass = 'triple-a';
+                qualityIcon = 'fa-award';
+                qualityEmoji = '🔝';
+            } else if (categoria === 'Doble A') {
+                qualityClass = 'doble-a';
+                qualityIcon = 'fa-tag';
+                qualityEmoji = '🔵';
+            }
 
-            // ===== DETERMINAR STOCK =====
             const stock = productoEncontrado.stock !== undefined ? productoEncontrado.stock : 1;
             const isAgotado = stock <= 0;
             const stockStatusClass = isAgotado ? 'agotado' : 'disponible';
@@ -1506,15 +1591,16 @@
                 <div class="product-detail-wrapper">
                     <div class="product-gallery">
                         <div class="main-image-container">
-                            <img id="mainImage" src="${mainImage}" alt="${productoEncontrado.nombre}" onerror="this.src='https://via.placeholder.com/600/333/666?text=No+Image'">
+                            <span class="product-number-badge">#${numeroProducto}</span>
+                            <img id="mainImage" src="${mainImage}" alt="${productoEncontrado.nombre}" 
+                                 loading="eager" decoding="async" 
+                                 onerror="this.src='https://via.placeholder.com/600/333/666?text=No+Image'">
                             ${isAgotado ? `
                             <div class="sold-out-overlay">
                                 <span>AGOTADO</span>
                             </div>` : ''}
                         </div>
-                        <div class="thumbnail-grid" id="thumbnailGrid">
-                            ${thumbnailsHTML}
-                        </div>
+                        ${thumbnailsHTML}
                     </div>
 
                     <div class="product-info-detail">
@@ -1553,7 +1639,6 @@
                             </div>
                         </div>
 
-                        <!-- ===== MÉTODOS DE PAGO ===== -->
                         <div class="payment-methods">
                             <h4><i class="fas fa-credit-card"></i> Métodos de Pago</h4>
                             <div class="payment-grid">
@@ -1563,7 +1648,6 @@
                                     </div>
                                     <div class="payment-info">
                                         <span class="payment-name">Pago Móvil <small>3 cuentas disponibles</small></span>
-                                        <span class="payment-click"></span>
                                     </div>
                                 </div>
                                 <div class="payment-item" onclick="openPaymentModal('modalDolarFisico')">
@@ -1572,7 +1656,6 @@
                                     </div>
                                     <div class="payment-info">
                                         <span class="payment-name">Dólar Físico <small>Efectivo en USD</small></span>
-                                        <span class="payment-click"></span>
                                     </div>
                                 </div>
                                 <div class="payment-item" onclick="openPaymentModal('modalBinance')">
@@ -1581,7 +1664,6 @@
                                     </div>
                                     <div class="payment-info">
                                         <span class="payment-name">Binance <small>USDT</small></span>
-                                        <span class="payment-click"> </span>
                                     </div>
                                 </div>
                                 <div class="payment-item" onclick="openPaymentModal('modalZinli')">
@@ -1590,7 +1672,6 @@
                                     </div>
                                     <div class="payment-info">
                                         <span class="payment-name">Zinli <small>Transferencia</small></span>
-                                        <span class="payment-click"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1618,6 +1699,25 @@
                     </div>
                 </div>
             `;
+
+            // ====== CARGAR MINIATURAS DESPUÉS DE 500ms (OPTIMIZACIÓN) ======
+            if (productoEncontrado.imagenes && productoEncontrado.imagenes.length > 1) {
+                setTimeout(() => {
+                    const thumbGrid = document.getElementById('thumbnailGrid');
+                    if (thumbGrid) {
+                        let thumbHTML = '';
+                        productoEncontrado.imagenes.forEach((img, index) => {
+                            const isActive = index === 0 ? 'active' : '';
+                            thumbHTML += `
+                                <div class="thumbnail-item ${isActive}" onclick="changeImage(this, '${img}')">
+                                    <img src="${img}" alt="Vista ${index + 1}" loading="lazy" decoding="async" onerror="this.src='https://via.placeholder.com/100/333/666?text=No+Image'">
+                                </div>
+                            `;
+                        });
+                        thumbGrid.innerHTML = thumbHTML;
+                    }
+                }, 500);
+            }
 
             // ====== CONFIGURAR WHATSAPP (SOLO SI HAY STOCK) ======
             if (!isAgotado) {
@@ -1770,9 +1870,16 @@
             document.querySelector('.nav-links')?.classList.toggle('active');
         });
 
-        // ====== CARRITO ======
-        let cartCount = 0;
-        document.getElementById('cart-count').textContent = cartCount;
+        // ====== CARRITO ELIMINADO ======
+        // let cartCount = 0;
+        // document.getElementById('cart-count').textContent = cartCount;
+
+        // ====== SERVICE WORKER ======
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('✅ Service Worker registrado'))
+                .catch(() => console.log('⚠️ Service Worker no disponible'));
+        }
 
         // ============================================================
         // ===== INICIALIZAR =====
