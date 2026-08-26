@@ -37,24 +37,6 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "numero": "3",
-      "nombre": "Air Force One Black",
-      "precio": "$42.00",
-      "categoria": "Top Quality",
-      "marca": "NIKE",
-      "genero": "Unisex",
-      "material": "Cuero + Gamuza",
-      "origen": "Importado",
-      "descripcion": "Las clasicas Air Fon One Black",
-      "stock": 1,
-      "imagenes": [
-        "imagenes/Air Force One Black.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
       "numero": "4",
       "nombre": "Air Jordan 3 Retro Black Cat",
       "precio": "$67.00",
@@ -209,7 +191,9 @@
       "descripcion": "Las Air Jordan Retro 3 White son un clásico atemporal. Su diseño en cuero blanco con detalles en gris y el icónico logo de Jumpman las convierten en una de las siluetas más queridas de la historia.",
       "stock": 7,
       "imagenes": [
-        "imagenes/Air Jordan Retro 3 White.jpg"
+        "imagenes/Air Jordan Retro 3 White1.jpg",
+        "imagenes/Air Jordan Retro 3 White2.jpg",
+        "imagenes/Air Jordan Retro 3 White3.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -218,7 +202,8 @@
     {
       "numero": "12",
       "nombre": "Air Jordan Retro 3 Palomino",
-      "precio": "$60.00",
+      "precio": "$70.00",
+      "badge": "Nuevo",
       "categoria": "Top Quality",
       "marca": "Jordan",
       "genero": "Unisex",
@@ -227,10 +212,13 @@
       "descripcion": "Las Air Jordan Retro 3 Palomino destacan por su elegante combinación de tonos marrones y crema. Con una construcción de cuero y gamuza de alta calidad, estas zapatillas ofrecen estilo y confort en cada paso.",
       "stock": 3,
       "imagenes": [
-        "imagenes/Air Jordan Retro 3 Palomino.jpg"
+        "imagenes/Air Jordan Retro 3 Palomino1.jpg",
+        "imagenes/Air Jordan Retro 3 Palomino2.jpg",
+        "imagenes/Air Jordan Retro 3 Palomino3.jpg",
+        "imagenes/Air Jordan Retro 3 Palomino4.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [45],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 40],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -510,24 +498,6 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "numero": "26",
-      "nombre": "Nike Zoom Vomero Roam",
-      "precio": "$60.00",
-      "categoria": "Top Quality",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Malla + Caucho",
-      "origen": "Importado",
-      "descripcion": "Las Nike Zoom Vomero Roam combinan el estilo urbano con la tecnología de running. Con su amortiguación Zoom Air y su diseño versátil, estas zapatillas son perfectas para la ciudad.",
-      "stock": 3,
-      "imagenes": [
-        "imagenes/Nike Zoom Vomero Roam.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
       "numero": "27",
       "nombre": "Nike Air Max Dn",
       "precio": "$60.00",
@@ -548,13 +518,13 @@
         "imagenes/Nike Air Max Dn7.jpg",
         "imagenes/Nike Air Max Dn8.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
     {
       "numero": "28",
-      "nombre": "Nike Air Max 97",
+      "nombre": "Nike Air Max 97 White",
       "precio": "$75.00",
       "categoria": "Top Quality",
       "marca": "Nike",
@@ -564,9 +534,15 @@
       "descripcion": "Las Nike Air Max 97 son un clásico del calzado deportivo. Con su diseño inspirado en los trenes bala japoneses, su amortiguación Air Max y su construcción de malla y cuero, estas zapatillas son un ícono de estilo.",
       "stock": 6,
       "imagenes": [
-        "imagenes/Nike Air Max 97.jpg"
+        "imagenes/Nike Air Max 97 White01.jpg",
+        "imagenes/Nike Air Max 97 White1.jpg",
+        "imagenes/Nike Air Max 97 White2.jpg",
+        "imagenes/Nike Air Max 97 White3.jpg",
+        "imagenes/Nike Air Max 97 White4.jpg",
+        "imagenes/Nike Air Max 97 White5.jpg",
+        "imagenes/Nike Air Max 97 White6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -638,9 +614,13 @@
       "descripcion": "Las Nike Air Force 1 Low Tiffany son una versión especial de la icónica silueta. Con su elegante combinación de colores Tiffany y blanco, estas zapatillas son perfectas para quienes buscan un look sofisticado.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Nike Air Force 1 Low Tiffany.jpg"
+        "imagenes/Nike Air Force 1 Low Tiffany1.jpg",
+        "imagenes/Nike Air Force 1 Low Tiffany2.jpg",
+        "imagenes/Nike Air Force 1 Low Tiffany3.jpg",
+        "imagenes/Nike Air Force 1 Low Tiffany4.jpg",
+        "imagenes/Nike Air Force 1 Low Tiffany5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
       "categoria_link": "Top_Quality.html"
     },
@@ -2733,6 +2713,326 @@
       ],
       "tallas": [41, 43, 44, 42, 45],
       "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "135",
+      "nombre": "Adidas",
+      "precio": "$53.00",
+      "badge":"",
+      "categoria":"Triple A",
+      "marca": "Adidas",
+      "genero":"Unisex",
+      "material":"Caucho + algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "10",
+      "imagenes":[
+        "imagenes/Adidas Sambas01.jpg",
+        "imagenes/Adidas Sambas6.jpg",
+        "imagenes/Adidas Sambas3.jpg",
+        "imagenes/Adidas Sambas4.jpg",
+        "imagenes/Adidas Sambas7.jpg",
+        "imagenes/Adidas Sambas8.jpg",
+        "imagenes/Adidas Sambas9.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas":[45],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "136",
+      "nombre": "Nike Air Jordan 1 Low Tokyo 96",
+      "precio": "$65.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "10",
+      "imagenes":[
+        "imagenes/Nike Air Jordan 1 Low Tokyo 961.jpg",
+        "imagenes/Nike Air Jordan 1 Low Tokyo 962.jpg",
+        "imagenes/Nike Air Jordan 1 Low Tokyo 963.jpg",
+        "imagenes/Nike Air Jordan 1 Low Tokyo 964.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "137",
+      "nombre": "Nike Zoom Streankfly",
+      "precio": "$55.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Zoom Streankfly1.jpg",
+        "imagenes/Nike Zoom Streankfly2.jpg",
+        "imagenes/Nike Zoom Streankfly3.jpg",
+        "imagenes/Nike Zoom Streankfly4.jpg",
+        "imagenes/Nike Zoom Streankfly5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "138",
+      "nombre": "Air Jordan Retro 4 Blanco con Negro",
+      "precio": "$70.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "Jordan",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Air Jordan Retro 4 Blanco con Negro1.jpg",
+        "imagenes/Air Jordan Retro 4 Blanco con Negro2.jpg",
+        "imagenes/Air Jordan Retro 4 Blanco con Negro3.jpg",
+        "imagenes/Air Jordan Retro 4 Blanco con Negro4.jpg",
+        "imagenes/Air Jordan Retro 4 Blanco con Negro5.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "139",
+      "nombre": "Nike Air Max Fusion Blancas",
+      "precio": "$65.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Air Max Fusion Blancas1.jpg",
+        "imagenes/Nike Air Max Fusion Blancas2.jpg",
+        "imagenes/Nike Air Max Fusion Blancas3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "140",
+      "nombre": "Nike Air Max 97 Ghost",
+      "precio": "$75.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Air Max 97 Ghost1.jpg",
+        "imagenes/Nike Air Max 97 Ghost2.jpg",
+        "imagenes/Nike Air Max 97 Ghost3.jpg",
+        "imagenes/Nike Air Max 97 Ghost4.jpg",
+        "imagenes/Nike Air Max 97 Ghost5.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "141",
+      "nombre": "Nike Air Max 97 Green",
+      "precio": "$75.00",
+      "badge":"",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Air Max 97 Green1.jpg",
+        "imagenes/Nike Air Max 97 Green2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "142",
+      "nombre": "Nike SB Dunk Low Green",
+      "precio": "$70.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Malla",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Green1.jpg",
+        "imagenes/Nike SB Dunk Low Green2.jpg"
+      ],
+      "tallas": [41, 42, 43, 44, 45],
+      "tallas_agotadas":[36, 37, 38, 39, 40],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "143",
+      "nombre": "Nike SB Dunk Low Travis Scott",
+      "precio": "$70.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Travis Scott1.jpg",
+        "imagenes/Nike SB Dunk Low Travis Scott2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "144",
+      "nombre": "Nike Air Max Dn Negras",
+      "precio": "$32.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Air Max DN Negras1.jpg",
+        "imagenes/Air Max DN Negras2.jpg",
+        "imagenes/Air Max DN Negras3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "145",
+      "nombre": "Nike Zoom Fly 4 Blancas",
+      "precio": "$50.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Zoom Fly 4 Blancas1.jpg",
+        "imagenes/Nike Zoom Fly 4 Blancas2.jpg",
+        "imagenes/Nike Zoom Fly 4 Blancas3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
+      "tallas_agotadas":[45],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "146",
+      "nombre": "Nike Air Max 97 Negras",
+      "precio": "$75.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Air Max 97 Negras.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Top_Quality.html"
+    },
+    {
+      "numero": "147",
+      "nombre": "Nike Air Force One Black",
+      "precio": "$42.00",
+      "badge":"Nuevo",
+      "categoria":"Triple A",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Air Force One Black1.jpg",
+        "imagenes/Air Force One Black2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
+      "categoria_link":"Triple_A.html"
+    },
+    {
+      "numero": "148",
+      "nombre": "Nike Air Zoom Pegasus 37 Negras",
+      "precio": "$50.00",
+      "badge":"Nuevo",
+      "categoria":"Triple A",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike Air Zoom Pegasus 37 Negras1.jpg",
+        "imagenes/Nike Air Zoom Pegasus 37 Negras2.jpg",
+        "imagenes/Nike Air Zoom Pegasus 37 Negras3.jpg",
+        "imagenes/Nike Air Zoom Pegasus 37 Negras4.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "tallas_agotadas":[43, 44, 45],
+      "categoria_link":"Triple_A.html"
+    },
+        {
+      "numero": "149",
+      "nombre": "Nike SB Dunk Low Grey Fog",
+      "precio": "$60.00",
+      "badge":"Nuevo",
+      "categoria":"Top Quality",
+      "marca": "nike",
+      "genero":"Unisex",
+      "material":"Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes":[
+        "imagenes/Nike SB Dunk Low Grey Fog1.jpg",
+        "imagenes/Nike SB Dunk Low Grey Fog2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas":[],
       "categoria_link":"Top_Quality.html"
     }
   ]
