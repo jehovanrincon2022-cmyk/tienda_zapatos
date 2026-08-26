@@ -751,25 +751,6 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "numero": "39",
-      "nombre": "Nike Dunk Low",
-      "precio": "$60.00",
-      "categoria": "Top Quality",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Cuero + Gamuza",
-      "origen": "Importado",
-      "descripcion": "Las Nike Dunk Low son un clásico del calzado urbano. Con su diseño versátil y su construcción de cuero y gamuza, estas zapatillas son perfectas para cualquier ocasión.",
-      "stock": 8,
-      "imagenes": [
-        "imagenes/Nike Dunk Low.jpg",
-        "imagenes/Nike Dunk Low naranja.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
       "numero": "40",
       "nombre": "Nike Dunk High",
       "precio": "$60.00",
@@ -788,24 +769,6 @@
       "categoria_link": "Top_Quality.html"
     },
     {
-      "numero": "41",
-      "nombre": "Nike Dunk Low SE 85",
-      "precio": "$60.00",
-      "categoria": "Top Quality",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Cuero Premium",
-      "origen": "Importado",
-      "descripcion": "Las Nike Dunk Low SE 85 son una edición especial de la clásica silueta. Con detalles únicos y una construcción de cuero premium, estas zapatillas son perfectas para coleccionistas.",
-      "stock": 5,
-      "imagenes": [
-        "imagenes/Nike Dunk Low SE 85 .jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
       "numero": "42",
       "nombre": "Nike Dunk Low Next Nature Alabaster",
       "precio": "$60.00",
@@ -818,25 +781,6 @@
       "stock": 4,
       "imagenes": [
         "imagenes/Nike Dunk Low Next Nature Alabaster.jpg"
-      ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
-    },
-    {
-      "numero": "43",
-      "nombre": "Nike Ja 3",
-      "precio": "$60.00",
-      "categoria": "Top Quality",
-      "marca": "Nike",
-      "genero": "Unisex",
-      "material": "Malla + Caucho",
-      "origen": "Importado",
-      "descripcion": "Las Nike Ja 3 son las zapatillas oficiales de Ja Morant. Con un diseño pensado para el máximo rendimiento en la cancha, estas zapatillas ofrecen agarre, estabilidad y estilo.",
-      "stock": 7,
-      "imagenes": [
-        "imagenes/Nike Ja 3 azules.jpg",
-        "imagenes/Nike Ja 3.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
       "tallas_agotadas": [],
@@ -2967,7 +2911,7 @@
       "descripcion": "Calzado precioso y comodo.",
       "stock": "5",
       "imagenes":[
-        "imagenes/Air Max 97 Negras.jpg"
+        "imagenes/Nike Air Max 97 Negras.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas":[],
