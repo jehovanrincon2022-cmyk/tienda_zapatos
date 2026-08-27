@@ -1714,7 +1714,7 @@
     },
     {
       "numero": "67",
-      "nombre": "Mind 001",
+      "nombre": "Nike MIND 001",
       "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Nike",
@@ -1974,7 +1974,7 @@
     },
     {
       "numero": "54",
-      "nombre": "Dior B30 Negras",
+      "nombre": "Dior B30 Negra",
       "precio": "$68.00",
       "categoria": "Top Quality",
       "marca": "Dior",
@@ -2747,8 +2747,7 @@
       "descripcion": "La colaboración entre Adidas y Bad Bunny en las Response CL combina el estilo retro con la visión única del artista. Con su diseño inspirado en los años 2000 y detalles exclusivos, estas zapatillas son una celebración de la cultura urbana y la música.",
       "stock": 1,
       "imagenes": [
-        "imagenes/adidas Response CL x Bad Bunny .jpg",
-        "imagenes/adidas Response CL x Bad Bunny 2.jpg"
+        "imagenes/adidas Response CL x Bad Bunny .jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42],
       "tallas_agotadas": [43, 44, 45],
@@ -2756,7 +2755,7 @@
     },
     {
       "numero": "13",
-      "nombre": "Adidas Campus x Bad Bunny (The Last Campus)",
+      "nombre": "Adidas Campus x Bad Bunny",
       "precio": "$55.00",
       "categoria": "Top Quality",
       "marca": "Adidas",
@@ -2764,7 +2763,7 @@
       "material": "Gamuza + Cuero",
       "origen": "Importado",
       "descripcion": "La colaboración entre Adidas y Bad Bunny trae The Last Campus, una versión especial de la clásica silueta Campus. Con detalles únicos y un diseño que combina la estética urbana con el toque personal del artista puertorriqueño, estas zapatillas son un homenaje a la cultura del sneaker.",
-      "stock": 2,
+      "stock": 8,
       "imagenes": [
         "imagenes/adidas Campus1.jpg",
         "imagenes/adidas Campus2.jpg",
