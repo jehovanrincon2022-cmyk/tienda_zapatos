@@ -241,6 +241,19 @@
             box-shadow: 0 10px 30px rgba(200, 168, 124, 0.3);
         }
 
+        /* ===== INDICADOR DE CARGA (SPINNER) ===== */
+        .loading-indicator {
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .loading-indicator i {
+            font-size: 32px;
+            color: #00d4ff;
+            animation: spin 1s linear infinite;
+        }
+
         @media (max-width: 768px) {
             .product-grid-catalog {
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -432,14 +445,16 @@
         // ===== VARIABLES DE PAGINACIÓN =====
         // ============================================================
         let productosCargados = 0;
-        const PRODUCTOS_POR_PAGINA = 8;
+        const PRODUCTOS_POR_PAGINA = 20; // Cambiado a 20
         let todosLosNovedades = [];
+        let isLoading = false;
 
         // ============================================================
-        // ===== FILTRAR NOVEDADES =====
+        // ===== FILTRAR NOVEDADES (ORDENADAS POR NÚMERO DESCENDENTE) =====
         // ============================================================
         function filtrarNovedades() {
-            return productosData.filter(producto => {
+            // 1. Filtrar productos con badge "Nuevo" u "Oferta"
+            let novedades = productosData.filter(producto => {
                 const badge = producto.badge || producto.etiqueta || '';
                 const descripcion = producto.descripcion || '';
                 const nombre = producto.nombre || '';
@@ -454,6 +469,16 @@
                 
                 return esNuevo || esOferta;
             });
+            
+            // 2. ORDENAR: Los productos con número más alto (más nuevos) primero
+            novedades.sort((a, b) => {
+                // Convertir a número, si no tiene número, poner 0
+                const numA = parseInt(a.numero) || 0;
+                const numB = parseInt(b.numero) || 0;
+                return numB - numA; // Descendente: del más alto al más bajo
+            });
+            
+            return novedades;
         }
 
         // ============================================================
@@ -527,7 +552,7 @@
                 return;
             }
 
-            // Cargar solo los primeros 8
+            // Cargar solo los primeros 20
             const iniciales = todosLosNovedades.slice(0, PRODUCTOS_POR_PAGINA);
             productosCargados = iniciales.length;
             
@@ -535,44 +560,56 @@
                 container.appendChild(crearCardProducto(producto));
             });
 
-            // Agregar botón "Cargar más" si hay más productos
-            if (todosLosNovedades.length > PRODUCTOS_POR_PAGINA) {
-                const btnMas = document.createElement('div');
-                btnMas.className = 'load-more-btn';
-                btnMas.innerHTML = `
-                    <button onclick="cargarMasNovedades()">
-                        Cargar más productos (${todosLosNovedades.length - productosCargados} restantes)
-                    </button>
-                `;
-                container.appendChild(btnMas);
-            }
+            // ===== BOTÓN "Cargar más" ELIMINADO - CARGA AUTOMÁTICA =====
+            // Los productos se cargan automáticamente al hacer scroll
         }
 
         // ============================================================
-        // ===== CARGAR MÁS NOVEDADES =====
+        // ===== CARGAR MÁS NOVEDADES (AUTOMÁTICO) =====
         // ============================================================
         window.cargarMasNovedades = function() {
+            if (isLoading || productosCargados >= todosLosNovedades.length) return;
+            
             const container = document.getElementById('productGrid');
+            
+            let spinner = container.querySelector('.loading-indicator');
+            if (!spinner) {
+                spinner = document.createElement('div');
+                spinner.className = 'loading-indicator';
+                spinner.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando más novedades...';
+                container.appendChild(spinner);
+            }
+
             const siguienteLote = todosLosNovedades.slice(productosCargados, productosCargados + PRODUCTOS_POR_PAGINA);
             
-            siguienteLote.forEach(producto => {
-                container.appendChild(crearCardProducto(producto));
-            });
-            
-            productosCargados += siguienteLote.length;
-            
-            // Quitar botón si ya no hay más
-            if (productosCargados >= todosLosNovedades.length) {
-                const btn = container.querySelector('.load-more-btn');
-                if (btn) btn.remove();
-            } else {
-                // Actualizar el contador del botón
-                const btn = container.querySelector('.load-more-btn button');
-                if (btn) {
-                    btn.innerHTML = `Cargar más productos (${todosLosNovedades.length - productosCargados} restantes)`;
-                }
-            }
+            setTimeout(() => {
+                siguienteLote.forEach(producto => {
+                    container.appendChild(crearCardProducto(producto));
+                });
+                
+                productosCargados += siguienteLote.length;
+                
+                const spinnerEl = container.querySelector('.loading-indicator');
+                if (spinnerEl) spinnerEl.remove();
+                
+                isLoading = false;
+            }, 300);
         };
+
+        // ============================================================
+        // ===== CARGA AUTOMÁTICA AL HACER SCROLL (INFINITE SCROLL) =====
+        // ============================================================
+        window.addEventListener('scroll', function() {
+            if (isLoading || productosCargados >= todosLosNovedades.length || todosLosNovedades.length === 0) return;
+            
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const pageHeight = document.documentElement.scrollHeight;
+            
+            if (scrollPosition >= pageHeight - 300) {
+                isLoading = true;
+                cargarMasNovedades();
+            }
+        });
 
         // ====== TEMA CLARO/OSCURO ======
         const themeToggle = document.getElementById('themeToggle');
