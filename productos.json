@@ -129,7 +129,7 @@
       "nombre": "Nike Air Max Dn Negras",
       "precio": "$32.00",
       "badge": "Nuevo",
-      "categoria": "Top Quality",
+      "categoria": "Triple A",
       "marca": "nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -1382,7 +1382,7 @@
     {
       "numero": "83",
       "nombre": "Air Force x Nocta",
-      "precio": "$68.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -1591,7 +1591,7 @@
     {
       "numero": "73",
       "nombre": "Air Force One x Drake Blancas",
-      "precio": "$67.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2753,7 +2753,7 @@
       "tallas_agotadas": [43, 44, 45],
       "categoria_link": "Top_Quality.html"
     },
-    {
+    {  
       "numero": "13",
       "nombre": "Adidas Campus x Bad Bunny",
       "precio": "$55.00",
