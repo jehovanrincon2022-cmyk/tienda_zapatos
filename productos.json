@@ -1,6 +1,63 @@
 {
   "productos": [
     {
+      "numero": "153",
+      "nombre": "Air Max DN Crema",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Max DN Crema.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "152",
+      "nombre": "Air Max DN All Day",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Max DN All Day.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "151",
+      "nombre": "Air Max DN Blanco con Negro",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Max DN Blanco con Negro.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
       "numero": "150",
       "nombre": "ASICS Gel-Kahana 8 White Black",
       "precio": "$50.00",
@@ -126,8 +183,8 @@
     },
     {
       "numero": "144",
-      "nombre": "Nike Air Max Dn Negras",
-      "precio": "$32.00",
+      "nombre": "Air Max Dn Negras",
+      "precio": "$35.00",
       "badge": "Nuevo",
       "categoria": "Triple A",
       "marca": "nike",
@@ -137,13 +194,11 @@
       "descripcion": "Calzado precioso y comodo.",
       "stock": "5",
       "imagenes": [
-        "imagenes/Air Max DN Negras1.jpg",
-        "imagenes/Air Max DN Negras2.jpg",
-        "imagenes/Air Max DN Negras3.jpg"
+        "imagenes/Air Max DN Negras.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "143",
@@ -1606,8 +1661,8 @@
         "imagenes/Air Force One x Drake Blancas4.jpg",
         "imagenes/Air Force One x Drake Blancas5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
+      "tallas": [36, 37, 38, 39, 40, 41, 44, 45],
+      "tallas_agotadas": [ 42, 43],
       "categoria_link": "Top_Quality.html"
     },
     {
