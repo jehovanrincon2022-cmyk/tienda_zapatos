@@ -1,6 +1,124 @@
 {
   "productos": [
     {
+      "numero": "159",
+      "nombre": "Nike Gary Payton Doble Cara",
+      "precio": "$84.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Nike Gary Payton Doble Cara.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "numero": "158",
+      "nombre": "Adidas Campus Black",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Adidas Campus Black.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "157",
+      "nombre": "Adidas Campus Blancas con Negro",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Adidas Campus Blancas con Negro.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "156",
+      "nombre": "ASICS GEL-Kahana 8 White-Pink-Cream",
+      "precio": "$50.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "ASICS",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/ASICS GEL-Kahana 8 White-Pink-Cream1.jpg",
+        "imagenes/ASICS GEL-Kahana 8 White-Pink-Cream2.jpg",
+        "imagenes/ASICS GEL-Kahana 8 White-Pink-Cream3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "155",
+      "nombre": "ASICS GEL-Kahana 8 Feather Grey",
+      "precio": "$50.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "ASICS",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/ASICS GEL-Kahana 8 Feather Grey1.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "154",
+      "nombre": "ASICS GEL-Kahana 8 Cream-Olive-Grey",
+      "precio": "$50.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "ASICS",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/ASICS GEL-Kahana 8 Cream-Olive-Grey1.jpg",
+        "imagenes/ASICS GEL-Kahana 8 Cream-Olive-Grey2.jpg",
+        "imagenes/ASICS GEL-Kahana 8 Cream-Olive-Grey3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
       "numero": "153",
       "nombre": "Air Max DN Crema",
       "precio": "$35.00",
@@ -62,8 +180,8 @@
       "nombre": "ASICS Gel-Kahana 8 White Black",
       "precio": "$50.00",
       "badge": "Nuevo",
-      "categoria": "Top Quality",
-      "marca": "nike",
+      "categoria": "Triple A",
+      "marca": "ASICS",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
       "origen": "Importado",
@@ -77,7 +195,7 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "149",
@@ -137,8 +255,8 @@
         "imagenes/Air Force One Black1.jpg",
         "imagenes/Air Force One Black2.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
+      "tallas": [36, 44, 45],
+      "tallas_agotadas": [37, 38, 39, 40, 41, 42, 43],
       "categoria_link": "Triple_A.html"
     },
     {
@@ -1458,7 +1576,7 @@
     {
       "numero": "82",
       "nombre": "Dior B30 Negras con Blanco",
-      "precio": "$68.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Dior",
       "genero": "Unisex",
@@ -1478,7 +1596,7 @@
     {
       "numero": "81",
       "nombre": "Dior B30 blancas",
-      "precio": "$68.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Dior",
       "genero": "Unisex",
@@ -1498,7 +1616,7 @@
     {
       "numero": "80",
       "nombre": "Adidas Response x Bad Bunny",
-      "precio": "$68.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -1661,14 +1779,14 @@
         "imagenes/Air Force One x Drake Blancas4.jpg",
         "imagenes/Air Force One x Drake Blancas5.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 44, 45],
-      "tallas_agotadas": [ 42, 43],
+      "tallas": [36, 37, 38, 39, 40, 41, 45],
+      "tallas_agotadas": [ 42, 43, 44],
       "categoria_link": "Top_Quality.html"
     },
     {
       "numero": "72",
       "nombre": "Dior B22 Negras",
-      "precio": "$63.00",
+      "precio": "$65.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -1690,7 +1808,7 @@
     {
       "numero": "71",
       "nombre": "Dior B22",
-      "precio": "$63.00",
+      "precio": "$65.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2030,7 +2148,7 @@
     {
       "numero": "54",
       "nombre": "Dior B30 Negra",
-      "precio": "$68.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Dior",
       "genero": "Unisex",
