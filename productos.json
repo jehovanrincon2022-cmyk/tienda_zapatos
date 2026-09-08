@@ -1,6 +1,67 @@
 {
   "productos": [
     {
+      "numero": "162",
+      "nombre": "Air Jordan 1 Low Court Purple",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low Court Purple1.jpg",
+        "imagenes/Air Jordan 1 Low Court Purple2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "161",
+      "nombre": "Air Jordan 1 Low Blue",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low Blue1.jpg",
+        "imagenes/Air Jordan 1 Low Blue2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "160",
+      "nombre": "Air Jordan 1 Low Green Toe",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Jordan 1 Low Green Toe1.jpg",
+        "imagenes/Air Jordan 1 Low Green Toe2.jpg",
+        "imagenes/Air Jordan 1 Low Green Toe3.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
       "numero": "159",
       "nombre": "Nike Gary Payton Doble Cara",
       "precio": "$84.00",
