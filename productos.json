@@ -1,6 +1,143 @@
 {
   "productos": [
     {
+      "numero": "169",
+      "nombre": "Air Jordan 4 Retro Thunder",
+      "precio": "$70.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Jordan 4 Retro Thunder1.jpg",
+        "imagenes/Air Jordan 4 Retro Thunder2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
+      "numero": "168",
+      "nombre": "Air Jordan Retro 4 Thunder",
+      "precio": "$58.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Air Jordan Retro 4 Thunder1.jpg",
+        "imagenes/Air Jordan Retro 4 Thunder2.jpg",
+        "imagenes/Air Jordan Retro 4 Thunder3.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "167",
+      "nombre": "Adidas Campus Green Toe",
+      "precio": "$35.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Adidas",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Adidas Campus Green Toe.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "166",
+      "nombre": "Nike Dunk Low Pink Rise",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Nike Dunk Low Pink Rise.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "165",
+      "nombre": "Nike Dunk Low Grey Fog",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Nike Dunk Low Grey Fog.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "164",
+      "nombre": "Nike Dunk Low Rose Whiper",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Nike Dunk Low Rose Whiper.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
+      "numero": "163",
+      "nombre": "Nike Dunk Low Black",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Nike Dunk Low Black1.jpg",
+        "imagenes/Nike Dunk Low Black2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
+    {
       "numero": "162",
       "nombre": "Air Jordan 1 Low Court Purple",
       "precio": "$30.00",
@@ -487,7 +624,7 @@
       "numero": "138",
       "nombre": "Air Jordan Retro 4 Blanco con Negro",
       "precio": "$70.00",
-      "badge": "",
+      "badge": "Nuevo",
       "categoria": "Top Quality",
       "marca": "Jordan",
       "genero": "Unisex",
@@ -1763,7 +1900,7 @@
     {
       "numero": "76",
       "nombre": "Air Max Portal Negras",
-      "precio": "$42.00",
+      "precio": "$45.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -1782,7 +1919,7 @@
     {
       "numero": "75",
       "nombre": "Air Max Portal",
-      "precio": "$42.00",
+      "precio": "$45.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -1803,7 +1940,7 @@
     {
       "numero": "74",
       "nombre": "Nike Sb Force Snake",
-      "precio": "$42.00",
+      "precio": "$45.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2067,14 +2204,14 @@
     {
       "numero": "61",
       "nombre": "Air Jordan 4 Retro Black",
-      "precio": "$95.00",
+      "precio": "$45.00",
       "categoria": "Triple A",
       "marca": "Jordan",
       "genero": "Unisex",
       "material": "Cuero + Malla",
       "origen": "Importado",
       "descripcion": "Las Air Jordan 4 Retro Black son un clásico atemporal. Con su diseño icónico, amortiguación Air-Sole y construcción de cuero y malla de alta calidad, estas zapatillas son un tributo a la leyenda del baloncesto.",
-      "stock": 2,
+      "stock": 0,
       "imagenes": [
         "imagenes/retro 4 black.jpeg"
       ],
