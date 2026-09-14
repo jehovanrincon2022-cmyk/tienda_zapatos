@@ -1,6 +1,32 @@
 {
   "productos": [
     {
+      "numero": "170",
+      "nombre": "Nike Mind 001 X Nocta",
+      "precio": "$65.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "10",
+      "imagenes": [
+        "imagenes/Nike Mind 0011.jpg",
+        "imagenes/Nike Mind 0012.jpg",
+        "imagenes/Nike Mind 0013.jpg",
+        "imagenes/Nike Mind 0014.jpg",
+        "imagenes/Nike Mind 0015.jpg",
+        "imagenes/Nike Mind 0016.jpg",
+        "imagenes/Nike Mind 0017.jpg",
+        "imagenes/Nike Mind 0018.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Top_Quality.html"
+    },
+    {
       "numero": "169",
       "nombre": "Air Jordan 4 Retro Thunder",
       "precio": "$70.00",

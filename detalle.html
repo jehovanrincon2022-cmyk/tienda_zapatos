@@ -810,6 +810,55 @@
             to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
+        /* ===== BOTÓN COPIAR TODO ===== */
+        .copy-all-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .copy-all-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .copy-all-btn:active {
+            transform: scale(0.97);
+        }
+
+        .copy-all-btn i {
+            font-size: 16px;
+        }
+
+        .copy-all-btn.copied {
+            background: #2ecc71;
+            color: #fff;
+        }
+
+        /* ===== BADGE COPIAR TODO ===== */
+        .copy-all-badge {
+            margin-left: auto;
+            font-size: 10px;
+            font-weight: 400;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            padding: 2px 8px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
         /* ===== OPTIMIZACIONES PARA MÓVIL ===== */
         @media (max-width: 1024px) {
             .product-detail-wrapper {
@@ -828,7 +877,6 @@
                 letter-spacing: 6px;
             }
             
-            /* Desactivar hover en móvil */
             .main-image-container:hover img {
                 transform: none !important;
             }
@@ -981,6 +1029,11 @@
             .product-number-badge {
                 font-size: 12px;
                 padding: 4px 12px;
+            }
+
+            .copy-all-btn {
+                font-size: 12px;
+                padding: 9px;
             }
         }
 
@@ -1177,6 +1230,16 @@
                 top: 10px;
                 left: 10px;
             }
+
+            .copy-all-btn {
+                font-size: 11px;
+                padding: 8px;
+            }
+
+            .copy-all-badge {
+                font-size: 9px;
+                padding: 1px 6px;
+            }
         }
 
         @keyframes fadeIn {
@@ -1237,7 +1300,7 @@
 
     <!-- ===== MODALES DE PAGO ===== -->
 
-    <!-- Modal Pago Móvil -->
+    <!-- Modal Pago Móvil MEJORADO -->
     <div class="payment-modal" id="modalPagoMovil">
         <div class="payment-modal-content">
             <span class="payment-modal-close" onclick="closePaymentModal('modalPagoMovil')">&times;</span>
@@ -1246,57 +1309,52 @@
                 Pago Móvil
             </div>
             <div class="payment-modal-body">
+                
+                <!-- ===== BANESCO ===== -->
                 <div class="bank-section">
                     <div class="bank-title">
-                        <i class="fas fa-university" style="color:hsl(128, 98%, 32%);"></i> Banesco
+                        <i class="fas fa-university" style="color:#2ecc71;"></i> Banesco
                     </div>
                     <div class="info-row">
-                        <span class="info-label">🪪 Cédula</span>
-                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
+                        <span class="info-label">BANESCO</span>
+                        <span class="info-value">Banesco</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-label"><i class="fas fa-university" style="color:hsl(128, 98%, 32%);"></i>Banco</span>
-                        <span class="info-value copyable" onclick="copyText('Banesco')">Banesco<span class="copy-hint">copiar</span></span>
+                        <span class="info-label">Cédula</span>
+                        <span class="info-value">31536496</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-label">📱 Teléfono</span>
-                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
-                    </div>    
+                        <span class="info-label">Teléfono</span>
+                        <span class="info-value">04125695130</span>
+                    </div>
+                    <button class="copy-all-btn" onclick="copyBankAll('Banco Banesco', '31536496', '04125695130')">
+                        <i class="fas fa-copy"></i> Copiar todos los datos
+                    </button>
                 </div>
+
+                <!-- ===== VENEZUELA ===== -->
                 <div class="bank-section">
                     <div class="bank-title">
-                        <i class="fas fa-university" style="color:#409aeef5;"></i> Mercantil
+                        <i class="fas fa-university" style="color:#a30404;"></i>Banco de Venezuela
+                        
                     </div>
                     <div class="info-row">
-                        <span class="info-label">🪪 Cédula</span>
-                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
+                        <span class="info-label">Banco de Venezuela</span>
+                        <span class="info-value">Banco de Venezuela</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-label"><i class="fas fa-university" style="color:#409aeef5;"></i>Banco</span>
-                        <span class="info-value copyable" onclick="copyText('Mercantil')">Mercantil<span class="copy-hint">copiar</span></span>
+                        <span class="info-label">Cédula</span>
+                        <span class="info-value">31536496</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-label">📱 Teléfono</span>
-                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
-                    </div>    
+                        <span class="info-label">Teléfono</span>
+                        <span class="info-value">04125695130</span>
+                    </div>
+                    <button class="copy-all-btn" onclick="copyBankAll('Banco de Venezuela', '31536496', '04125695130')">
+                        <i class="fas fa-copy"></i> Copiar todos los datos
+                    </button>
                 </div>
-                <div class="bank-section">
-                    <div class="bank-title">
-                        <i class="fas fa-university" style="color:hwb(0 1% 37%);"></i> Venezuela
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">🪪 Cédula</span>
-                        <span class="info-value copyable" onclick="copyText('31536496')">31536496<span class="copy-hint">copiar</span></span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-university" style="color:#a30404;"></i>Banco</span>
-                        <span class="info-value copyable" onclick="copyText('Venezuela')">Venezuela<span class="copy-hint">copiar</span></span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">📱 Teléfono</span>
-                        <span class="info-value copyable" onclick="copyText('0412 569 5130')">0412 569 5130 <span class="copy-hint">copiar</span></span>
-                    </div>    
-                </div>
+
             </div>
         </div>
     </div>
@@ -1647,7 +1705,7 @@
                                         <i class="fas fa-university"></i>
                                     </div>
                                     <div class="payment-info">
-                                        <span class="payment-name">Pago Móvil <small>3 cuentas disponibles</small></span>
+                                        <span class="payment-name">Pago Móvil <small>2 cuentas disponibles</small></span>
                                     </div>
                                 </div>
                                 <div class="payment-item" onclick="openPaymentModal('modalDolarFisico')">
@@ -1731,10 +1789,6 @@
                     const productPrice = productoEncontrado.precio || 'Consultar precio';
                     const productQuality = productoEncontrado.categoria || 'General';
                     
-                    const imageUrl = productoEncontrado.imagenes && productoEncontrado.imagenes.length > 0 
-                        ? productoEncontrado.imagenes[0] 
-                        : '';
-
                     const message = `Hola 👋, ¡bienvenido a SoleStyle! %0A%0A` +
                     `Estoy interesado en este producto:%0A` +
                     `📌 *${productName}*%0A` +
@@ -1745,12 +1799,13 @@
                     `💳 *MÉTODOS DE PAGO DISPONIBLES*%0A` +
                     `━━━━━━━━━━━━━━━━━━━━━━━━%0A%0A` +
                     `🏦 *PAGO MÓVIL*%0A` +
-                    `📌 Mercantil:%0A` +
-                    `   🪪 Cédula: 31536496%0A` +
-                    `   📱 Teléfono: 04125695130%0A%0A` +
-                    `📌 Venezuela:%0A` +
-                    `   🪪 Cédula: 31536496%0A` +
-                    `   📱 Teléfono: 04125695130%0A%0A` +
+
+                    `Banesco:%0A` +
+                    `Cédula: 31536496%0A` +
+                    `Teléfono: 04125695130%0A%0A` +
+                    `Venezuela:%0A` +
+                    `Cédula: 31536496%0A` +
+                    `Teléfono: 04125695130%0A%0A` +
                     `━━━━━━━━━━━━━━━━━━━━━━━━%0A` +
                     `💵 *DÓLAR FÍSICO*%0A` +
                     `   ✅ Billetes en buen estado%0A` +
@@ -1765,7 +1820,7 @@
                     `   📧 Correo: jehovanrincon2022@gmail.com%0A%0A` +
                     `━━━━━━━━━━━━━━━━━━━━━━━━%0A` +
                     `📌 *Importante:* Al realizar el pago, envía el comprobante para confirmar tu pedido.%0A%0A` +
-                    `¿Podrían confirmar disponibilidad y stock actual? 🙏`;
+                    `¡En breve le confirmaremos el producto!`;
 
                     whatsappBtn.href = `https://wa.me/${phoneNumber}?text=${message}`;
                 }
@@ -1818,7 +1873,48 @@
             });
         });
 
-        // ====== FUNCIÓN PARA COPIAR TEXTO ======
+        // ============================================================
+        // ===== COPIAR DATOS COMPLETOS DEL BANCO (CON NOMBRE) =====
+        // ============================================================
+        function copyBankAll(bank, cedula, telefono) {
+            const textToCopy = 
+                ` *${bank}*%0A` +
+                ` Cédula: ${cedula}%0A` +
+                ` Teléfono: ${telefono}`;
+            
+            // Limpiar formato para copiar
+            const textoLimpio = textToCopy.replace(/%0A/g, '\n');
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textoLimpio).then(() => {
+                    showCopyNotification(`✅ Datos de ${bank} copiados`);
+                }).catch(() => {
+                    fallbackCopyBank(textoLimpio, bank);
+                });
+            } else {
+                fallbackCopyBank(textoLimpio, bank);
+            }
+        }
+
+        function fallbackCopyBank(texto, bank) {
+            const textarea = document.createElement('textarea');
+            textarea.value = texto;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            textarea.style.top = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showCopyNotification(`✅ Datos de ${bank} copiados`);
+            } catch (e) {
+                console.error('Error al copiar:', e);
+                showCopyNotification('❌ Error al copiar');
+            }
+            document.body.removeChild(textarea);
+        }
+
+        // ====== FUNCIÓN PARA COPIAR TEXTO SIMPLE ======
         function copyText(text) {
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(text).then(() => {
@@ -1848,8 +1944,13 @@
             document.body.removeChild(textarea);
         }
 
-        function showCopyNotification() {
+        function showCopyNotification(mensaje) {
             const notification = document.getElementById('copyNotification');
+            if (mensaje) {
+                notification.innerHTML = `<i class="fas fa-check-circle"></i> ${mensaje}`;
+            } else {
+                notification.innerHTML = `<i class="fas fa-check-circle"></i> ¡Copiado!`;
+            }
             notification.style.display = 'block';
             clearTimeout(notification._timeout);
             notification._timeout = setTimeout(() => {
@@ -1888,10 +1989,6 @@
         document.querySelector('.menu-toggle')?.addEventListener('click', () => {
             document.querySelector('.nav-links')?.classList.toggle('active');
         });
-
-        // ====== CARRITO ELIMINADO ======
-        // let cartCount = 0;
-        // document.getElementById('cart-count').textContent = cartCount;
 
         // ====== SERVICE WORKER ======
         if ('serviceWorker' in navigator) {
