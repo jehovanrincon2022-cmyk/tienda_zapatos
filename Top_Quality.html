@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👟 SoleStyle - Top Quality</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buscador.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ===== ESTILOS PARA LAS TARJETAS DE PRODUCTOS ===== */
@@ -285,6 +286,9 @@
                 </ul>
             </nav>
             <div class="header-actions">
+                <button class="search-trigger" id="searchTrigger" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
@@ -2544,5 +2548,6 @@
             console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
         })();
     </script>
+    <script src="buscador.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buscador.css">
     <style>
         .product-grid-catalog {
             display: grid;
@@ -353,8 +354,10 @@
                 </ul>
             </nav>
             <div class="header-actions">
+                <button class="search-trigger" id="searchTrigger" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
                 <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <!-- ===== ÍCONO DEL CARRITO ELIMINADO ===== -->
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </div>
@@ -668,5 +671,6 @@
             init();
         }
     </script>
+    <script src="buscador.js"></script>
 </body>
 </html>
