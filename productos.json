@@ -1,6 +1,25 @@
 {
   "productos": [
     {
+      "numero": "192",
+      "nombre": "Air Force One black",
+      "precio": "$32.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Importado",
+      "descripcion": "Calzado precioso y comodo.",
+      "stock": "10",
+      "imagenes": [
+        "imagenes/Air Force One Black TripleA.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
+    },
+    {
       "numero": "191",
       "nombre": "Nike SB Dunk Low Pro Gardenia x Fly Streetwear",
       "precio": "$55.00",
@@ -866,9 +885,9 @@
     {
       "numero": "147",
       "nombre": "Nike Air Force One Black",
-      "precio": "$42.00",
+      "precio": "$45.00",
       "badge": "Nuevo",
-      "categoria": "Triple A",
+      "categoria": "Top Quality",
       "marca": "nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -881,7 +900,7 @@
       ],
       "tallas": [36, 44, 45],
       "tallas_agotadas": [37, 38, 39, 40, 41, 42, 43],
-      "categoria_link": "Triple_A.html"
+      "categoria_link": "Top_Quality.html"
     },
     {
       "numero": "146",
@@ -3763,17 +3782,17 @@
     },
     {
       "numero": "2",
-      "nombre": "Air Force One",
-      "precio": "$42.00",
+      "nombre": "Air Force One Blancas",
+      "precio": "$43.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
-      "material": "Cuero Premium",
+      "material": "Caucho + Algodon",
       "origen": "Importado",
       "descripcion": "Las Air Force One son el ícono del calzado urbano. Con su diseño clásico, amortiguación Air-Sole y construcción de cuero premium, estas zapatillas han trascendido generaciones convirtiéndose en un símbolo de la cultura streetwear.",
       "stock": 2,
       "imagenes": [
-        "imagenes/Air Fonce One.jpg"
+        "imagenes/Air Force One Blancas.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
@@ -3781,17 +3800,17 @@
     },
     {
       "numero": "1",
-      "nombre": "Air Force One Blancas",
-      "precio": "$30.00",
+      "nombre": "Nike Air Force One",
+      "precio": "$32.00",
       "categoria": "Triple A",
       "marca": "NIKE",
       "genero": "Unisex",
-      "material": "Cuero Premium",
+      "material": "Caucho + Algodon",
       "origen": "Importado",
       "descripcion": "Las Clasicas Air Force One",
       "stock": 8,
       "imagenes": [
-        "imagenes/Air Force One Blancas TripleA1.jpg"
+        "imagenes/Nike Air Force One TripleA.jpg"
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
