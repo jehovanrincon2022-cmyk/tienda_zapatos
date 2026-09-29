@@ -977,8 +977,8 @@
         "imagenes/Nike SB Dunk Low Travis Scott1.jpg",
         "imagenes/Nike SB Dunk Low Travis Scott2.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
+      "tallas": [36, 37, 38],
+      "tallas_agotadas": [39, 40, 41, 42, 43, 44, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -1648,7 +1648,7 @@
       "material": "Malla + Caucho",
       "origen": "Importado",
       "descripcion": "Calzado precioso y comodo.",
-      "stock": 4,
+      "stock": 0,
       "imagenes": [
         "imagenes/deportivas chunky 1.jpg"
       ],
@@ -1666,7 +1666,7 @@
       "material": "Malla + Caucho",
       "origen": "Importado",
       "descripcion": "Calzado precioso y comodo.",
-      "stock": 4,
+      "stock": 0,
       "imagenes": [
         "imagenes/deportivas chunky.jpg"
       ],
@@ -1684,7 +1684,7 @@
       "material": "Malla + Caucho",
       "origen": "Importado",
       "descripcion": "Calzado precioso y comodo.",
-      "stock": 4,
+      "stock": 0,
       "imagenes": [
         "imagenes/deportivas chunky negras.jpg"
       ],
@@ -1702,7 +1702,7 @@
       "material": "Malla + Caucho",
       "origen": "Importado",
       "descripcion": "Calzado precioso y comodo.",
-      "stock": 4,
+      "stock": 0,
       "imagenes": [
         "imagenes/zapatillas depotivas chunky.jpg"
       ],
@@ -2524,8 +2524,8 @@
         "imagenes/New Balance 5301.jpg",
         "imagenes/New Balance 5303.jpg"
       ],
-      "tallas": [37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [36],
+      "tallas": [39],
+      "tallas_agotadas": [36, 37, 38, 40, 41, 42, 43, 44, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -3291,8 +3291,8 @@
         "imagenes/Nike Air Max 97 White5.jpg",
         "imagenes/Nike Air Max 97 White6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [],
+      "tallas": [36, 37, 38, 39, 44],
+      "tallas_agotadas": [40, 41, 42, 43, 45],
       "categoria_link": "Top_Quality.html"
     },
     {
@@ -3656,8 +3656,8 @@
         "imagenes/Air Jordan 4 Retro OG SP5.jpg",
         "imagenes/Air Jordan 4 Retro OG SP6.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44],
-      "tallas_agotadas": [],
+      "tallas": [40, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 41, 42, 43, 44],
       "categoria_link": "Top_Quality.html"
     },
     {
