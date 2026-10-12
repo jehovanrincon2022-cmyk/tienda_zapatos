@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa - JR SPORT SHOP</title>
+    <link rel="stylesheet" href="../css/styles-v2.css">
+    <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section-header {
+            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
+            border-bottom: 3px solid var(--accent);
+            padding: 50px 0 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h1 {
+            font-size: 52px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        .section-header h1 span {
+            color: var(--accent);
+            font-weight: 400;
+        }
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 30px 0 80px;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 45px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .category-card i {
+            font-size: 56px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover i {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .category-card h3 {
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+
+        .category-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                padding: 35px 0 25px;
+            }
+            .section-header h1 {
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+            .section-header p {
+                font-size: 15px;
+            }
+            .category-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                padding: 20px 0 50px;
+            }
+            .category-card {
+                padding: 30px 15px;
+            }
+            .category-card i {
+                font-size: 42px;
+                margin-bottom: 12px;
+            }
+            .category-card h3 {
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+            .category-card p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- HEADER -->
+    <header>
+        <div id="header-container"></div>
+    </header>
+
+    <!-- ENCABEZADO -->
+    <section class="section-header">
+        <div class="container">
+            <h1>👕 <span>Ropa</span></h1>
+            <p>Descubre nuestra colección de ropa premium</p>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <div class="container">
+        <div class="category-grid">
+            <a href="camisetas.html" class="category-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Camisetas</h3>
+                <p>Estilo urbano y cómodo</p>
+            </a>
+            <a href="pantalones.html" class="category-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Pantalones</h3>
+                <p>Comodidad y diseño</p>
+            </a>
+            <a href="chaquetas.html" class="category-card">
+                <i class="fas fa-vest"></i>
+                <h3>Chaquetas</h3>
+                <p>Abrígate con estilo</p>
+            </a>
+            <a href="gorras.html" class="category-card">
+                <i class="fas fa-hat-cowboy"></i>
+                <h3>Gorras</h3>
+                <p>El toque final perfecto</p>
+            </a>
+            <a href="ropa_gym.html" class="category-card">
+                <i class="fas fa-hat-cowboy"></i>
+                <h3>Ropa para GYM</h3>
+                <p>Lo mejor en ropa deportiva</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; JR SPORT SHOP - Jehovan Rincón</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // ====== TEMA CLARO/OSCURO ======
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = themeToggle.querySelector('i');
+            if (icon) icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // ====== MENÚ MÓVIL ======
+        document.querySelector('.menu-toggle')?.addEventListener('click', () => {
+            document.querySelector('.nav-links')?.classList.toggle('active');
+        });
+
+        // ====== MENÚ DESPLEGABLE EN MÓVIL ======
+        document.querySelectorAll('.has-dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const parent = this.parentElement;
+                    document.querySelectorAll('.has-dropdown').forEach(item => {
+                        if (item !== parent) item.classList.remove('active');
+                    });
+                    parent.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+    <script src="/tienda_zapatos/components/header.js"></script>
+</body>
+</html>

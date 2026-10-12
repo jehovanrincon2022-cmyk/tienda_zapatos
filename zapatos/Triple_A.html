@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR SPORT SHOP - Triple A</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="../css/styles-v2.css">
+    <link rel="stylesheet" href="../css/buscador.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* ===== ESTILOS PARA LAS TARJETAS DE PRODUCTOS ===== */
@@ -262,39 +262,10 @@
     </style>
 </head>
 <body>
-    <!-- TOP BAR -->
-    <div class="top-bar">
-        <div class="container">
-          
-            <div class="top-right">
-            </div>
-        </div>
-    </div>
 
     <!-- HEADER -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-shoe-prints"></i>
-                <span>JR <span>SPORT SHOP</span></span>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="Top_Quality.html">Top Quality</a></li>
-                    <li><a href="Triple_A.html" >Triple A</a></li>
-                    <li><a href="doble_A.html">Doble A</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <button class="search-trigger" id="searchTrigger" aria-label="Buscar">
-                    <i class="fas fa-search"></i>
-                </button>
-                <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div>
-                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-            </div>
-        </div>
+        <div id="header-container"></div>
     </header>
 
     <!-- ENCABEZADO ESPECIAL TRIPLE A -->
@@ -1522,6 +1493,22 @@
             console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
         })();
     </script>
-    <script src="buscador.js"></script>
+    <script>
+    // ====== MENÚ DESPLEGABLE EN MÓVIL ======
+    document.querySelectorAll('.has-dropdown > a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = this.parentElement;
+                // Cerrar otros dropdowns abiertos
+                document.querySelectorAll('.has-dropdown').forEach(item => {
+                    if (item !== parent) item.classList.remove('active');
+                });
+                parent.classList.toggle('active');
+            }
+        });
+    });
+</script>
+    <script src="/tienda_zapatos/components/header.js"></script>
 </body>
 </html>

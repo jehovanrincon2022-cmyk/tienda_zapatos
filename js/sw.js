@@ -2,8 +2,8 @@
 // ===== SERVICE WORKER PARA SOLE STYLE =====
 // ============================================================
 
-const CACHE_NAME = 'solestyle-v2';
-const IMAGES_CACHE = 'solestyle-images-v2';
+const CACHE_NAME = 'jrsportshop-v1';
+const IMAGES_CACHE = 'jrsportshop-images-v1';
 const FILES_TO_CACHE = [
     '/',
     '/index.html',

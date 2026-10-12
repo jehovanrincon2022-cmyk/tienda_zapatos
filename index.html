@@ -5,69 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Sport Shop - Tienda de Zapatos</title>
     
-    <!-- Preconexiones para mejorar velocidad -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    
-    <!-- Font Awesome con carga diferida -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="/tienda_zapatos/css/styles-v2.css">
+    <link rel="stylesheet" href="/tienda_zapatos/css/buscador.css">
     
-    <!-- Preload de imagen hero para carga rápida -->
-    <link rel="preload" as="image" href="imagenes/image.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="/tienda_zapatos/zapatos/imagenes/image.jpg" fetchpriority="high">
 </head>
 <body>
-    <!-- TOP BAR -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-right">
-                <span class="weather">
-            </div>
-        </div>
-    </div>
+    <!-- HEADER COMPARTIDO -->
+    <div id="header-container"></div>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-shoe-prints"></i>
-                <span>JR <span>SPORT SHOP</span></span>
-            </div>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="novedades.html" class="active">Novedades</a></li>
-                    <li><a href="Top_Quality.html">Top Quality</a></li>
-                    <li><a href="Triple_A.html">Triple A</a></li>
-                    <li><a href="doble_A.html">Doble A</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                    <button class="search-trigger" id="searchTrigger" aria-label="Buscar">
-        <i class="fas fa-search"></i>
-    </button>
-                <div class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                </div>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- ====== HERO CON IMAGEN PROTAGONISTA ====== -->
+    <!-- HERO -->
     <section class="hero-banner" id="novedades">
         <div class="hero-background">
-            <img src="imagenes/image.jpg" 
-                 alt="Zapatos SoleStyle" 
+            <img src="/tienda_zapatos/zapatos/imagenes/image.jpg" 
+                 alt="Zapatos" 
                  class="hero-bg-image"
-                 fetchpriority="high"
-                 loading="eager"
-                 decoding="async">
+                 fetchpriority="high">
             <div class="hero-overlay"></div>
         </div>
         
@@ -88,7 +45,7 @@
         </div>
     </section>
 
-    <!-- ====== VIDEO PUBLICITARIO (CON LOOP) ====== -->
+    <!-- VIDEO -->
     <section class="video-section" id="video">
         <div class="container">
             <div class="video-header">
@@ -99,42 +56,19 @@
             <div class="video-container">
                 <div class="video-wrapper">
                     <video loop autoplay muted playsinline loading="lazy">
-                        <source src="videos/video2.mp4" type="video/mp4">
-                        Tu navegador no soporta el video.
+                        <source src="/tienda_zapatos/videos/video2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO / REDES -->
+    <!-- CONTACTO -->
     <section class="contacto">
         <div class="container">
-            <div class="social-icons">
-                <!-- Tus iconos de redes sociales aquí -->
-            </div>
+            <div class="social-icons"></div>
         </div>
     </section>
-
-    <!-- MODAL -->
-    <div class="modal" id="shoeModal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <i class="fas fa-shoe-prints"></i>
-                </div>
-                <div class="modal-details">
-                    <h3 id="modalTitle">Zapato</h3>
-                    <p id="modalDescription">Descripción detallada</p>
-                    <p class="modal-price" id="modalPrice">$0</p>
-                    <button class="btn-comprar">
-                        <i class="fas fa-shopping-bag"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
@@ -142,16 +76,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    
-    <!-- Service Worker para caché -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(() => console.log('✅ Service Worker registrado'))
-                .catch(() => console.log('⚠️ Service Worker no disponible'));
-        }
-    </script>
-    <script src="buscador.js"></script>
+    <!-- SCRIPTS -->
+    <script src="/tienda_zapatos/components/header.js"></script>
+    <script src="/tienda_zapatos/js/script.js"></script>
+    <script src="/tienda_zapatos/js/buscador.js"></script>
 </body>
 </html>
