@@ -1,18 +1,18 @@
 // ============================================================
-// HEADER COMPARTIDO - Carga el header en todas las páginas
-// Incluye: Menú, Tema, Buscador, Conexión con JSONs
+// HEADER COMPARTIDO - JR SPORT SHOP
+// Carga el header, el buscador y los datos
 // ============================================================
 
 (function() {
-    // ============================================================
-    // CARGAR EL HEADER.HTML EN TODAS LAS PÁGINAS
-    // ============================================================
     const container = document.getElementById('header-container');
     if (!container) {
         console.warn('⚠️ No se encontró #header-container');
         return;
     }
 
+    // ============================================================
+    // CARGAR EL HEADER.HTML
+    // ============================================================
     fetch('/tienda_zapatos/components/header.html')
         .then(res => {
             if (!res.ok) throw new Error('Error cargando header');
@@ -20,18 +20,24 @@
         })
         .then(html => {
             container.innerHTML = html;
-            inicializarHeader();
+            console.log('✅ Header HTML cargado');
+            
+            // Esperar un momento para que el DOM se actualice
+            setTimeout(() => {
+                inicializarHeader();
+                inicializarBuscador(); // ← Inicializar el buscador después
+            }, 100);
         })
         .catch(err => console.error('❌ Error cargando header:', err));
 
 
     // ============================================================
-    // INICIALIZAR TODAS LAS FUNCIONES DEL HEADER
+    // INICIALIZAR HEADER (MENÚ, TEMA)
     // ============================================================
     function inicializarHeader() {
-        console.log('✅ Header cargado correctamente');
+        console.log('✅ Header inicializado');
 
-        // ===== MENÚ HAMBURGUESA (MÓVIL) =====
+        // ===== MENÚ HAMBURGUESA =====
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         
@@ -41,7 +47,7 @@
             });
         }
 
-        // ===== DROPDOWN EN MÓVIL =====
+        // ===== DROPDOWN MÓVIL =====
         document.querySelectorAll('.has-dropdown > a').forEach(link => {
             link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
@@ -55,44 +61,52 @@
             });
         });
 
-        // ===== BOTÓN DE TEMA (DARK/LIGHT) =====
+        // ===== TEMA DARK/LIGHT =====
         const themeToggle = document.getElementById('themeToggle');
         if (themeToggle) {
             const body = document.body;
             const savedTheme = localStorage.getItem('theme') || 'dark';
             body.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
+            
+            const icon = themeToggle.querySelector('i');
+            if (icon) icon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
 
             themeToggle.addEventListener('click', () => {
                 const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
                 body.setAttribute('data-theme', newTheme);
                 localStorage.setItem('theme', newTheme);
-                updateThemeIcon(newTheme);
-            });
-        }
-
-        function updateThemeIcon(theme) {
-            const icon = themeToggle.querySelector('i');
-            if (icon) icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
-        }
-
-        // ===== BOTÓN DE BÚSQUEDA =====
-        const searchTrigger = document.getElementById('searchTrigger');
-        if (searchTrigger) {
-            searchTrigger.addEventListener('click', () => {
-                // Abrir el buscador
-                if (typeof window.abrirBuscador === 'function') {
-                    window.abrirBuscador();
-                } else {
-                    console.warn('⚠️ buscador.js no está cargado');
-                }
+                const icon = themeToggle.querySelector('i');
+                if (icon) icon.className = newTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
             });
         }
     }
 
 
     // ============================================================
-    // CARGAR DATOS DE PRODUCTOS (ZAPATOS + ROPA)
+    // INICIALIZAR BUSCADOR (después de que el header se cargue)
+    // ============================================================
+    function inicializarBuscador() {
+        const searchTrigger = document.getElementById('searchTrigger');
+        if (!searchTrigger) {
+            console.warn('⚠️ No se encontró #searchTrigger');
+            return;
+        }
+
+        // Si la función abrirBuscador existe, enganchar el botón
+        searchTrigger.addEventListener('click', () => {
+            if (typeof window.abrirBuscador === 'function') {
+                window.abrirBuscador();
+            } else {
+                console.warn('⚠️ buscador.js no está cargado');
+            }
+        });
+
+        console.log('✅ Botón de búsqueda enganchado');
+    }
+
+
+    // ============================================================
+    // CARGAR PRODUCTOS (ZAPATOS + ROPA)
     // ============================================================
     window.cargarTodosLosProductos = async function() {
         try {
@@ -121,7 +135,6 @@
             const todos = [...zapatos, ...ropa];
             console.log(`✅ Total: ${todos.length} productos`);
 
-            // Guardar en variable global para que otros scripts la usen
             window.productosData = todos;
             window.zapatosData = zapatos;
             window.ropaData = ropa;
@@ -135,40 +148,7 @@
 
 
     // ============================================================
-    // BUSCAR PRODUCTO POR NOMBRE
-    // ============================================================
-    window.buscarProductoGlobal = function(nombre) {
-        if (!window.productosData || window.productosData.length === 0) {
-            console.warn('⚠️ No hay productos cargados aún');
-            return null;
-        }
-
-        const nombreDecodificado = decodeURIComponent(nombre);
-        
-        let producto = window.productosData.find(p => p.nombre === nombreDecodificado);
-        
-        if (!producto) {
-            producto = window.productosData.find(p => 
-                p.nombre.toLowerCase().includes(nombreDecodificado.toLowerCase()) ||
-                nombreDecodificado.toLowerCase().includes(p.nombre.toLowerCase())
-            );
-        }
-        
-        return producto;
-    };
-
-
-    // ============================================================
-    // DETECTAR SI ES ROPA O ZAPATO
-    // ============================================================
-    window.esRopa = function(categoria) {
-        const categoriasRopa = ['Camisetas', 'Pantalones', 'Chaquetas', 'Gorras', 'GYM'];
-        return categoriasRopa.includes(categoria);
-    };
-
-
-    // ============================================================
-    // AUTO-INICIALIZAR (si se necesita)
+    // AUTO-INICIALIZAR
     // ============================================================
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
