@@ -113,7 +113,7 @@
             console.log('📂 Cargando todos los productos...');
             
             const [resZapatos, resRopa] = await Promise.all([
-                fetch('/tienda_zapatos/data/productos.json?v=' + Date.now()),
+                fetch('/tienda_zapatos/data/zapatos.json?v=' + Date.now()),
                 fetch('/tienda_zapatos/data/ropa.json?v=' + Date.now())
             ]);
 

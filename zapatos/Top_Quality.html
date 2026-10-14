@@ -6,267 +6,13 @@
     <title>JR SPORT SHOP - Top Quality</title>
     <link rel="stylesheet" href="../css/styles-v2.css">
     <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="../css/zapatos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* ===== ESTILOS PARA LAS TARJETAS DE PRODUCTOS ===== */
-        .product-grid-catalog {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 25px;
-            padding: 20px 0 60px;
-        }
-
-        .product-card-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .product-card-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            cursor: pointer;
-            position: relative;
-            height: 100%;
-        }
-
-        .product-card-box:hover {
-            transform: translateY(-10px);
-            border-color: #00d4ff;
-            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
-        }
-
-        .product-img-container {
-            width: 100%;
-            padding-top: 100%;
-            position: relative;
-            overflow: hidden;
-            background: var(--bg-secondary);
-        }
-
-        .product-img-catalog {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-
-        .product-card-box:hover .product-img-catalog {
-            transform: scale(1.05);
-        }
-
-        .product-info-box {
-            padding: 18px 20px 20px;
-        }
-
-        .product-brand-tag {
-            display: inline-block;
-            background: #00d4ff;
-            color: #000;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            padding: 3px 14px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-
-        .product-name {
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-            color: var(--text-primary);
-            line-height: 1.3;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .product-footer-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 5px;
-        }
-
-        .product-price {
-            font-size: 22px;
-            font-weight: 600;
-            color: #00d4ff;
-        }
-
-        .product-detail-badge {
-            font-size: 12px;
-            color: var(--text-secondary);
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .product-detail-badge::after {
-            content: '→';
-            transition: transform 0.3s;
-        }
-
-        .product-card-box:hover .product-detail-badge::after {
-            transform: translateX(5px);
-        }
-
-        /* ===== BOTONES DE FILTRO ===== */
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 10px 28px;
-            background: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-
-        .filter-btn:hover {
-            border-color: #00d4ff;
-            color: var(--text-primary);
-        }
-
-        .filter-btn.active {
-            background: #00d4ff;
-            border-color: #00d4ff;
-            color: #000;
-        }
-
-        /* ===== ENCABEZADO ===== */
-        .section-header {
-            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
-            border-bottom: 3px solid #00d4ff;
-            padding: 10px 0 10px;
-            margin-bottom: 30px;
-        }
-
-        .quality-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(0, 212, 255, 0.15);
-            padding: 8px 10px;
-            border-radius: 20px;
-            margin-bottom: 5px;
-            border: 1px solid rgba(0, 212, 255, 0.2);
-        }
-
-        .quality-badge i {
-            color: #00d4ff;
-            font-size: 20px;
-        }
-
-        .quality-badge span {
-            color: #00d4ff;
-            font-size: 12px;
-            letter-spacing: 3px;
-            font-weight: 600;
-        }
-
-        .section-header h1 {
-            font-size: 42px;
-            font-weight: 300;
-            letter-spacing: 4px;
-            color: var(--text-primary);
-        }
-
-        .section-header h1 span {
-            color: #00d4ff;
-            font-weight: 400;
-        }
-
-        .section-header p {
-            color: var(--text-secondary);
-            font-size: 18px;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .product-grid-catalog {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 15px;
-            }
-            
-            .product-info-box {
-                padding: 14px 15px 16px;
-            }
-            
-            .product-name {
-                font-size: 14px;
-            }
-            
-            .product-price {
-                font-size: 18px;
-            }
-
-            .section-header h1 {
-                font-size: 32px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .product-grid-catalog {
-                grid-template-columns: 1fr 1fr;
-                gap: 12px;
-            }
-            
-            .product-info-box {
-                padding: 10px 12px 14px;
-            }
-            
-            .product-name {
-                font-size: 12px;
-            }
-            
-            .product-price {
-                font-size: 16px;
-            }
-            
-            .product-brand-tag {
-                font-size: 8px;
-                padding: 2px 10px;
-            }
-            
-            .product-detail-badge {
-                font-size: 10px;
-            }
-
-            .section-header h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div id="header-container"></div>
-    </header>
+    <!-- HEADER COMPARTIDO -->
+    <div id="header-container"></div>
 
     <!-- ENCABEZADO ESPECIAL TOP QUALITY -->
     <section class="section-header">
@@ -301,12 +47,8 @@
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
 
-            <!-- ============================================================ -->
-            <!-- ===== NIKE ===== -->
-            <!-- ============================================================ -->
-
             <!-- AIR FORCE ONE BLANCAS -->
-            <a href="detalle.html?nombre=Air%20Force%20One%20Blancas" class="product-card-link" data-brand="nike"> 
+            <a href="detalle_zapatos.html?nombre=Air%20Force%20One%20Blancas" class="product-card-link" data-brand="nike"> 
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Force One Blancas.jpg" alt="Air Force One Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -323,7 +65,7 @@
             </a>
 
             <!-- NIKE AIR FORCE ONE BLACK -->
-            <a href="detalle.html?nombre=Nike%20Air%20Force%20One%20Black" class="product-card-link" data-brand="nike"> 
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Force%20One%20Black" class="product-card-link" data-brand="nike"> 
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Force One Black1.jpg" alt="Air Force One Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -340,7 +82,7 @@
             </a>
 
             <!-- AIR FORCE ONE X DRAKE BLANCAS -->
-            <a href="detalle.html?nombre=Air%20Force%20One%20x%20Drake%20Blancas" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Air%20Force%20One%20x%20Drake%20Blancas" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Force One x Drake Blancas1.jpg" alt="Air Force One x Drake Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -357,7 +99,7 @@
             </a>
 
             <!-- AIR FORCE 1 X NOCTA -->
-            <a href="detalle.html?nombre=Air%20Force%20x%20Nocta" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Air%20Force%20x%20Nocta" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Force 1 x Nocta1.jpg" alt="Air Force x Nocta" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -374,7 +116,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW AZUL -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Azul" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Azul" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Azul1.jpg" alt="Nike SB Dunk Low Azul" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -391,7 +133,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW AE86 -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20AE86" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20AE86" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk LowAE861.jpg" alt="Nike SB Dunk Low AE86" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -408,7 +150,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW AE86 MARRONES -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20AE86%20Marrones" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20AE86%20Marrones" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low AE86 Marrones1.jpg" alt="Nike SB Dunk Low AE86 Marrones" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -425,7 +167,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW PRO PRM -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Pro%20PRM" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Pro%20PRM" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Pro PRM1.jpg" alt="Nike SB Dunk Low Pro PRM" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -442,7 +184,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW GREEN APPLE -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Green%20Apple" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Green%20Apple" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Green Apple.jpg" alt="Nike SB Dunk Low Green Apple" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -459,7 +201,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW 85 DOUBLE BROWN -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%2085%20Double%20Brown" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%2085%20Double%20Brown" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low 85 Double Brown1.jpg" alt="Nike SB Dunk Low 85 Double Brown" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -475,9 +217,8 @@
                 </div>
             </a>
 
-
             <!-- NIKE SB DUNK LOW GREY FOG -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Grey%20Fog" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Grey%20Fog" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Grey Fog1.jpg" alt="Nike SB Dunk Low Grey Fog" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -494,7 +235,7 @@
             </a>
 
             <!-- NIKE SABRINA 1 -->
-            <a href="detalle.html?nombre=Nike%20Sabrina%201" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Sabrina%201" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Sabrina 1.jpg" alt="Nike Sabrina 1" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -511,7 +252,7 @@
             </a>
 
             <!-- NIKE ZOOM FLY 4 -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20Fly%204" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Zoom%20Fly%204" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Zoom Fly 4.jpg" alt="Nike Zoom Fly 4" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -527,9 +268,8 @@
                 </div>
             </a>
 
-
             <!-- NIKE AIR MAX DN -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Dn" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Dn" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Dn1.jpg" alt="Nike Air Max Dn" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -546,7 +286,7 @@
             </a>
 
             <!-- NIKE AIR MAX 97 NEGRAS -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%2097%20Negras" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%2097%20Negras" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max 97 Negras.jpg" alt="Nike Air Max Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -563,7 +303,7 @@
             </a>
 
             <!-- NIKE AIR MAX 97 WHITE -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%2097%20White" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%2097%20White" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max 97 White01.jpg" alt="Nike Air Max 97" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -580,7 +320,7 @@
             </a>
 
             <!-- NIKE AIR MAX PLUS -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Plus" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Plus" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Plus.jpg" alt="Nike Air Max Plus" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -597,7 +337,7 @@
             </a>
 
             <!-- NIKE AIR MAX PLUS DRIFT -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Plus%20Drift" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Plus%20Drift" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Plus Drift.jpg" alt="Nike Air Max Plus Drift" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -614,7 +354,7 @@
             </a>
 
             <!-- NIKE AIR FORCE 1 LOW TIFFANY -->
-            <a href="detalle.html?nombre=Nike%20Air%20Force%201%20Low%20Tiffany" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Force%201%20Low%20Tiffany" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Force 1 Low Tiffany1.jpg" alt="Nike Air Force 1 Low Tiffany" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -631,7 +371,7 @@
             </a>
 
             <!-- NIKE AIR FORCE 1 LOW X CACTUS PLANT FLEA BLACK -->
-            <a href="detalle.html?nombre=Nike%20Air%20Force%201%20Low%20x%20Cactus%20Plant%20Flea%20Black" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Force%201%20Low%20x%20Cactus%20Plant%20Flea%20Black" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Force x Cactus1.jpg" alt="Nike Air Force 1 Low x Cactus" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -648,7 +388,7 @@
             </a>
 
             <!-- NIKE AIR FORCE 1 LOW X CACTUS PLANT FLEA MARKET WHITE -->
-            <a href="detalle.html?nombre=Nike%20Air%20Force%201%20Low%20x%20Cactus%20Plant%20Flea%20Market%20white" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Force%201%20Low%20x%20Cactus%20Plant%20Flea%20Market%20white" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Force 1 Low x Cactus Plant Flea Market white1.jpg" alt="Nike Air Force 1 Low x Cactus white" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -664,9 +404,8 @@
                 </div>
             </a>
 
-
             <!-- NIKE A´ONE LEO LIGHTS -->
-            <a href="detalle.html?nombre=Nike%20A%C2%B4One%20Leo%20Lights" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20A%C2%B4One%20Leo%20Lights" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike A´One rosa1.jpg" alt="Nike A´One Leo lights" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -683,7 +422,7 @@
             </a>
 
             <!-- NIKE A´ONE -->
-            <a href="detalle.html?nombre=Nike%20A%C2%B4One" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20A%C2%B4One" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike A One1.jpg" alt="Nike A´One" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -700,7 +439,7 @@
             </a>
 
             <!-- NIKE HOT STEP 2 DRAKE NOCTA -->
-            <a href="detalle.html?nombre=Nike%20Hot%20Step%202%20Drake%20NOCTA" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Hot%20Step%202%20Drake%20NOCTA" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Hot Step 2 Drake NOCTA1.jpeg" alt="Nike Hot Step 2 Drake NOCTA" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -716,8 +455,8 @@
                 </div>
             </a>
 
-            <!-- NIKE HOT STEP 2 DRAKE NOCTA BLACk -->
-            <a href="detalle.html?nombre=Nike%20Hot%20Step%202%20x%20Drake%20NOCTA%20BLACK" class="product-card-link" data-brand="nike">
+            <!-- NIKE HOT STEP 2 DRAKE NOCTA BLACK -->
+            <a href="detalle_zapatos.html?nombre=Nike%20Hot%20Step%202%20x%20Drake%20NOCTA%20BLACK" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Hot Step 2 x Drake NOCTA BLACK1.jpg" alt="Nike Hot Step 2 Drake NOCTA BLACK" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -734,7 +473,7 @@
             </a>
 
             <!-- NIKE DUNK HIGH -->
-            <a href="detalle.html?nombre=Nike%20Dunk%20High" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Dunk%20High" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Dunk High.jpg" alt="Nike Dunk High" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -751,7 +490,7 @@
             </a>
 
             <!-- NIKE ZOOM FLY 4 BLANCAS -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20Fly%204%20Blancas" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Zoom%20Fly%204%20Blancas" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Zoom Fly 4 Blancas1.jpg" alt="Nike Zoom Fly 4 Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -768,7 +507,7 @@
             </a>
 
             <!-- NIKE VOMERO ROAM -->
-            <a href="detalle.html?nombre=Nike%20Vomero%20Roam" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Vomero%20Roam" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Vomero Roam1.jpg" alt="Nike Vomero Roam" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -785,7 +524,7 @@
             </a>
 
             <!-- NIKE VOMERO ROAM SUMMIT WHITE -->
-            <a href="detalle.html?nombre=Nike%20Vomero%20Roam%20Summit%20White" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Vomero%20Roam%20Summit%20White" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Vomero Roam Summit White1.jpg" alt="Nike Vomero Roam Summit White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -802,7 +541,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW ARGON -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Argon" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Argon" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Argon1.jpg" alt="Nike SB Dunk Low Argon" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -819,7 +558,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW AURA CLEAR -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Aura%20Clear" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Aura%20Clear" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Aura Clear1.jpg" alt="Nike SB Dunk Low Aura Clear" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -836,7 +575,7 @@
             </a>
 
             <!-- NIKE AIR MAX CORTEIZ 95 -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Corteiz%2095" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Corteiz%2095" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Corteiz 951.jpg" alt="Nike Air Max Corteiz 95" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -853,7 +592,7 @@
             </a>
 
             <!-- NIKE AIR MAX FUSION BLANCAS -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Fusion%20Blancas" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Fusion%20Blancas" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Fusion Blancas1.jpg" alt="Nike Air Max Fusion Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -870,7 +609,7 @@
             </a>
 
             <!-- NIKE AIR MAX 97 GHOST -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%2097%20Ghost" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%2097%20Ghost" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max 97 Ghost1.jpg" alt="Nike Air Max 97 Ghost" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -887,7 +626,7 @@
             </a>
 
             <!-- NIKE AIR MAX 97 GREEN -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%2097%20Green" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%2097%20Green" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max 97 Green1.jpg" alt="Nike Air Max 97 Green" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -904,7 +643,7 @@
             </a>
 
             <!-- NIKE MIND 001 -->
-            <a href="detalle.html?nombre=Nike%20MIND%20001" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20MIND%20001" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Mind1.jpg" alt="MIND 001" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -921,7 +660,7 @@
             </a>
 
             <!-- NIKE MIND 001 X NOCTA -->
-            <a href="detalle.html?nombre=Nike%20Mind%20001%20X%20Nocta" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Mind%20001%20X%20Nocta" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Mind 0011.jpg" alt="Nike MIND 001" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -938,7 +677,7 @@
             </a>
 
             <!-- NIKE ZOOM X INVINCIBLE RUN 3 -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20x%20Invincible%20Run%203" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Zoom%20x%20Invincible%20Run%203" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Zoom x Invincible Run 31.jpg" alt="Nike Zoom x Invincible Run 3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -955,7 +694,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW OTOMO KATSUHIRO -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Otomo%20Katsuhiro" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Otomo%20Katsuhiro" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Otomo Katsuhiro1.jpg" alt="Nike SB Dunk Low Otomo Katsuhiro" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -972,7 +711,7 @@
             </a>
 
             <!-- NIKE AIR JORDAN 1 LOW TOKYO 96 -->
-            <a href="detalle.html?nombre=Nike%20Air%20Jordan%201%20Low%20Tokyo%2096" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Jordan%201%20Low%20Tokyo%2096" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Jordan 1 Low Tokyo 961.jpg" alt="Nike Air Jordan 1 Low Tokyo 96" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -989,7 +728,7 @@
             </a>
 
             <!-- NIKE AIR MAX PULSE -->
-            <a href="detalle.html?nombre=Nike%20Air%20Max%20Pulse" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Air%20Max%20Pulse" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Air Max Pulse1.jpg" alt="Nike Air Max Pulse" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1006,7 +745,7 @@
             </a>
 
             <!-- NIKE JA 3 NEGRAS -->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Negras" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Ja%203%20Negras" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Ja 3 Negras1.jpg" alt="Nike Ja 3 Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1023,7 +762,7 @@
             </a>
 
             <!-- NIKE JA 3 AZUL TURQUESA -->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Azul%20Turquesa" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Ja%203%20Azul%20Turquesa" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Ja 3 Azul Turquesa1.jpg" alt="Nike Ja 3 Azul Turquesa" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1040,7 +779,7 @@
             </a>
 
             <!-- NIKE JA 3 SOUND CHECK -->
-            <a href="detalle.html?nombre=Nike%20Ja%203%20Sound%20Check" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Ja%203%20Sound%20Check" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Ja 3 Sound Check1.jpg" alt="Nike Ja 3 Sound Check" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1057,7 +796,7 @@
             </a>
 
             <!-- NIKE ZOOM STREANKFLY -->
-            <a href="detalle.html?nombre=Nike%20Zoom%20Streankfly" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Zoom%20Streankfly" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Zoom Streankfly1.jpg" alt="Nike Zoom Streankfly" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1074,7 +813,7 @@
             </a>
 
             <!-- NOCTA GLIDE BLACK -->
-            <a href="detalle.html?nombre=Nocta%20Glide%20Black" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nocta%20Glide%20Black" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nocta Glide1.jpg" alt="Nocta Glide Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1091,7 +830,7 @@
             </a>
 
             <!-- NOCTA GLIDE BLANCAS -->
-            <a href="detalle.html?nombre=Nocta%20Glide%20Blancas" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nocta%20Glide%20Blancas" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nocta Glide Blancas1.jpg" alt="Nocta Glide" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1108,7 +847,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW GREEN -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Green" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Green" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Green1.jpg" alt="Nike SB Dunk Low Green" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1125,7 +864,7 @@
             </a>
 
             <!-- NIKE SB DUNK LOW TRAVIS SCOTT -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Travis%20Scott" class="product-card-link" data-brand="nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Travis%20Scott" class="product-card-link" data-brand="nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Travis Scott1.jpg" alt="Nike SB Dunk Low Travis Scott" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1142,7 +881,7 @@
             </a>
 
             <!-- NIKE GARY PAYTON DOBLE CARA -->
-            <a href="detalle.html?nombre=Nike%20Gary%20Payton%20Doble%20Cara" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20Gary%20Payton%20Doble%20Cara" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Gary Payton Doble Cara.jpg" alt="Nike Gary Payton Doble Cara" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1159,7 +898,7 @@
             </a>
 
             <!-- SB DUNK LOW AZUL Y MARRON -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Marron" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Marron" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Azul y Marron1.jpg" alt="Nike SB Dunk Low Marron" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1176,7 +915,7 @@
             </a>
 
             <!-- SB DUNK SWOOSH -->
-            <a href="detalle.html?nombre=Sb%20Dunk%20Swoosh" class="product-card-link" data-brand="Nike">
+            <a href="detalle_zapatos.html?nombre=Sb%20Dunk%20Swoosh" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Sb Dunk Swoosh1.jpg" alt="Sb Dunk Swoosh" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1192,8 +931,8 @@
                 </div>
             </a>
 
-            <!-- NIKE DUNK LOW LX PINK FOAM  -->
-            <a href="detalle.html?nombre=Nike%20Dunk%20Low%20LX%20Pink%20Foam" class="product-card-link" data-brand="Nike">
+            <!-- NIKE DUNK LOW LX PINK FOAM -->
+            <a href="detalle_zapatos.html?nombre=Nike%20Dunk%20Low%20LX%20Pink%20Foam" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike Dunk Low LX Pink Foam.jpg" alt="Nike Dunk Low LX Pink Foam" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1209,8 +948,8 @@
                 </div>
             </a>
 
-            <!-- NIKE SB DUNK LOW CUSTOM  -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Custom" class="product-card-link" data-brand="Nike">
+            <!-- NIKE SB DUNK LOW CUSTOM -->
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Custom" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Custom.jpg" alt="Nike SB Dunk Low Custom" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1226,8 +965,8 @@
                 </div>
             </a>
 
-            <!-- NIKE SB DUNK LOW PRO GARDENIA X FLY STREETWEAR  -->
-            <a href="detalle.html?nombre=Nike%20SB%20Dunk%20Low%20Pro%20Gardenia%20x%20Fly%20Streetwear" class="product-card-link" data-brand="Nike">
+            <!-- NIKE SB DUNK LOW PRO GARDENIA X FLY STREETWEAR -->
+            <a href="detalle_zapatos.html?nombre=Nike%20SB%20Dunk%20Low%20Pro%20Gardenia%20x%20Fly%20Streetwear" class="product-card-link" data-brand="Nike">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Nike SB Dunk Low Pro Gardenia x Fly Streetwear.jpg" alt="Nike SB Dunk Low Custom" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1243,12 +982,8 @@
                 </div>
             </a>
 
-            <!-- ============================================================ -->
-            <!-- ===== ADIDAS ===== -->
-            <!-- ============================================================ -->
-
             <!-- ADIDAS CAMPUS X BAD BUNNY -->
-            <a href="detalle.html?nombre=Adidas%20Campus%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Campus%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Campus1.jpg" alt="Adidas Campus x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1265,7 +1000,7 @@
             </a>
 
             <!-- ADIDAS RESPONSE CL X BAD BUNNY -->
-            <a href="detalle.html?nombre=Adidas%20Response%20CL%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Response%20CL%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/adidas Response CL x Bad Bunny .jpg" alt="Adidas Response CL x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1282,7 +1017,7 @@
             </a>
 
             <!-- ADIDAS AE 2 -->
-            <a href="detalle.html?nombre=Adidas%20AE%202" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20AE%202" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas AE 21.jpg" alt="Adidas AE 2" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1299,7 +1034,7 @@
             </a>
 
             <!-- ADIDAS AE 2 NEGRAS -->
-            <a href="detalle.html?nombre=Adidas%20AE2%20Black" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20AE2%20Black" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas AE2 Black1.jpg" alt="Adidas AE2 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1316,7 +1051,7 @@
             </a>
 
             <!-- ADIDAS YEEZY 350 ZEBRA -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20350%20Zebra" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Yeezy%20350%20Zebra" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Yeezy  350 Zebra1.jpeg" alt="Adidas Yeezy 350 Zebra" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1333,7 +1068,7 @@
             </a>
 
             <!-- ADIDAS YEEZY BOOST 350 V2 EARTH -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20Boost%20350%20V2%20Earth" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Yeezy%20Boost%20350%20V2%20Earth" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Yeezy Boost 350 V2 Earth1.jpg" alt="Adidas Yeezy Boost 350 V2 Earth" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1350,7 +1085,7 @@
             </a>
 
             <!-- ADIDAS RESPONSE X BAD BUNNY -->
-            <a href="detalle.html?nombre=Adidas%20Response%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Response%20x%20Bad%20Bunny" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Response x Bad Bunny1.jpg" alt="Adidas Response x Bad Bunny" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1367,7 +1102,7 @@
             </a>
 
             <!-- ADIDAS YEEZY 700 V3 -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Yeezy%20700%20V3" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Yeezy 700 V31.jpg" alt="Adidas Yeezy 700 V3" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1384,7 +1119,7 @@
             </a>
 
             <!-- ADIDAS YEEZY 700 V3 BLACK -->
-            <a href="detalle.html?nombre=Adidas%20Yeezy%20700%20V3%20Black" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Yeezy%20700%20V3%20Black" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Yeezy 700 V3 Black1.jpg" alt="Adidas Yeezy 700 V3 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1401,7 +1136,7 @@
             </a>
 
             <!-- ADIDAS OZELIA -->
-            <a href="detalle.html?nombre=Adidas%20Ozelia" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Ozelia" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Ozelia1.jpg" alt="Adidas Ozelia" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1418,7 +1153,7 @@
             </a>
 
             <!-- ADIDAS JELLYFISH X PHARRELL WILLIAMS -->
-            <a href="detalle.html?nombre=Adidas%20Jellyfish%20x%20Pharrell%20Williams" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Jellyfish%20x%20Pharrell%20Williams" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Jellyfish x Pharrell Williams.jpg" alt="Adidas Jellyfish x Pharrell Williams" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1435,7 +1170,7 @@
             </a>
 
             <!-- ADIDAS JELLYFISH BLACK -->
-            <a href="detalle.html?nombre=Adidas%20Jellyfish%20Black" class="product-card-link" data-brand="adidas">
+            <a href="detalle_zapatos.html?nombre=Adidas%20Jellyfish%20Black" class="product-card-link" data-brand="adidas">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Adidas Jellyfish Black.jpg" alt="Adidas Jellyfish Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1451,12 +1186,8 @@
                 </div>
             </a>
 
-            <!-- ============================================================ -->
-            <!-- ===== JORDAN ===== -->
-            <!-- ============================================================ -->
-
             <!-- JORDAN RETRO 3 BLACK CAT -->
-            <a href="detalle.html?nombre=Air%20Jordan%203%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%203%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 3 Retro Black Cat1.jpg" alt="Air Jordan 3 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1472,8 +1203,8 @@
                 </div>
             </a>
 
-            <!-- AIR JORDAN RETRO 4 BLANCO CON NEGRO   -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%204%20Blanco%20con%20Negro" class="product-card-link" data-brand="jordan">
+            <!-- AIR JORDAN RETRO 4 BLANCO CON NEGRO -->
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%204%20Blanco%20con%20Negro" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 4 Blanco con Negro1.jpg" alt="Air Jordan Retro 4 Blanco con Negro" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1489,8 +1220,8 @@
                 </div>
             </a>
 
-            <!-- AIR JORDAN 4 RETRO THUNDER   -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Thunder" class="product-card-link" data-brand="jordan">
+            <!-- AIR JORDAN 4 RETRO THUNDER -->
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%204%20Retro%20Thunder" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 4 Retro Thunder1.jpg" alt="Air Jordan 4 Retro Thunder" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1507,7 +1238,7 @@
             </a>
 
             <!-- AIR JORDAN 1 LOW -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%201%20Low" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 1 Low .jpg" alt="Air Jordan 1 Low" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1524,7 +1255,7 @@
             </a>
 
             <!-- AIR JORDAN 1 LOW JADE SMOKE -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20Jade%20Smoke" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%201%20Low%20Jade%20Smoke" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 1 Low Jade Smoke.jpg" alt="Air Jordan 1 Low Jade Smoke" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1541,7 +1272,7 @@
             </a>
 
             <!-- AIR JORDAN 1 LOW X EASTSIDE GOLF -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Low%20x%20Eastside%20Golf" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%201%20Low%20x%20Eastside%20Golf" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 1 Low x Eastside Golf1.jpg" alt="Air Jordan 1 Low x Eastside Golf" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1558,7 +1289,7 @@
             </a>
 
             <!-- AIR JORDAN 4 RETRO BLACK CAT -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%204%20Retro%20Black%20Cat" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container"> 
                         <img src="imagenes/Air Jordan Retro 4 Black top quality1.jpg" alt="Air Jordan 4 Retro Black Cat" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1575,7 +1306,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 4 -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%204" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%204" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 41.jpg" alt="Air Jordan Retro 4" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1592,7 +1323,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 4 MILITARY BLUE -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%204%20Military%20Blue" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%204%20Military%20Blue" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 4 Military Blue.jpg" alt="Air Jordan Retro 4 Military Blue" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1609,7 +1340,7 @@
             </a>
 
             <!-- AIR JORDAN 4 RETRO OG SP -->
-            <a href="detalle.html?nombre=Air%20Jordan%204%20Retro%20OG%20SP" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%204%20Retro%20OG%20SP" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan 4 Retro OG SP1.jpg" alt="Air Jordan 4 Retro OG SP" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1626,7 +1357,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 3 WHITE -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20White" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%203%20White" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 3 White1.jpg" alt="Air Jordan Retro 3 White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1643,7 +1374,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 3 PALOMINO -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20Palomino" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%203%20Palomino" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 3 Palomino1.jpg" alt="Air Jordan Retro 3 Palomino" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1660,7 +1391,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 3 LUCKY GREEN -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20Lucky%20Green" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%203%20Lucky%20Green" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 3 Lucky Green.jpg" alt="Air Jordan Retro 3 Lucky Green" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1677,7 +1408,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 3 SP J BALVIN MEDELLIN SUNSET -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20SP%20J%20Balvin%20Medellin%20Sunset" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%203%20SP%20J%20Balvin%20Medellin%20Sunset" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 3 SP J Balvin Medellin Sunset.jpg" alt="Air Jordan Retro 3 SP J Balvin Medellin Sunset" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1693,9 +1424,8 @@
                 </div>
             </a>
 
-
             <!-- AIR JORDAN RETRO 3 X J BALVIN RIO -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%203%20x%20J%20Balvin%20Rio" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%203%20x%20J%20Balvin%20Rio" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 3 x J Balvin Rio.jpg" alt="Air Jordan Retro 3 x J Balvin Rio" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1712,7 +1442,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 1 WASHING PING -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20Washing%20Ping" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%201%20Washing%20Ping" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 1 Washing Ping1.jpg" alt="Air Jordan Retro 1 Washing Ping" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1729,7 +1459,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 1 HIGH MOKA -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%201%20High%20Moka" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%201%20High%20Moka" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 1 high Moka1.jpg" alt="Air Jordan Retro 1 High Moka" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1746,7 +1476,7 @@
             </a>
 
             <!-- AIR JORDAN 1 MID -->
-            <a href="detalle.html?nombre=Air%20Jordan%201%20Mid" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%201%20Mid" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air-Jordan-1-Mid.jpg" alt="Air-Jordan-1-Mid" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1763,7 +1493,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 4 SEAFOAM -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%204%20Seafoam" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%204%20Seafoam" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 4 Seafoam.jpg" alt="Air Jordan Retro 4 Seafoam" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1780,7 +1510,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 6 GEORGETOWN -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%206%20Georgetown" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%206%20Georgetown" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 6 Georgetown.jpg" alt="Air Jordan Retro 6 Georgetown" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1796,9 +1526,8 @@
                 </div>
             </a>
 
-
             <!-- AIR JORDAN RETRO 6 BLACK UNIVERSITY BLUE -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%206%20Black%20University%20Blue" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%206%20Black%20University%20Blue" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 6 Black University Blue.jpg" alt="Air Jordan Retro 6 Black University Blue" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1815,7 +1544,7 @@
             </a>
 
             <!-- AIR JORDAN RETRO 4 RAGING BULL -->
-            <a href="detalle.html?nombre=Air%20Jordan%20Retro%205%20Raging%20Bull1" class="product-card-link" data-brand="jordan">
+            <a href="detalle_zapatos.html?nombre=Air%20Jordan%20Retro%205%20Raging%20Bull1" class="product-card-link" data-brand="jordan">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Air Jordan Retro 5 Raging Bull1.jpg" alt="Air Jordan Retro 5 Raging Bull1" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1831,12 +1560,8 @@
                 </div>
             </a>
 
-            <!-- ============================================================ -->
-            <!-- ===== NEW BALANCE ===== -->
-            <!-- ============================================================ -->
-
             <!-- NEW BALANCE 9060 NEGRAS -->
-            <a href="detalle.html?nombre=New%20Balance%209060%20negras" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%209060%20negras" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 9060 negras1.jpg" alt="New Balance 9060 negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1853,7 +1578,7 @@
             </a>
 
             <!-- NEW BALANCE 9060 BLANCAS -->
-            <a href="detalle.html?nombre=New%20Balance%209060%20Blancas" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%209060%20Blancas" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 9060 Blancas1.jpg" alt="New Balance 9060 Blancas" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1870,7 +1595,7 @@
             </a>
 
             <!-- NEW BALANCE 1906AD -->
-            <a href="detalle.html?nombre=New%20Balance%201906AD" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%201906AD" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 1906AD1.jpg" alt="New Balance 1906AD" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1887,7 +1612,7 @@
             </a>
 
             <!-- NEW BALANCE 1906D WHITE -->
-            <a href="detalle.html?nombre=New%20Balance%201906D%20White" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%201906D%20White" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 1906D White.jpg" alt="New Balance 1906D White" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1904,7 +1629,7 @@
             </a>
 
             <!-- NEW BALANCE 1906D PROTECTION PACK -->
-            <a href="detalle.html?nombre=New%20Balance%201906D%20Protection%20Pack" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%201906D%20Protection%20Pack" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 1906D Protection Pack.jpg" alt="New Balance 1906D Protection Pack" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1921,7 +1646,7 @@
             </a>
 
             <!-- NEW BALANCE 993 -->
-            <a href="detalle.html?nombre=New%20Balance%20993" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%20993" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 9931.jpg" alt="New Balance 993" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1938,7 +1663,7 @@
             </a>
 
             <!-- NEW BALANCE 991 -->
-            <a href="detalle.html?nombre=New%20Balance%20991" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%20991" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 991.jpg" alt="New Balance 991" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1955,7 +1680,7 @@
             </a>
 
             <!-- NEW BALANCE 1906R -->
-            <a href="detalle.html?nombre=New%20Balance%201906R" class="product-card-link" data-brand="newbalance">
+            <a href="detalle_zapatos.html?nombre=New%20Balance%201906R" class="product-card-link" data-brand="newbalance">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/New Balance 1906R1.jpg" alt="New Balance 1906R" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1971,13 +1696,8 @@
                 </div>
             </a>
 
-
-            <!-- ============================================================ -->
-            <!-- ===== BALENCIAGA ===== -->
-            <!-- ============================================================ -->
-
             <!-- BALENCIAGA TRACK LED BLANCAS -->
-            <a href="detalle.html?nombre=Balenciaga%20Track%20LED%20blancas" class="product-card-link" data-brand="balenciaga">
+            <a href="detalle_zapatos.html?nombre=Balenciaga%20Track%20LED%20blancas" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Balenciaga Track LED blancas1.jpg" alt="Balenciaga Track LED" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -1994,7 +1714,7 @@
             </a>
 
             <!-- BALENCIAGA TRACK LED NEGRAS -->
-            <a href="detalle.html?nombre=Balenciaga%20Track%20LED%20Negras" class="product-card-link" data-brand="balenciaga">
+            <a href="detalle_zapatos.html?nombre=Balenciaga%20Track%20LED%20Negras" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Balenciaga Track LED Negras1.jpg" alt="Balenciaga Track LED Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2011,7 +1731,7 @@
             </a>
 
             <!-- BALENCIAGA TRACK 3.0 BLACK -->
-            <a href="detalle.html?nombre=Balenciaga%20Track%203.0" class="product-card-link" data-brand="balenciaga">
+            <a href="detalle_zapatos.html?nombre=Balenciaga%20Track%203.0" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Balenciaga Track 3.0 Black1.jpg" alt="Balenciaga Track 3.0" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2028,7 +1748,7 @@
             </a>
 
             <!-- BALENCIAGA RUNNER -->
-            <a href="detalle.html?nombre=Balenciaga%20Runner" class="product-card-link" data-brand="balenciaga">
+            <a href="detalle_zapatos.html?nombre=Balenciaga%20Runner" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Balenciaga Runner1.jpg" alt="Balenciaga Runner" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2045,7 +1765,7 @@
             </a>
 
             <!-- BALENCIAGA RUNNER BLACK -->
-            <a href="detalle.html?nombre=Balenciaga%20Runner%20Black" class="product-card-link" data-brand="balenciaga">
+            <a href="detalle_zapatos.html?nombre=Balenciaga%20Runner%20Black" class="product-card-link" data-brand="balenciaga">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Balenciaga Runner Black1.jpg" alt="Balenciaga Runner Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2061,12 +1781,8 @@
                 </div>
             </a>
 
-            <!-- ============================================================ -->
-            <!-- ===== LOUIS VUITTON ===== -->
-            <!-- ============================================================ -->
-
             <!-- LOUIS VUITTON LV WHITE SKATE SNEAKER -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20White%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
+            <a href="detalle_zapatos.html?nombre=Louis%20Vuitton%20LV%20White%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Louis Vuitton LV White Skate Sneaker.jpg" alt="Louis Vuitton LV White Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2083,7 +1799,7 @@
             </a>
 
             <!-- LOUIS VUITTON SKATE SNEAKER -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
+            <a href="detalle_zapatos.html?nombre=Louis%20Vuitton%20Skate%20Sneaker" class="product-card-link" data-brand="louis">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Louis Vuitton Skate Sneaker1.jpg" alt="Louis Vuitton Skate Sneaker" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2100,7 +1816,7 @@
             </a>
 
             <!-- LOUIS VUITTON LV SKATE SNEAKER MARRONES -->
-            <a href="detalle.html?nombre=Louis%20Vuitton%20LV%20Skate%20Sneaker%20Marrones1" class="product-card-link" data-brand="louis">
+            <a href="detalle_zapatos.html?nombre=Louis%20Vuitton%20LV%20Skate%20Sneaker%20Marrones1" class="product-card-link" data-brand="louis">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Louis Vuitton LV Skate Sneaker Marrones1.jpg" alt="Louis Vuitton LV Skate Sneaker Marrones" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2116,13 +1832,8 @@
                 </div>
             </a>
 
-
-            <!-- ============================================================ -->
-            <!-- ===== ASICS (asics) ===== -->
-            <!-- ============================================================ -->
-
             <!-- ASICS GEL-KAYANO 14 -->
-            <a href="detalle.html?nombre=ASICS%20GEL-Kayano%2014" class="product-card-link" data-brand="ASICS">
+            <a href="detalle_zapatos.html?nombre=ASICS%20GEL-Kayano%2014" class="product-card-link" data-brand="ASICS">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/ASICS GEL-Kayano 141.jpg" alt="ASICS GEL-Kayano 14" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2139,7 +1850,7 @@
             </a>
 
             <!-- ASICS GEL-KAYANO 14 BLACK -->
-            <a href="detalle.html?nombre=ASICS%20GEL-Kayano%2014%20Black" class="product-card-link" data-brand="ASICS">
+            <a href="detalle_zapatos.html?nombre=ASICS%20GEL-Kayano%2014%20Black" class="product-card-link" data-brand="ASICS">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/ASICS GEL-Kayano 14 Black.jpg" alt="ASICS GEL-Kayano 14 Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2156,7 +1867,7 @@
             </a>
 
             <!-- ASICS GEL-KAYANO 14 COLOR MARFIL -->
-            <a href="detalle.html?nombre=ASICS%20GEL-NYC%20Color%20Marfil" class="product-card-link" data-brand="ASICS">
+            <a href="detalle_zapatos.html?nombre=ASICS%20GEL-NYC%20Color%20Marfil" class="product-card-link" data-brand="ASICS">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/ASICS GEL-NYC color marfil.jpg" alt="ASICS GEL-NYC color marfil" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2173,7 +1884,7 @@
             </a>
 
             <!-- ASICS GEL-KAYANO 14 VERDE HIEDRA -->
-            <a href="detalle.html?nombre=ASICS%20GEL-NYC%20Verde%20Hiedra" class="product-card-link" data-brand="ASICS">
+            <a href="detalle_zapatos.html?nombre=ASICS%20GEL-NYC%20Verde%20Hiedra" class="product-card-link" data-brand="ASICS">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/ASICS GEL-NYC verde hiedra.jpg" alt="ASICS GEL-NYC verde hiedra" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2189,13 +1900,8 @@
                 </div>
             </a>
 
-
-            <!-- ============================================================ -->
-            <!-- ===== DIOR (dior) ===== -->
-            <!-- ============================================================ -->
-
             <!-- DIOR B30 NEGROS -->
-            <a href="detalle.html?nombre=Dior%20B30%20Negra" class="product-card-link" data-brand="DIOR">
+            <a href="detalle_zapatos.html?nombre=Dior%20B30%20Negra" class="product-card-link" data-brand="DIOR">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Dior B30 Negra1.jpg" alt="Dior B30 Negra" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2212,7 +1918,7 @@
             </a>
 
             <!-- DIOR B30 BLANCAS CON GRIS -->
-            <a href="detalle.html?nombre=Dior%20B30%20blancas%20gris" class="product-card-link" data-brand="DIOR">
+            <a href="detalle_zapatos.html?nombre=Dior%20B30%20blancas%20gris" class="product-card-link" data-brand="DIOR">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Dior B30 blancas gris1.jpg" alt="Dior B30 Blancas con Gris" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2229,7 +1935,7 @@
             </a>
 
             <!-- DIOR B30 NEGRAS CON BLANCO -->
-            <a href="detalle.html?nombre=Dior%20B30%20Negras%20con%20Blanco" class="product-card-link" data-brand="DIOR">
+            <a href="detalle_zapatos.html?nombre=Dior%20B30%20Negras%20con%20Blanco" class="product-card-link" data-brand="DIOR">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Dior B30 Negras con Blanco1.jpg" alt="Dior B30 Negras con Blanco" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2245,10 +1951,8 @@
                 </div>
             </a>
 
-
-
             <!-- DIOR B22 BLANCAS CON GRISES -->
-            <a href="detalle.html?nombre=Dior%20B22" class="product-card-link" data-brand="DIOR">
+            <a href="detalle_zapatos.html?nombre=Dior%20B22" class="product-card-link" data-brand="DIOR">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/DIOR B221.jpg" alt="DIOR B22" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2265,7 +1969,7 @@
             </a>
 
             <!-- DIOR B22 NEGRAS -->
-            <a href="detalle.html?nombre=Dior%20B22%20Negras" class="product-card-link" data-brand="DIOR">
+            <a href="detalle_zapatos.html?nombre=Dior%20B22%20Negras" class="product-card-link" data-brand="DIOR">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/DIOR B22 Negras1.jpg" alt="DIOR B22 Negras" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2281,13 +1985,8 @@
                 </div>
             </a>
 
-
-            <!-- ============================================================ -->
-            <!-- ===== PUMA (puma) ===== -->
-            <!-- ============================================================ -->
-
             <!-- PUMA SUEDE XL ROSA -->
-            <a href="detalle.html?nombre=Puma%20Suede%20XL%20Rosa" class="product-card-link" data-brand="PUMA">
+            <a href="detalle_zapatos.html?nombre=Puma%20Suede%20XL%20Rosa" class="product-card-link" data-brand="PUMA">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Puma Suede XL Rosa.jpg" alt="Puma Suede XL Rosa" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2304,7 +2003,7 @@
             </a>
 
             <!-- PUMA SUEDE XL BLACK -->
-            <a href="detalle.html?nombre=Puma%20Suede%20XL%20Black" class="product-card-link" data-brand="PUMA">
+            <a href="detalle_zapatos.html?nombre=Puma%20Suede%20XL%20Black" class="product-card-link" data-brand="PUMA">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Puma Suede XL Black.jpg" alt="Puma Suede XL Black" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2320,15 +2019,8 @@
                 </div>
             </a>
 
-
-
-
-            <!-- ============================================================ -->
-            <!-- ===== OTROS (Other) ===== -->
-            <!-- ============================================================ -->
-
             <!-- ON RUNNING CLOUDTILT -->
-            <a href="detalle.html?nombre=On%20Running%20Cloudtilt" class="product-card-link" data-brand="other">
+            <a href="detalle_zapatos.html?nombre=On%20Running%20Cloudtilt" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/On Running Cloudtilt 1.jpg" alt="On Running Cloudtilt" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2344,8 +2036,8 @@
                 </div>
             </a>
 
-                        <!-- SALOMON XT-6 -->
-            <a href="detalle.html?nombre=Salomon%20XT-6" class="product-card-link" data-brand="other">
+            <!-- SALOMON XT-6 -->
+            <a href="detalle_zapatos.html?nombre=Salomon%20XT-6" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Salomon XT-61.jpg" alt="Salomon XT-6" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2362,7 +2054,7 @@
             </a>
 
             <!-- AMIRI MA RUNNER -->
-            <a href="detalle.html?nombre=Amiri%20MA%20Runner" class="product-card-link" data-brand="other">
+            <a href="detalle_zapatos.html?nombre=Amiri%20MA%20Runner" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Amiri MA Runner.jpg" alt="Amiri MA Runner" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2379,7 +2071,7 @@
             </a>
 
             <!-- BOTAS TIMBERLANDS -->
-            <a href="detalle.html?nombre=Botas%20Timberlands%20Premium%206-Inch" class="product-card-link" data-brand="other">
+            <a href="detalle_zapatos.html?nombre=Botas%20Timberlands%20Premium%206-Inch" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Botas Timberlands1.jpg" alt="Timberlands" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2396,7 +2088,7 @@
             </a>
 
             <!-- VANS KNU SKOOL -->
-            <a href="detalle.html?nombre=Vans%20Knu%20Skool" class="product-card-link" data-brand="other">
+            <a href="detalle_zapatos.html?nombre=Vans%20Knu%20Skool" class="product-card-link" data-brand="other">
                 <div class="product-card-box">
                     <div class="product-img-container">
                         <img src="imagenes/Vans Knu Skool1.jpg" alt="Vans Knu Skool" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
@@ -2412,22 +2104,13 @@
                 </div>
             </a>
 
-
-
-
-
         </div>
     </div>
 
     <!-- CONTACTO -->
     <section class="contacto">
         <div class="container">
-            <div class="social-icons">
-      
-
-            
-            </div>
-           
+            <div class="social-icons"></div>
         </div>
     </section>
 
@@ -2453,21 +2136,17 @@
         </div>
     </footer>
 
-    <!-- IMPORTANTE: NO cargamos script.js para evitar conflictos -->
     <script>
         // ====== FILTROS POR MARCA ======
         window.filterProducts = function(brand) {
             console.log('🔍 Filtrando por:', brand);
             
             const cards = document.querySelectorAll('.product-card-link');
-            console.log('📦 Tarjetas encontradas:', cards.length);
             
-            // Actualizar botones
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             
-            // Marcar el botón activo
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
                 const btnText = btn.textContent.toLowerCase().trim();
@@ -2496,7 +2175,6 @@
                 }
             });
             
-            // Mostrar/ocultar tarjetas
             let visibleCount = 0;
             cards.forEach(card => {
                 if (brand === 'todos') {
@@ -2516,68 +2194,12 @@
             console.log('👟 Productos visibles:', visibleCount);
         };
 
-        // ====== TEMA CLARO/OSCURO ======
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+        // Forzar mostrar todos
+        document.querySelectorAll('.product-card-link').forEach(card => {
+            card.style.display = 'block';
         });
-
-        function updateThemeIcon(theme) {
-            const icon = themeToggle.querySelector('i');
-            if (icon) {
-                if (theme === 'dark') {
-                    icon.className = 'fas fa-moon';
-                } else {
-                    icon.className = 'fas fa-sun';
-                }
-            }
-        }
-
-        // ====== MENÚ MÓVIL ======
-        document.querySelector('.menu-toggle')?.addEventListener('click', () => {
-            document.querySelector('.nav-links')?.classList.toggle('active');
-        });
-
-        // ====== CARRITO ======
-        let cartCount = 0;
-        document.getElementById('cart-count').textContent = cartCount;
-
-        // ====== FORZAR MOSTRAR TODOS LOS PRODUCTOS ======
-        (function() {
-            console.log('🚀 Top Quality - Mostrando todos los productos...');
-            document.querySelectorAll('.product-card-link').forEach(card => {
-                card.style.display = 'block';
-            });
-            console.log('✅ Productos mostrados:', document.querySelectorAll('.product-card-link').length);
-        })();
     </script>
-    <script>
-    // ====== MENÚ DESPLEGABLE EN MÓVIL ======
-    document.querySelectorAll('.has-dropdown > a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                const parent = this.parentElement;
-                // Cerrar otros dropdowns abiertos
-                document.querySelectorAll('.has-dropdown').forEach(item => {
-                    if (item !== parent) item.classList.remove('active');
-                });
-                parent.classList.toggle('active');
-            }
-        });
-    });
-</script>
+    <script src="/tienda_zapatos/js/buscador.js"></script>
     <script src="/tienda_zapatos/components/header.js"></script>
-
 </body>
 </html>

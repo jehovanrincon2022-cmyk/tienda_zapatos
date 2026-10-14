@@ -1,6 +1,6 @@
 /* ============================================
    BUSCADOR GLOBAL - JR SPORT SHOP
-   Carga productos.json Y ropa.json
+   Carga zapatos.json Y ropa.json
    Se activa cuando el header está cargado
    ============================================ */
 
@@ -30,6 +30,7 @@
         if (c.includes('pantalon')) return 'pantalones';
         if (c.includes('chaqueta')) return 'chaquetas';
         if (c.includes('gorra')) return 'gorras';
+        if (c.includes('novedad')) return 'top';
         return 'top';
     }
 
@@ -38,7 +39,7 @@
             console.log('📂 Buscador: Cargando catálogo completo...');
             
             const [resZapatos, resRopa] = await Promise.all([
-                fetch('/tienda_zapatos/data/productos.json?v=' + Date.now()),
+                fetch('/tienda_zapatos/data/zapatos.json?v=' + Date.now()),
                 fetch('/tienda_zapatos/data/ropa.json?v=' + Date.now())
             ]);
 

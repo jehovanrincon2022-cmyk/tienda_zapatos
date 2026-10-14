@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR SPORT SHOP - Detalle del Producto</title>
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <link rel="stylesheet" href="../css/styles-v2.css">
+    <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="../css/detalle_zapatos.css">
+</head>
+<body>
+    <!-- HEADER COMPARTIDO -->
+    <div id="header-container"></div>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/tienda_zapatos/index.html">Inicio</a>
+            <span>›</span>
+            <a href="#" id="breadcrumbCategory">Categoría</a>
+            <span>›</span>
+            <span id="breadcrumbProduct">Cargando...</span>
+        </div>
+
+        <section class="product-detail-section" id="productDetailSection">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner"></i>
+                <p style="margin-top:20px;color:var(--text-secondary);">Cargando producto...</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- MODALES DE PAGO -->
+    <div class="payment-modal" id="modalPagoMovil">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalPagoMovil')">&times;</span>
+            <div class="payment-modal-title">
+                <i class="fas fa-university" style="color:#2e86c1;"></i> Pago Móvil
+            </div>
+            <div class="payment-modal-body">
+                <div class="bank-section">
+                    <div class="bank-title"><i class="fas fa-university" style="color:#2ecc71;"></i> Banesco</div>
+                    <div class="info-row"><span class="info-label">Banco</span><span class="info-value">Banesco</span></div>
+                    <div class="info-row"><span class="info-label">Cédula</span><span class="info-value">31536496</span></div>
+                    <div class="info-row"><span class="info-label">Teléfono</span><span class="info-value">04125695130</span></div>
+                    <button class="copy-all-btn" onclick="copyBankAll('Banco Banesco', '31536496', '04125695130')">
+                        <i class="fas fa-copy"></i> Copiar datos
+                    </button>
+                </div>
+                <div class="bank-section">
+                    <div class="bank-title"><i class="fas fa-university" style="color:#a30404;"></i> Banco de Venezuela</div>
+                    <div class="info-row"><span class="info-label">Banco</span><span class="info-value">Banco de Venezuela</span></div>
+                    <div class="info-row"><span class="info-label">Cédula</span><span class="info-value">31536496</span></div>
+                    <div class="info-row"><span class="info-label">Teléfono</span><span class="info-value">04125695130</span></div>
+                    <button class="copy-all-btn" onclick="copyBankAll('Banco de Venezuela', '31536496', '04125695130')">
+                        <i class="fas fa-copy"></i> Copiar datos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-modal" id="modalDolarFisico">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalDolarFisico')">&times;</span>
+            <div class="payment-modal-title"><i class="fas fa-dollar-sign" style="color:#2ecc71;"></i> Dólar Físico</div>
+            <div class="payment-modal-body">
+                <div class="dolar-image">
+                    <i class="fas fa-dollar-sign"></i>
+                    <i class="fas fa-dollar-sign" style="font-size:50px;margin:0 8px;"></i>
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="dolar-message">
+                    <i class="fas fa-exclamation-triangle"></i> Por favor, dólar en buen estado
+                </div>
+                <div class="dolar-subtext">Sin manchas, roturas, rayones ni escrituras</div>
+                <div class="dolar-subtext" style="margin-top:8px;font-size:12px;">
+                    Aceptamos billetes de $1, $5, $10, $20, $50 y $100
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-modal" id="modalBinance">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalBinance')">&times;</span>
+            <div class="payment-modal-title"><i class="fab fa-bitcoin" style="color:#f0b90b;"></i> Binance</div>
+            <div class="payment-modal-body">
+                <div class="info-row">
+                    <span class="info-label">🆔 ID</span>
+                    <span class="info-value copyable" onclick="copyText('1195316146')">1195316146 <span class="copy-hint">copiar</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">📧 Correo</span>
+                    <span class="info-value copyable" onclick="copyText('jehovanrincon2022@gmail.com')">jehovanrincon2022@gmail.com <span class="copy-hint">copiar</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-modal" id="modalZinli">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close" onclick="closePaymentModal('modalZinli')">&times;</span>
+            <div class="payment-modal-title"><i class="fas fa-credit-card" style="color:#8b5cf6;"></i> Zinli</div>
+            <div class="payment-modal-body">
+                <div class="info-row">
+                    <span class="info-label">📧 Correo</span>
+                    <span class="info-value copyable" onclick="copyText('jehovanrincon2022@gmail.com')">jehovanrincon2022@gmail.com <span class="copy-hint">copiar</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyNotification" style="display:none;" class="copy-notification">
+        <i class="fas fa-check-circle"></i> ¡Copiado!
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; JR SPORT SHOP - Jehovan Rincón</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script>
+        let productosData = [];
+        let productoActual = null;
+        let cantidad = 1;
+        const CANTIDAD_MAX = 10;
+
+        async function cargarProductos() {
+            try {
+                console.log('📂 Cargando zapatos.json...');
+                const res = await fetch('/tienda_zapatos/data/zapatos.json?v=' + Date.now());
+                
+                if (!res.ok) throw new Error('Error al cargar JSON');
+                
+                const data = await res.json();
+                productosData = data.productos || [];
+                console.log(`✅ ${productosData.length} productos cargados`);
+                return productosData;
+            } catch (error) {
+                console.error('❌ Error:', error);
+                productosData = [];
+                return [];
+            }
+        }
+
+        function buscarProducto(nombre) {
+            if (!productosData || productosData.length === 0) return null;
+            
+            const nombreDecodificado = decodeURIComponent(nombre);
+            console.log('🔍 Buscando:', nombreDecodificado);
+            
+            let producto = productosData.find(p => p.nombre === nombreDecodificado);
+            
+            if (!producto) {
+                producto = productosData.find(p => 
+                    p.nombre.toLowerCase().includes(nombreDecodificado.toLowerCase()) ||
+                    nombreDecodificado.toLowerCase().includes(p.nombre.toLowerCase())
+                );
+            }
+            
+            return producto;
+        }
+
+        function calcularPrecio(precioStr) {
+            if (!precioStr) return 0;
+            return parseFloat(precioStr.replace(/[^0-9.]/g, '')) || 0;
+        }
+
+        function formatearPrecio(valor) {
+            return '$' + valor.toFixed(2);
+        }
+
+        function actualizarTotal() {
+            if (!productoActual) return;
+            
+            const precioUnitario = calcularPrecio(productoActual.precio);
+            const total = precioUnitario * cantidad;
+            
+            const totalEl = document.getElementById('totalPrice');
+            if (totalEl) totalEl.textContent = formatearPrecio(total);
+            
+            actualizarWhatsApp();
+        }
+
+        function cambiarCantidad(delta) {
+            cantidad = Math.max(1, Math.min(CANTIDAD_MAX, cantidad + delta));
+            
+            const qtyEl = document.getElementById('qtyValue');
+            if (qtyEl) qtyEl.textContent = cantidad;
+            
+            const btnMenos = document.getElementById('btnMenos');
+            const btnMas = document.getElementById('btnMas');
+            if (btnMenos) btnMenos.disabled = cantidad <= 1;
+            if (btnMas) btnMas.disabled = cantidad >= CANTIDAD_MAX;
+            
+            actualizarTotal();
+        }
+
+        function selectSize(element) {
+            if (element.classList.contains('disabled') || element.disabled) return;
+            document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            actualizarWhatsApp();
+        }
+
+        function seleccionarColor(btn) {
+            if (btn.classList.contains('disabled') || btn.disabled) return;
+            document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            actualizarWhatsApp();
+        }
+
+        function changeImage(element, src) {
+            const mainImage = document.getElementById('mainImage');
+            if (mainImage) mainImage.src = src;
+            document.querySelectorAll('.thumbnail-item').forEach(item => item.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        function actualizarWhatsApp() {
+            if (!productoActual) return;
+            
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            if (!whatsappBtn) return;
+            
+            const tallaSeleccionada = document.querySelector('.size-btn.active');
+            const colorSeleccionado = document.querySelector('.color-btn.active');
+            const talla = tallaSeleccionada ? tallaSeleccionada.dataset.talla : 'No seleccionada';
+            const color = colorSeleccionado ? colorSeleccionado.dataset.color : 'N/A';
+            const precioUnitario = calcularPrecio(productoActual.precio);
+            const total = precioUnitario * cantidad;
+            
+            const phoneNumber = '+584125695130';
+            
+            let mensaje = `Hola 👋, ¡bienvenido a JR SPORT SHOP! %0A%0A`;
+            mensaje += `Estoy interesado en:%0A`;
+            mensaje += `📌 *${productoActual.nombre}*%0A`;
+            mensaje += `🏷️ Calidad: *${productoActual.categoria || 'General'}*%0A`;
+            if (color !== 'N/A') mensaje += `🎨 Color: *${color}*%0A`;
+            mensaje += `📏 Talla: *${talla}*%0A`;
+            mensaje += `🔢 Cantidad: *${cantidad}*%0A`;
+            mensaje += `💰 Precio unitario: *${formatearPrecio(precioUnitario)}*%0A`;
+            mensaje += `💵 *TOTAL: ${formatearPrecio(total)}*%0A%0A`;
+            mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━%0A`;
+            mensaje += `💳 *MÉTODOS DE PAGO*%0A`;
+            mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━%0A%0A`;
+            mensaje += `🏦 *PAGO MÓVIL*%0A`;
+            mensaje += `Banesco: Cédula 31536496 / Tel 04125695130%0A`;
+            mensaje += `Venezuela: Cédula 31536496 / Tel 04125695130%0A%0A`;
+            mensaje += `💵 *DÓLAR FÍSICO* (buen estado)%0A%0A`;
+            mensaje += `₿ *BINANCE USDT*%0A`;
+            mensaje += `ID: 1195316146%0A`;
+            mensaje += `Correo: jehovanrincon2022@gmail.com%0A%0A`;
+            mensaje += `💳 *ZINLI*%0A`;
+            mensaje += `Correo: jehovanrincon2022@gmail.com%0A%0A`;
+            mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━%0A`;
+            mensaje += `📌 Envía el comprobante para confirmar tu pedido.`;
+            
+            whatsappBtn.href = `https://wa.me/${phoneNumber}?text=${mensaje}`;
+        }
+
+        async function renderProductDetail() {
+            const params = new URLSearchParams(window.location.search);
+            const nombreProducto = params.get('nombre') || '';
+            const container = document.getElementById('productDetailSection');
+
+            if (!nombreProducto) {
+                container.innerHTML = `
+                    <div class="not-found">
+                        <i class="fas fa-search"></i>
+                        <h2>Producto no especificado</h2>
+                        <a href="/tienda_zapatos/index.html" class="btn-back" style="display:inline-flex;margin-top:20px;">
+                            <i class="fas fa-arrow-left"></i> Volver al inicio
+                        </a>
+                    </div>
+                `;
+                return;
+            }
+
+            if (productosData.length === 0) await cargarProductos();
+
+            const producto = buscarProducto(nombreProducto);
+
+            if (!producto) {
+                container.innerHTML = `
+                    <div class="not-found">
+                        <i class="fas fa-search"></i>
+                        <h2>Producto no encontrado</h2>
+                        <p>No pudimos encontrar "${decodeURIComponent(nombreProducto)}"</p>
+                        <a href="/tienda_zapatos/index.html" class="btn-back" style="display:inline-flex;margin-top:20px;">
+                            <i class="fas fa-arrow-left"></i> Volver al inicio
+                        </a>
+                    </div>
+                `;
+                document.getElementById('breadcrumbProduct').textContent = 'No encontrado';
+                return;
+            }
+
+            productoActual = producto;
+            cantidad = 1;
+            console.log('✅ Producto:', producto);
+
+            document.getElementById('breadcrumbProduct').textContent = producto.nombre;
+            document.getElementById('breadcrumbCategory').textContent = producto.categoria || 'Categoría';
+
+            const numeroProducto = producto.numero || '?';
+            const mainImage = producto.imagenes && producto.imagenes.length > 0 ? producto.imagenes[0] : '';
+            const precioUnitario = calcularPrecio(producto.precio);
+            const totalInicial = precioUnitario * cantidad;
+            
+            const stock = producto.stock !== undefined ? producto.stock : 1;
+            const isAgotado = stock <= 0;
+
+            let thumbnailsHTML = '';
+            if (producto.imagenes && producto.imagenes.length > 1) {
+                thumbnailsHTML = `<div class="thumbnail-grid" id="thumbnailGrid"></div>`;
+            } else {
+                thumbnailsHTML = `
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail-item active">
+                            <img src="${mainImage}" alt="Imagen" loading="lazy" onerror="this.src='https://via.placeholder.com/100/333/666?text=No+Image'">
+                        </div>
+                    </div>
+                `;
+            }
+
+            // ===== COLORES =====
+            let coloresHTML = '';
+            if (producto.colores && producto.colores.length > 0) {
+                const coloresAgotados = producto.colores_agotados || [];
+                let coloresBtns = '';
+                let primerColorDisponible = true;
+                
+                producto.colores.forEach((color) => {
+                    const agotado = coloresAgotados.includes(color);
+                    let clase = 'color-btn';
+                    
+                    if (agotado) {
+                        clase += ' disabled';
+                    } else if (primerColorDisponible) {
+                        clase += ' active';
+                        primerColorDisponible = false;
+                    }
+                    
+                    coloresBtns += `
+                        <button class="${clase}" 
+                                data-color="${color}" 
+                                onclick="seleccionarColor(this)"
+                                ${agotado ? 'disabled' : ''}>
+                            ${color}
+                        </button>
+                    `;
+                });
+                
+                coloresHTML = `
+                    <div class="color-section">
+                        <h4><i class="fas fa-palette"></i> Color disponible</h4>
+                        <div class="color-grid">${coloresBtns}</div>
+                    </div>
+                `;
+            }
+
+            // ===== TALLAS (ZAPATOS) =====
+            let tallasHTML = '';
+            const tallasDisponibles = producto.tallas || [];
+            const tallasAgotadas = producto.tallas_agotadas || [];
+            const todasTallasZapatos = [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46];
+            
+            todasTallasZapatos.forEach(talla => {
+                const disponible = tallasDisponibles.includes(talla) || tallasDisponibles.includes(String(talla));
+                const agotada = tallasAgotadas.includes(talla) || tallasAgotadas.includes(String(talla));
+                let clase = 'size-btn';
+                if (agotada || (tallasDisponibles.length > 0 && !disponible)) clase += ' disabled';
+                tallasHTML += `
+                    <button class="${clase}" data-talla="${talla}" onclick="selectSize(this)">
+                        ${talla}
+                    </button>
+                `;
+            });
+
+            const categoria = producto.categoria || 'General';
+            let qualityClass = '';
+            let qualityIcon = 'fa-tag';
+            let qualityEmoji = '';
+            
+            if (categoria === 'Top Quality') {
+                qualityClass = 'top-quality';
+                qualityIcon = 'fa-crown';
+                qualityEmoji = '⭐';
+            } else if (categoria === 'Triple A') {
+                qualityClass = 'triple-a';
+                qualityIcon = 'fa-award';
+                qualityEmoji = '🔝';
+            } else if (categoria === 'Doble A') {
+                qualityClass = 'doble-a';
+                qualityIcon = 'fa-tag';
+                qualityEmoji = '🔵';
+            }
+
+            container.innerHTML = `
+                <div class="product-detail-wrapper">
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <span class="product-number-badge">#${numeroProducto}</span>
+                            <img id="mainImage" src="${mainImage}" alt="${producto.nombre}" 
+                                 loading="eager" onerror="this.src='https://via.placeholder.com/600/333/666?text=No+Image'">
+                            ${isAgotado ? `<div class="sold-out-overlay"><span>AGOTADO</span></div>` : ''}
+                        </div>
+                        ${thumbnailsHTML}
+                    </div>
+
+                    <div class="product-info-detail">
+                        ${categoria !== 'General' ? `
+                        <div class="quality-badge-detail ${qualityClass}">
+                            <i class="fas ${qualityIcon}"></i>
+                            ${qualityEmoji} ${categoria}
+                        </div>` : ''}
+                        
+                        <div class="stock-status ${isAgotado ? 'agotado' : 'disponible'}">
+                            <i class="fas ${isAgotado ? 'fa-times-circle' : 'fa-check-circle'}"></i>
+                            ${isAgotado ? '🔥 AGOTADO' : '✅ Disponible'}
+                            ${!isAgotado ? `(${stock} unidades)` : ''}
+                        </div>
+
+                        <h1 class="product-title-detail">${producto.nombre}</h1>
+                        <p class="product-price-detail">${producto.precio || 'Precio no disponible'}</p>
+                        <p class="product-description-detail">${producto.descripcion || 'Sin descripción disponible'}</p>
+
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Material</span>
+                                <span class="spec-value">${producto.material || 'N/A'}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Género</span>
+                                <span class="spec-value">${producto.genero || 'N/A'}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Marca</span>
+                                <span class="spec-value">${producto.marca || 'N/A'}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Origen</span>
+                                <span class="spec-value">${producto.origen || 'N/A'}</span>
+                            </div>
+                        </div>
+
+                        ${coloresHTML}
+
+                        <div class="size-section">
+                            <h4><i class="fas fa-ruler"></i> Selecciona tu talla</h4>
+                            <div class="size-grid">${tallasHTML}</div>
+                        </div>
+
+                        <div class="quantity-section">
+                            <h4><i class="fas fa-shopping-basket"></i> Cantidad</h4>
+                            <div class="quantity-control">
+                                <button class="qty-btn" id="btnMenos" onclick="cambiarCantidad(-1)" disabled>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="qty-value" id="qtyValue">1</span>
+                                <button class="qty-btn" id="btnMas" onclick="cambiarCantidad(1)">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="qty-limit">Máximo ${CANTIDAD_MAX} unidades por pedido</div>
+                        </div>
+
+                        <div class="total-section">
+                            <span class="total-label"><i class="fas fa-calculator"></i> TOTAL:</span>
+                            <span class="total-price" id="totalPrice">${formatearPrecio(totalInicial)}</span>
+                        </div>
+
+                        <div class="payment-methods">
+                            <h4><i class="fas fa-credit-card"></i> Métodos de Pago</h4>
+                            <div class="payment-grid">
+                                <div class="payment-item" onclick="openPaymentModal('modalPagoMovil')">
+                                    <div class="payment-icon pago-movil"><i class="fas fa-university"></i></div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Pago Móvil <small>2 cuentas</small></span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalDolarFisico')">
+                                    <div class="payment-icon dolar-fisico"><i class="fas fa-dollar-sign"></i></div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Dólar Físico <small>Efectivo USD</small></span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalBinance')">
+                                    <div class="payment-icon binance"><span>B</span></div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Binance <small>USDT</small></span>
+                                    </div>
+                                </div>
+                                <div class="payment-item" onclick="openPaymentModal('modalZinli')">
+                                    <div class="payment-icon zinli"><span>Z</span></div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Zinli <small>Transferencia</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="btn-whatsapp ${isAgotado ? 'agotado' : ''}" id="whatsappBtn" 
+                               ${isAgotado ? 'style="pointer-events:none;"' : ''}>
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <div>${isAgotado ? '❌ PRODUCTO AGOTADO' : 'Pedir por WhatsApp'}</div>
+                                    <span class="whatsapp-subtext">${isAgotado ? 'No disponible temporalmente' : 'Confirmar talla, color y cantidad'}</span>
+                                </div>
+                            </a>
+                            <a href="javascript:history.back()" class="btn-back">
+                                <i class="fas fa-arrow-left"></i> Volver al catálogo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            if (producto.imagenes && producto.imagenes.length > 1) {
+                setTimeout(() => {
+                    const thumbGrid = document.getElementById('thumbnailGrid');
+                    if (thumbGrid) {
+                        let thumbHTML = '';
+                        producto.imagenes.forEach((img, index) => {
+                            thumbHTML += `
+                                <div class="thumbnail-item ${index === 0 ? 'active' : ''}" 
+                                     onclick="changeImage(this, '${img}')">
+                                    <img src="${img}" alt="Vista ${index + 1}" loading="lazy" onerror="this.src='https://via.placeholder.com/100/333/666?text=No+Image'">
+                                </div>
+                            `;
+                        });
+                        thumbGrid.innerHTML = thumbHTML;
+                    }
+                }, 300);
+            }
+
+            if (!isAgotado) {
+                setTimeout(actualizarWhatsApp, 200);
+            }
+        }
+
+        function openPaymentModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePaymentModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('click', function(e) {
+            document.querySelectorAll('.payment-modal').forEach(modal => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        function copyBankAll(bank, cedula, telefono) {
+            const texto = `*${bank}*\nCédula: ${cedula}\nTeléfono: ${telefono}`;
+            copyText(texto, `✅ Datos de ${bank} copiados`);
+        }
+
+        function copyText(text, mensaje) {
+            const onSuccess = () => showCopyNotification(mensaje);
+            const onError = () => fallbackCopy(text, mensaje);
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(onSuccess).catch(onError);
+            } else {
+                fallbackCopy(text, mensaje);
+            }
+        }
+
+        function fallbackCopy(text, mensaje) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showCopyNotification(mensaje);
+            } catch (e) {
+                console.error('Error al copiar:', e);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function showCopyNotification(mensaje) {
+            const notification = document.getElementById('copyNotification');
+            notification.innerHTML = mensaje ? `<i class="fas fa-check-circle"></i> ${mensaje}` : `<i class="fas fa-check-circle"></i> ¡Copiado!`;
+            notification.style.display = 'block';
+            clearTimeout(notification._timeout);
+            notification._timeout = setTimeout(() => notification.style.display = 'none', 2000);
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', renderProductDetail);
+        } else {
+            renderProductDetail();
+        }
+    </script>
+    <script src="/tienda_zapatos/js/buscador.js"></script>
+    <script src="/tienda_zapatos/components/header.js"></script>
+</body>
+</html>

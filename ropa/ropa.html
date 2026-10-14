@@ -103,6 +103,26 @@
             letter-spacing: 1px;
         }
 
+        /* ===== TARJETA DE NOVEDADES (destacada) ===== */
+        .category-card.novedades {
+            border-color: var(--accent);
+            box-shadow: 0 5px 25px rgba(200, 168, 124, 0.2);
+        }
+
+        .category-card.novedades::before {
+            transform: scaleX(1);
+            background: linear-gradient(90deg, var(--accent), #ffd700);
+        }
+
+        .category-card.novedades i {
+            animation: starPulse 2s infinite;
+        }
+
+        @keyframes starPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
         @media (max-width: 768px) {
             .section-header {
                 padding: 35px 0 25px;
@@ -136,13 +156,10 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="ropa">
 
-    <!-- HEADER -->
-    <header>
-        <div id="header-container"></div>
-    </header>
+    <!-- HEADER COMPARTIDO -->
+    <div id="header-container"></div>
 
     <!-- ENCABEZADO -->
     <section class="section-header">
@@ -155,31 +172,49 @@
     <!-- CATEGORÍAS -->
     <div class="container">
         <div class="category-grid">
+            
+            <!-- ⭐ NOVEDADES (destacada) -->
+            <a href="novedades_ropa.html" class="category-card novedades">
+                <i class="fas fa-star"></i>
+                <h3>Novedades</h3>
+                <p>Lo último en moda</p>
+            </a>
+
+            <!-- CAMISETAS -->
             <a href="camisetas.html" class="category-card">
                 <i class="fas fa-tshirt"></i>
                 <h3>Camisetas</h3>
                 <p>Estilo urbano y cómodo</p>
             </a>
+
+            <!-- PANTALONES -->
             <a href="pantalones.html" class="category-card">
                 <i class="fas fa-user-tie"></i>
                 <h3>Pantalones</h3>
                 <p>Comodidad y diseño</p>
             </a>
+
+            <!-- CHAQUETAS -->
             <a href="chaquetas.html" class="category-card">
                 <i class="fas fa-vest"></i>
                 <h3>Chaquetas</h3>
                 <p>Abrígate con estilo</p>
             </a>
+
+            <!-- GORRAS -->
             <a href="gorras.html" class="category-card">
                 <i class="fas fa-hat-cowboy"></i>
                 <h3>Gorras</h3>
                 <p>El toque final perfecto</p>
             </a>
+
+            <!-- ROPA PARA GYM (Ícono cambiado) -->
             <a href="ropa_gym.html" class="category-card">
-                <i class="fas fa-hat-cowboy"></i>
+                <i class="fas fa-dumbbell"></i>
                 <h3>Ropa para GYM</h3>
                 <p>Lo mejor en ropa deportiva</p>
             </a>
+
         </div>
     </div>
 
@@ -192,30 +227,6 @@
 
     <!-- SCRIPTS -->
     <script>
-        // ====== TEMA CLARO/OSCURO ======
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            const icon = themeToggle.querySelector('i');
-            if (icon) icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
-        }
-
-        // ====== MENÚ MÓVIL ======
-        document.querySelector('.menu-toggle')?.addEventListener('click', () => {
-            document.querySelector('.nav-links')?.classList.toggle('active');
-        });
-
         // ====== MENÚ DESPLEGABLE EN MÓVIL ======
         document.querySelectorAll('.has-dropdown > a').forEach(link => {
             link.addEventListener('click', function(e) {

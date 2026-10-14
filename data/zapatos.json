@@ -2700,9 +2700,9 @@
         "imagenes/New Balance 5301.jpg",
         "imagenes/New Balance 5303.jpg"
       ],
-      "tallas": [39],
-      "tallas_agotadas": [36, 37, 38, 40, 41, 42, 43, 44, 45],
-      "categoria_link": "Top_Quality.html"
+      "tallas": [36, 37, 38, 39, 40],
+      "tallas_agotadas": [41, 42, 43, 44, 45],
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "67",

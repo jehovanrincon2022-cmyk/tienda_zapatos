@@ -16,18 +16,16 @@
 </head>
 <body>
     <!-- HEADER COMPARTIDO -->
-
-        <div id="header-container"></div>
-
+    <div id="header-container"></div>
 
     <div class="container">
         <div class="breadcrumb">
-    <a href="/tienda_zapatos/index.html">Inicio</a>
-    <span>›</span>
-    <a href="/tienda_zapatos/ropa/ropa.html" id="breadcrumbCategory">Ropa</a>
-    <span>›</span>
-    <span id="breadcrumbProduct">Cargando...</span>
-</div>
+            <a href="/tienda_zapatos/index.html">Inicio</a>
+            <span>›</span>
+            <a href="#" id="breadcrumbCategory">Ropa</a>
+            <span>›</span>
+            <span id="breadcrumbProduct">Cargando...</span>
+        </div>
 
         <section class="product-detail-section" id="productDetailSection">
             <div class="loading-spinner">
@@ -131,9 +129,7 @@
         </div>
     </footer>
 
-    <!-- ============================================================
-         SCRIPT PRINCIPAL
-    ============================================================ -->
+    <!-- SCRIPT PRINCIPAL -->
     <script>
         let productosData = [];
         let productoActual = null;
@@ -227,13 +223,8 @@
             actualizarWhatsApp();
         }
 
-        // ============================================================
-        // SELECCIONAR COLOR - MODIFICADO CON VERIFICACIÓN
-        // ============================================================
         function seleccionarColor(btn) {
-            // ⚠️ VERIFICACIÓN: Si está deshabilitado, no hacer nada
             if (btn.classList.contains('disabled') || btn.disabled) return;
-            
             document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             actualizarWhatsApp();
@@ -298,7 +289,7 @@
                     <div class="not-found">
                         <i class="fas fa-search"></i>
                         <h2>Producto no especificado</h2>
-                        <a href="ropa.html" class="btn-back" style="display:inline-flex;margin-top:20px;">
+                        <a href="javascript:history.back()" class="btn-back" style="display:inline-flex;margin-top:20px;">
                             <i class="fas fa-arrow-left"></i> Volver al catálogo
                         </a>
                     </div>
@@ -316,7 +307,7 @@
                         <i class="fas fa-search"></i>
                         <h2>Producto no encontrado</h2>
                         <p>No pudimos encontrar "${decodeURIComponent(nombreProducto)}"</p>
-                        <a href="ropa.html" class="btn-back" style="display:inline-flex;margin-top:20px;">
+                        <a href="javascript:history.back()" class="btn-back" style="display:inline-flex;margin-top:20px;">
                             <i class="fas fa-arrow-left"></i> Volver al catálogo
                         </a>
                     </div>
@@ -331,7 +322,6 @@
 
             document.getElementById('breadcrumbProduct').textContent = producto.nombre;
             document.getElementById('breadcrumbCategory').textContent = producto.categoria || 'Ropa';
-            document.getElementById('breadcrumbCategory').href = producto.categoria_link || 'ropa.html';
 
             const numeroProducto = producto.numero || '?';
             const mainImage = producto.imagenes && producto.imagenes.length > 0 ? producto.imagenes[0] : '';
@@ -407,8 +397,7 @@
                     </button>
                 `;
             } else {
-                const todasTallas = ["S", "M", "L", "XL", "XXL", "XXL", "XXXL"];
-                const tallasUnicas = [...new Set(todasTallas)];
+                const todasTallas = ["S", "M", "L", "XL", "XXL", "XXXL"];
                 const tallasDelProducto = tallasDisponibles.filter(t => 
                     !String(t).toLowerCase().includes('única') && 
                     !String(t).toLowerCase().includes('unica')
@@ -416,7 +405,7 @@
                 
                 let tallasAMostrar = tallasDelProducto.length > 0 
                     ? tallasDelProducto 
-                    : tallasUnicas;
+                    : todasTallas;
                 
                 tallasAMostrar.forEach(talla => {
                     const disponible = tallasDisponibles.includes(talla) || tallasDisponibles.includes(String(talla));
@@ -542,7 +531,7 @@
                                     <span class="whatsapp-subtext">${isAgotado ? 'No disponible' : 'Confirmar talla, color y cantidad'}</span>
                                 </div>
                             </a>
-                            <a href="${producto.categoria_link || 'ropa.html'}" class="btn-back">
+                            <a href="javascript:history.back()" class="btn-back">
                                 <i class="fas fa-arrow-left"></i> Volver al catálogo
                             </a>
                         </div>
@@ -642,4 +631,3 @@
     <script src="/tienda_zapatos/components/header.js"></script>      
 </body>
 </html>
-
