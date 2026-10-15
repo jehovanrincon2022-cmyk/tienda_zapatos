@@ -1,6 +1,90 @@
 {
   "productos": [
     {
+  "numero": "13",
+  "nombre": "Conjunto Adidas",
+  "precio": "$35.00",
+  "badge": "Nuevo",
+  "categoria": "GYM",
+  "marca": "Adidas",
+  "genero": "Unisex",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Precioso conjunto de Adidas.",
+  "stock": "2",
+  "imagenes": [
+    "imagenes_ropa/Conjunto Adidas.jpg"
+    ],
+  "tallas": ["talla unica"],
+  "tallas_agotadas": [],
+  "colores": ["Marron", "Negro", "Blanco", "Gris"],
+  "colores_agotados": ["Marron", "Blanco"],
+  "categoria_link": "ropa_gym.html"
+},
+    {
+  "numero": "12",
+  "nombre": "Baggys",
+  "precio": "$14.00",
+  "badge": "Nuevo",
+  "categoria": "GYM",
+  "marca": "Nike",
+  "genero": "Unisex",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Baggys, comidad a tu estilo.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Baggys.jpg"
+    ],
+  "tallas": ["talla unica"],
+  "tallas_agotadas": [],
+  "colores": ["Marron", "Negro", "Blanco"],
+  "colores_agotados": [""],
+  "categoria_link": "ropa_gym.html"
+},
+    {
+  "numero": "11",
+  "nombre": "Franela de compresión acanalada Nike",
+  "precio": "$16.00",
+  "badge": "Nuevo",
+  "categoria": "GYM",
+  "marca": "Nike",
+  "genero": "Hombre",
+  "material": "Compresión acanalada",
+  "origen": "Caracas",
+  "descripcion": "Franelas de compresión acanaladas, excelente calidad.",
+  "stock": "1",
+  "imagenes": [
+    "imagenes_ropa/Franela de compresión acanalada Nike.jpg"
+    ],
+  "tallas": ["talla unica"],
+  "tallas_agotadas": [],
+  "colores": ["Azul", "Negro", "Gris"],
+  "colores_agotados": ["Azul", "Gris"],
+  "categoria_link": "ropa_gym.html"
+},
+    {
+  "numero": "10",
+  "nombre": "Franela de compresión Adidas",
+  "precio": "$16.00",
+  "badge": "Nuevo",
+  "categoria": "GYM",
+  "marca": "Adidas",
+  "genero": "Hombre",
+  "material": "Compresión acanalada",
+  "origen": "Caracas",
+  "descripcion": "Franelas de compresión acanaladas, excelente calidad.",
+  "stock": "1",
+  "imagenes": [
+    "imagenes_ropa/Franela de compresión Adidas.jpg"
+    ],
+  "tallas": ["talla unica"],
+  "tallas_agotadas": [],
+  "colores": ["Azul", "Negro", "Gris"],
+  "colores_agotados": ["Azul", "Gris"],
+  "categoria_link": "ropa_gym.html"
+},
+    {
   "numero": "9",
   "nombre": "Short Nike",
   "precio": "$11.00",
