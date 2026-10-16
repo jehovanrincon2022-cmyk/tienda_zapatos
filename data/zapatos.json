@@ -1,9 +1,69 @@
 {
   "productos": [
+      {
+      "numero": "204",
+      "nombre": "Air Jordan Retro 5 OG Black Metallic Reimagined",
+      "precio": "$60.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "Las Retro 5 Black Metallic Reimagined, excelente calidad y al mejor precio.",
+      "stock": "4 ",
+      "imagenes": [
+        "imagenes/Air Jordan Retro 5 OG Black Metallic Reimagined1.jpg",
+        "imagenes/Air Jordan Retro 5 OG Black Metallic Reimagined2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+    {
+      "numero": "203",
+      "nombre": "Dior B22 Negro - Plateado",
+      "precio": "$47.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Caracas",
+      "descripcion": "Las Dior B22 Black Reflective, Calzado de muy buena calidad.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Dior B22 Negro - Plateado2.jpg",
+        "imagenes/Dior B22 Negro - Plateado1.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+    {
+      "numero": "202",
+      "nombre": "Dior B22 Blanco - Plateado",
+      "precio": "$47.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon",
+      "origen": "Caracas",
+      "descripcion": "Las Dior B22 White refletive, calzado de muy buena calidad.",
+      "stock": "5",
+      "imagenes": [
+        "imagenes/Dior B22 Blanco - Plateado2.jpg",
+        "imagenes/Dior B22 Blanco - Plateado1.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"
+    },
     {
       "numero": "201",
       "nombre": "Nike Hot Step 2 x Drake NOCTA BLACK",
-      "precio": "$70.00",
+      "precio": "$65.00",
       "badge": "Nuevo",
       "categoria": "Top Quality",
       "marca": "nike",
@@ -23,7 +83,7 @@
     {
       "numero": "200",
       "nombre": "Air Jordan Retro 5 Raging Bull",
-      "precio": "$70.00",
+      "precio": "$65.00",
       "badge": "Nuevo",
       "categoria": "Top Quality",
       "marca": "Jordan",
