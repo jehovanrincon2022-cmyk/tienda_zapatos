@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatos - JR SPORT SHOP</title>
+    <link rel="stylesheet" href="../css/styles-v2.css">
+    <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .section-header {
+            background: linear-gradient(135deg, #0a0a1a, #1a1a2d);
+            border-bottom: 3px solid var(--accent);
+            padding: 50px 0 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-header h1 {
+            font-size: 52px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        .section-header h1 span {
+            color: var(--accent);
+            font-weight: 400;
+        }
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 30px 0 80px;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 45px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .category-card i {
+            font-size: 56px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover i {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .category-card h3 {
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+
+        .category-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            letter-spacing: 1px;
+        }
+
+        /* ===== TARJETA DE NOVEDADES (destacada) ===== */
+        .category-card.novedades {
+            border-color: var(--accent);
+            box-shadow: 0 5px 25px rgba(200, 168, 124, 0.2);
+        }
+
+        .category-card.novedades::before {
+            transform: scaleX(1);
+            background: linear-gradient(90deg, var(--accent), #ffd700);
+        }
+
+        .category-card.novedades i {
+            animation: starPulse 2s infinite;
+        }
+
+        @keyframes starPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @media (max-width: 768px) {
+            .section-header {
+                padding: 35px 0 25px;
+            }
+            .section-header h1 {
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+            .section-header p {
+                font-size: 15px;
+            }
+            .category-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                padding: 20px 0 50px;
+            }
+            .category-card {
+                padding: 30px 15px;
+            }
+            .category-card i {
+                font-size: 42px;
+                margin-bottom: 12px;
+            }
+            .category-card h3 {
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+            .category-card p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body class="zapatos">
+
+    <!-- HEADER COMPARTIDO -->
+    <div id="header-container"></div>
+
+    <!-- ENCABEZADO -->
+    <section class="section-header">
+        <div class="container">
+            <h1><span>Zapatos</span></h1>
+            <p>Encuentra el estilo perfecto para tus pies</p>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <div class="container">
+        <div class="category-grid">
+            
+            <!--  NOVEDADES (destacada) -->
+            <a href="novedades.html" class="category-card novedades">
+                <i class="fas fa-star"></i>
+                <h3>Novedades</h3>
+                <p>Lo último en calzado</p>
+            </a>
+
+            <!-- TOP QUALITY -->
+            <a href="Top_Quality.html" class="category-card">
+                <i class="fas fa-crown"></i>
+                <h3>Top Quality</h3>
+                <p>Máxima calidad y confort</p>
+            </a>
+
+            <!-- TRIPLE A -->
+            <a href="Triple_A.html" class="category-card">
+                <i class="fas fa-gem"></i>
+                <h3>Triple A</h3>
+                <p>Estilo y durabilidad</p>
+            </a>
+
+            <!-- DOBLE A -->
+            <a href="doble_A.html" class="category-card">
+                <i class="fas fa-shoe-prints"></i>
+                <h3>Doble A</h3>
+                <p>Clásicos que nunca fallan</p>
+            </a>
+
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; JR SPORT SHOP - Jehovan Rincón</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // ====== MENÚ DESPLEGABLE EN MÓVIL ======
+        document.querySelectorAll('.has-dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const parent = this.parentElement;
+                    document.querySelectorAll('.has-dropdown').forEach(item => {
+                        if (item !== parent) item.classList.remove('active');
+                    });
+                    parent.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+    <script src="/tienda_zapatos/js/buscador.js"></script>
+    <script src="/tienda_zapatos/components/header.js"></script>
+</body>
+</html>

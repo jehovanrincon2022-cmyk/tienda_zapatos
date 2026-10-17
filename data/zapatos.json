@@ -1,6 +1,26 @@
 {
   "productos": [
       {
+      "numero": "205",
+      "nombre": "PUMA Suede XL Black",
+      "precio": "$40.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "puma",
+      "genero": "Unisex",
+      "material": "Caucho + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "Las pumas Suede XL calzado precioso.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/PUMA Suede XL Black1.jpg",
+        "imagenes/PUMA Suede XL Black2.jpg"
+      ],
+      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 45],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
       "numero": "204",
       "nombre": "Air Jordan Retro 5 OG Black Metallic Reimagined",
       "precio": "$60.00",
@@ -2747,7 +2767,7 @@
     {
       "numero": "68",
       "nombre": "New Balance 530",
-      "precio": "$45.00",
+      "precio": "$50.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2760,8 +2780,8 @@
         "imagenes/New Balance 5301.jpg",
         "imagenes/New Balance 5303.jpg"
       ],
-      "tallas": [36, 37, 38, 39, 40],
-      "tallas_agotadas": [41, 42, 43, 44, 45],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
       "categoria_link": "Triple_A.html"
     },
     {
@@ -2903,7 +2923,7 @@
     {
       "numero": "60",
       "nombre": "ASICS GEL-Kayano 14",
-      "precio": "$75.00",
+      "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "ASICS",
       "genero": "Unisex",
@@ -3208,7 +3228,7 @@
       "numero": "46",
       "nombre": "New Balance 9060 Blancas",
       "precio": "$50.00",
-      "categoria": "Top Quality",
+      "categoria": "Triple A",
       "marca": "New Balance",
       "genero": "Unisex",
       "material": "Malla + Caucho",
@@ -3225,13 +3245,13 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "45",
       "nombre": "New Balance 9060 negras",
       "precio": "$50.00",
-      "categoria": "Top Quality",
+      "categoria": "Triple A",
       "marca": "New Balance",
       "genero": "Unisex",
       "material": "Malla + Caucho",
@@ -3247,7 +3267,7 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "44",

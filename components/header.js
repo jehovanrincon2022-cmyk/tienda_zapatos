@@ -48,18 +48,22 @@
         }
 
         // ===== DROPDOWN MÓVIL =====
-        document.querySelectorAll('.has-dropdown > a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    const parent = this.parentElement;
-                    document.querySelectorAll('.has-dropdown').forEach(item => {
-                        if (item !== parent) item.classList.remove('active');
-                    });
-                    parent.classList.toggle('active');
-                }
-            });
-        });
+    document.querySelectorAll('.has-dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            const parent = this.parentElement;
+            // Primer toque: abre submenú. Segundo toque: navega.
+            if (!parent.classList.contains('active')) {
+                e.preventDefault();
+                document.querySelectorAll('.has-dropdown').forEach(item => {
+                    if (item !== parent) item.classList.remove('active');
+                });
+                parent.classList.add('active');
+            }
+        }
+        // En PC (más de 768px) siempre navega normal ✅
+    });
+});
 
         // ===== TEMA DARK/LIGHT =====
         const themeToggle = document.getElementById('themeToggle');
