@@ -3,7 +3,7 @@
     {
   "numero": "14",
   "nombre": "Franela de Compresión Y2K",
-  "precio": "$14.00",
+  "precio": "$13.00",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Nike",
@@ -26,7 +26,7 @@
     {
   "numero": "13",
   "nombre": "Conjunto Adidas",
-  "precio": "$35.00",
+  "precio": "$30.00",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Adidas",
@@ -68,7 +68,7 @@
     {
   "numero": "11",
   "nombre": "Franela de compresión acanalada Nike",
-  "precio": "$16.00",
+  "precio": "$15.00",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Nike",
@@ -89,7 +89,7 @@
     {
   "numero": "10",
   "nombre": "Franela de compresión Adidas",
-  "precio": "$16.00",
+  "precio": "$15.00",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Adidas",
@@ -110,7 +110,7 @@
     {
   "numero": "9",
   "nombre": "Short Nike",
-  "precio": "$11.00",
+  "precio": "$9.00",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Nike",
@@ -118,7 +118,7 @@
   "material": "Transpirante y elástica",
   "origen": "Importado",
   "descripcion": "Shorts Nike perfectos para entrenamientos deportivos.",
-  "stock": "3",
+  "stock": "0",
   "imagenes": [
     "imagenes_ropa/Short Nike.jpg"
     ],
@@ -131,7 +131,7 @@
     {
   "numero": "8",
   "nombre": "Cojunto Deportivo",
-  "precio": "$15.00",
+  "precio": "$13.50",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "alo",
@@ -152,7 +152,7 @@
       {
   "numero": "7",
   "nombre": "Oversai",
-  "precio": "$15.00",
+  "precio": "$18.00",
   "badge": "Nuevo",
   "categoria": "Camisetas",
   "marca": "Nike",
@@ -161,11 +161,18 @@
   "origen": "Importado",
   "descripcion": "Camiseta clásica de algodón premium con logo Nike.",
   "stock": "10",
-  "imagenes": ["imagenes_ropa/Oversai.jpg"],
+  "imagenes": [
+    "imagenes_ropa/Oversai1.jpg",
+    "imagenes_ropa/Oversai2.jpg",
+    "imagenes_ropa/Oversai3.jpg",
+    "imagenes_ropa/Oversai4.jpg",
+    "imagenes_ropa/Oversai5.jpg",
+    "imagenes_ropa/Oversai.jpg"
+  ],
   "tallas": ["S", "M", "L", "XL", "XXL"],
   "tallas_agotadas": [],
-  "colores": ["Verde", "Gris", "Azul", "Negra"],
-  "colores_agotados": [""],
+  "colores": ["Verde", "Gris", "Azul", "Negro", "Marron", "Blanco"],
+  "colores_agotados": ["Verde"],
   "categoria_link": "camisetas.html"
 },
   {
@@ -228,7 +235,7 @@
   {
   "numero": "3",
   "nombre": "camisa de compresión Gymshark azul",
-  "precio": "$15.00",
+  "precio": "$13.50",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Gymshark",
@@ -255,8 +262,11 @@
   "material": "Tela rigidad",
   "origen": "Importado",
   "descripcion": "Pantalones Levis clasicos, tela rigidad de la mejor calidad.",
-  "stock": "10",
-  "imagenes": ["imagenes_ropa/pantalones.jpg"],
+  "stock": "0",
+  "imagenes": [
+    "imagenes_ropa/pantalones1.jpg",
+    "imagenes_ropa/pantalones.jpg"
+  ],
   "tallas": ["28", "30", "32", "34", "36", "38"],
   "tallas_agotadas": ["28","38"],
   "colores": ["Azul", "Celeste", "Azul Oscuro","Negro", "Blanco"],
