@@ -1,5 +1,24 @@
 {
   "productos": [
+        {
+      "numero": "207",
+      "nombre": "Nike NOCTA Hot Step 2 white",
+      "precio": "$50.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Cilicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike NOCTA Hot Step 2 white.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"  
+    },
       {
       "numero": "206",
       "nombre": "On Runni Cloudtilt",
@@ -10,7 +29,7 @@
       "genero": "Unisex",
       "material": "Cilicon + Algodon + Gamusa",
       "origen": "Valencia",
-      "descripcion": "Las pumas Suede XL calzado precioso.",
+      "descripcion": "Lo mejor.",
       "stock": "4",
       "imagenes": [
         "imagenes/On Runni Cloudtilt.jpg"
