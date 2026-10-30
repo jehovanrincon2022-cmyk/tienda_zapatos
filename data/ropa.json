@@ -1,5 +1,196 @@
 {
   "productos": [
+      {
+  "numero": "23",
+  "nombre": "Amiri Rhinestone",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Amiri Rhinestone.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Azul", "Verde"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "22",
+  "nombre": "Oversized Louis Vuitton",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Nike",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Louis Vuitton Verde.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Azul", "Gris"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "21",
+  "nombre": "Nike Sportswear",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Nike",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Nike Sportswear.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Azul"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "20",
+  "nombre": "Oversized New  York",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "NY",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized New  York Negra.jpg",
+    "imagenes_ropa/Oversized New  York Blanca.jpg",
+    "imagenes_ropa/Oversized New  York Gris.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Gris"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "19",
+  "nombre": "Oversized Amire Azul",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Amire Azul.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Gris"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "18",
+  "nombre": "Oversized Amire Blanca",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Amire Blanca.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Gris", "Azul"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "17",
+  "nombre": "Oversized Louis Vuitton Blanca",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Louis Vuitton",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Louis Vuitton Blanca.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Gris", "Azul"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "16",
+  "nombre": "Oversized Gris Louis Vuitton",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Louis Vuitton",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Gris Lous Vuitton.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Azul"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "15",
+  "nombre": "Oversized Prada",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Prada",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized Prada.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Gris"],
+  "categoria_link": "camisetas.html"
+},
     {
   "numero": "14",
   "nombre": "Franela de Compresión Y2K",
@@ -151,28 +342,24 @@
 },
       {
   "numero": "7",
-  "nombre": "Oversai",
+  "nombre": "Oversized Most Wanted",
   "precio": "$18.00",
   "badge": "Nuevo",
   "categoria": "Camisetas",
-  "marca": "Nike",
+  "marca": "Most Wanted",
   "genero": "Unisex",
   "material": "Algodón 100%",
   "origen": "Importado",
   "descripcion": "Camiseta clásica de algodón premium con logo Nike.",
   "stock": "10",
   "imagenes": [
-    "imagenes_ropa/Oversai1.jpg",
-    "imagenes_ropa/Oversai2.jpg",
-    "imagenes_ropa/Oversai3.jpg",
-    "imagenes_ropa/Oversai4.jpg",
-    "imagenes_ropa/Oversai5.jpg",
-    "imagenes_ropa/Oversai.jpg"
+    "imagenes_ropa/Oversized Most Wanted Marrón.jpg",
+    "imagenes_ropa/Oversized Most Wanted Azul.jpg"
   ],
   "tallas": ["S", "M", "L", "XL", "XXL"],
   "tallas_agotadas": [],
   "colores": ["Verde", "Gris", "Azul", "Negro", "Marron", "Blanco"],
-  "colores_agotados": ["Verde"],
+  "colores_agotados": ["Verde", "Gris", "", "Negro", "", "Blanco"],
   "categoria_link": "camisetas.html"
 },
   {

@@ -1,5 +1,162 @@
 {
   "productos": [
+      {
+      "numero": "215",
+      "nombre": "Nike NOCTA Glide BlackWhite",
+      "precio": "$45.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike NOCTA Glide BlackWhite.jpg",
+        "imagenes/Nike NOCTA Glide BlackWhite2.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "214",
+      "nombre": "Nike Air Max Plus 3 TN",
+      "precio": "$40.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike Air Max Plus 3 TN.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "213",
+      "nombre": "Nike Air Max Plus Light",
+      "precio": "$40.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike Air Max Plus Light.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "212",
+      "nombre": "Nike Air Max Plus TN x Lacoste",
+      "precio": "$40.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike Air Max Plus TN x Lacoste.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "211",
+      "nombre": "Nike Air Max Plus Triple White",
+      "precio": "$40.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike Air Max Plus Triple White.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+        {
+      "numero": "210",
+      "nombre": "New Balance 1000 Mile",
+      "precio": "$75.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/New Balance 1000 Mile.jpg",
+        "imagenes/New Balance 1000 Mile2.jpg",
+        "imagenes/New Balance 1000 Mile3.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"  
+    },
+        {
+      "numero": "209",
+      "nombre": "New Balance 1000 White",
+      "precio": "$75.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/New Balance 1000 White1.jpg",
+        "imagenes/New Balance 1000 White.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"  
+    },
+        {
+      "numero": "208",
+      "nombre": "New Balance 1000 Azul Marino",
+      "precio": "$75.00",
+      "badge": "Nuevo",
+      "categoria": "Top Quality",
+      "marca": "New Balance",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/New Balance 1000 Azul Marino1.jpg",
+        "imagenes/New Balance 1000 Azul Marino2.jpg"
+      ],
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Top_Quality.html"  
+    },
         {
       "numero": "207",
       "nombre": "Nike NOCTA Hot Step 2 white",
@@ -200,10 +357,10 @@
     },
     {
       "numero": "197",
-      "nombre": "Nike Air Max Plus DobleA2",
-      "precio": "$38.00",
+      "nombre": "Nike Air Max Plus BLACK",
+      "precio": "$40.00",
       "badge": "Nuevo",
-      "categoria": "Doble A",
+      "categoria": "Triple A",
       "marca": "nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -211,12 +368,12 @@
       "descripcion": "Calzado precioso y comodo.",
       "stock": "10",
       "imagenes": [
-        "imagenes/Nike Air Max Plus DobleA2.jpg",
-        "imagenes/Nike Air Max Plus DobleA1.jpg"
+        "imagenes/Nike Air Max Plus BLACK2.jpg",
+        "imagenes/Nike Air Max Plus BLACK1.jpg"
       ],
-      "tallas": [40, 41, 42, 43, 44, 45],
-      "tallas_agotadas": [36, 37, 38, 39],
-      "categoria_link": "doble_A.html"
+      "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [],
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "196",
@@ -297,7 +454,7 @@
     {
       "numero": "192",
       "nombre": "Air Force One black",
-      "precio": "$32.00",
+      "precio": "$30.00",
       "badge": "Nuevo",
       "categoria": "Triple A",
       "marca": "nike",
@@ -1179,7 +1336,7 @@
     {
       "numero": "147",
       "nombre": "Nike Air Force One Black",
-      "precio": "$45.00",
+      "precio": "$40.00",
       "badge": "Nuevo",
       "categoria": "Top Quality",
       "marca": "nike",
@@ -4077,7 +4234,7 @@
     {
       "numero": "2",
       "nombre": "Air Force One Blancas",
-      "precio": "$43.00",
+      "precio": "$40.00",
       "categoria": "Top Quality",
       "marca": "Nike",
       "genero": "Unisex",
@@ -4095,7 +4252,7 @@
     {
       "numero": "1",
       "nombre": "Nike Air Force One",
-      "precio": "$32.00",
+      "precio": "$30.00",
       "categoria": "Triple A",
       "marca": "NIKE",
       "genero": "Unisex",
