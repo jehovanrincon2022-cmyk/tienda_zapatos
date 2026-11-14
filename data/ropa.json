@@ -1,5 +1,89 @@
 {
   "productos": [
+    {
+  "numero": "27",
+  "nombre": "Oversized Amiri Gris",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized2.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Negro", "Blanco", "Azul", "Verde"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "26",
+  "nombre": "Oversized Amiri Negra",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized3.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Gris", "Blanco", "Azul", "Verde"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "25",
+  "nombre": "Oversized Amiri",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized4.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Gris", "Negro", "Azul", "Verde"],
+  "categoria_link": "camisetas.html"
+},
+    {
+  "numero": "24",
+  "nombre": "Oversized Moncler",
+  "precio": "$20.00",
+  "badge": "Nuevo",
+  "categoria": "Camisetas",
+  "marca": "Amiri",
+  "genero": "Hombre",
+  "material": "Algodón 100%",
+  "origen": "Caracas",
+  "descripcion": "Viste con el mejor calidad.",
+  "stock": "3",
+  "imagenes": [
+    "imagenes_ropa/Oversized1.jpg"
+    ],
+  "tallas": ["S", "M", "L", "XL", "XXL"],
+  "tallas_agotadas": ["S"],
+  "colores": ["Rojo", "Negro", "Blanco", "Gris", "Azul", "Verde"],
+  "colores_agotados": ["Rojo", "Gris", "Blanco", "Azul", "Verde"],
+  "categoria_link": "camisetas.html"
+},
       {
   "numero": "23",
   "nombre": "Amiri Rhinestone",
@@ -194,7 +278,7 @@
     {
   "numero": "14",
   "nombre": "Franela de Compresión Y2K",
-  "precio": "$13.00",
+  "precio": "$13.60",
   "badge": "Nuevo",
   "categoria": "GYM",
   "marca": "Nike",
@@ -337,7 +421,7 @@
   "tallas": ["talla unica"],
   "tallas_agotadas": [],
   "colores": ["Lila", "Vinotinto"],
-  "colores_agotados": ["Lila"],
+  "colores_agotados": ["Vinotinto"],
   "categoria_link": "ropa_gym.html"
 },
       {
@@ -392,7 +476,7 @@
   "material": "Algodón 100%",
   "origen": "Importado",
   "descripcion": "Camiseta clásica de algodón premium con logo Nike.",
-  "stock": "10",
+  "stock": "0",
   "imagenes": ["imagenes_ropa/chaqueta.jpg"],
   "tallas": ["S, M, L, XL, XXL"],
   "tallas_agotadas": [],
@@ -441,7 +525,7 @@
   {
   "numero": "2",
   "nombre": "Pantalones levis",
-  "precio": "$17.00",
+  "precio": "$17.60",
   "badge": "Nuevo",
   "categoria": "pantalones",
   "marca": "Levis",
@@ -449,7 +533,7 @@
   "material": "Tela rigidad",
   "origen": "Importado",
   "descripcion": "Pantalones Levis clasicos, tela rigidad de la mejor calidad.",
-  "stock": "0",
+  "stock": "10",
   "imagenes": [
     "imagenes_ropa/pantalones1.jpg",
     "imagenes_ropa/pantalones.jpg"

@@ -1,12 +1,109 @@
 {
   "productos": [
+      {
+      "numero": "224",
+      "nombre": "Nike Shox TL",
+      "precio": "$65.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Nike",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Nike Shox TL1.jpg",
+        "imagenes/Nike Shox TL2.jpg",
+        "imagenes/Nike Shox TL3.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+    {
+      "numero": "223",
+      "nombre": "Air Jordan Retro 3 Black",
+      "precio": "$30.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Jordan",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Air Jordan Retro 3 Black.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "222",
+      "nombre": "Dior B30 Negras",
+      "precio": "$42.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Dior B30 negras1.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+    {
+      "numero": "221",
+      "nombre": "Dior B30 Blancas",
+      "precio": "$42.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Dior B30 Blancas TripleA.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
+      {
+      "numero": "220",
+      "nombre": "Air Joran 1 Retro High Dior1",
+      "precio": "$50.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Dior",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Air Joran 1 Retro High Dior1.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39, 45],
+      "categoria_link": "Triple_A.html"  
+    },
     {
       "numero": "219",
       "nombre": "ASICS GEL - venture 6",
       "precio": "$45.00",
       "badge": "Nuevo",
       "categoria": "Triple A",
-      "marca": "Amiri",
+      "marca": "ASICS",
       "genero": "Unisex",
       "material": "Silicon + Algodon + Gamusa",
       "origen": "Caracas",
@@ -532,9 +629,9 @@
     {
       "numero": "192",
       "nombre": "Air Force One black",
-      "precio": "$30.00",
+      "precio": "$28.00",
       "badge": "Nuevo",
-      "categoria": "Triple A",
+      "categoria": "Doble A",
       "marca": "nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -546,7 +643,7 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Triple_A.html"
+      "categoria_link": "doble_A.html"
     },
     {
       "numero": "191",
@@ -1414,9 +1511,9 @@
     {
       "numero": "147",
       "nombre": "Nike Air Force One Black",
-      "precio": "$40.00",
+      "precio": "$32.00",
       "badge": "Nuevo",
-      "categoria": "Top Quality",
+      "categoria": "Triple A",
       "marca": "nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -1429,7 +1526,7 @@
       ],
       "tallas": [36, 44, 45],
       "tallas_agotadas": [37, 38, 39, 40, 41, 42, 43],
-      "categoria_link": "Top_Quality.html"
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "146",
@@ -1931,7 +2028,7 @@
     {
       "numero": "122",
       "nombre": "Nike Free Metcon6 White",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Mujer",
@@ -1949,7 +2046,7 @@
     {
       "numero": "121",
       "nombre": "Nike Free Metcon6 Morado",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Mujer",
@@ -1967,7 +2064,7 @@
     {
       "numero": "120",
       "nombre": "Nike Free Metcon6",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Mujer",
@@ -1985,7 +2082,7 @@
     {
       "numero": "119",
       "nombre": "Nike Free Metcon7 celestes",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Mujer",
@@ -2003,7 +2100,7 @@
     {
       "numero": "118",
       "nombre": "Nike Free Metcon7 Blancas",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2021,7 +2118,7 @@
     {
       "numero": "117",
       "nombre": "Nike Free Metcon7 Naranja",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2039,7 +2136,7 @@
     {
       "numero": "116",
       "nombre": "Nike Free Metcon8",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2057,7 +2154,7 @@
     {
       "numero": "115",
       "nombre": "Nike Free Metcon7",
-      "precio": "$60.00",
+      "precio": "$47.00",
       "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
@@ -2767,7 +2864,7 @@
     },
     {
       "numero": "81",
-      "nombre": "Dior B30 blancas",
+      "nombre": "Dior B30 blancas gris",
       "precio": "$70.00",
       "categoria": "Top Quality",
       "marca": "Dior",
@@ -4312,8 +4409,8 @@
     {
       "numero": "2",
       "nombre": "Air Force One Blancas",
-      "precio": "$40.00",
-      "categoria": "Top Quality",
+      "precio": "$32.00",
+      "categoria": "Triple A",
       "marca": "Nike",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -4325,13 +4422,13 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Top_Quality.html"
+      "categoria_link": "Triple_A.html"
     },
     {
       "numero": "1",
       "nombre": "Nike Air Force One",
-      "precio": "$30.00",
-      "categoria": "Triple A",
+      "precio": "$28.00",
+      "categoria": "Doble A",
       "marca": "NIKE",
       "genero": "Unisex",
       "material": "Caucho + Algodon",
@@ -4343,7 +4440,7 @@
       ],
       "tallas": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [],
-      "categoria_link": "Triple_A.html"
+      "categoria_link": "doble_A.html"
     }
   ]
 }
