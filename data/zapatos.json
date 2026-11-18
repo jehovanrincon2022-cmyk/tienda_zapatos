@@ -2,7 +2,7 @@
   "productos": [
       {
       "numero": "226",
-      "nombre": "Alexander McQueen Triple Black.jpg",
+      "nombre": "Alexander McQueen Triple Black",
       "precio": "$48.00",
       "badge": "Nuevo",
       "categoria": "Triple A",
@@ -13,7 +13,7 @@
       "descripcion": "El mejor calzado.",
       "stock": "4",
       "imagenes": [
-        "imagenes/Alexander McQueen Triple Black.jpg.jpg"
+        "imagenes/Alexander McQueen Triple Black.jpg"
       ],
       "tallas": [ 40, 41, 42, 43, 44, 45],
       "tallas_agotadas": [36, 37, 38, 39],
