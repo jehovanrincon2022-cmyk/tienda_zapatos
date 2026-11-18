@@ -30,6 +30,7 @@
     <div class="container">
         <div class="filter-container">
             <button class="filter-btn active" onclick="window.filterProducts('todos')">Todos</button>
+            <button class="filter-btn" onclick="window.filterProducts('alexander mcqueen')">Alexander McQueen</button>
             <button class="filter-btn" onclick="window.filterProducts('amiri')">AMIRI</button>
             <button class="filter-btn" onclick="window.filterProducts('dior')">Dior</button>
             <button class="filter-btn" onclick="window.filterProducts('nike')">Nike</button>
@@ -45,6 +46,29 @@
     <!-- PRODUCTOS TRIPLE A -->
     <div class="container">
         <div class="product-grid-catalog" id="productGrid">
+            
+            <!-------------------------------------->
+            <!--  ALEXANDER MCQUEEN -->
+            <!-------------------------------------->
+
+             <!-- ALEXANDER MCQUEEN BLACK CRYSTAL -->
+             <a href="detalle_zapatos.html?nombre=Alexander%20McQueen%20Black%20Crystal" class="product-card-link" data-brand="Alexander McQueen">
+                <div class="product-card-box">
+                    <div class="product-img-container">
+                        <img src="imagenes/Alexander McQueen Black Crystal.jpg" alt="Alexander McQueen Black Crystal" class="product-img-catalog" onerror="this.src='https://via.placeholder.com/300/333/666?text=No+Image'">
+                    </div>
+                    <div class="product-info-box">
+                        <span class="product-brand-tag">Triple A</span>
+                        <h3 class="product-name">Alexander McQueen Black Crystal</h3>
+                        <div class="product-footer-row">
+                            <span class="product-price">70$.00</span>
+                            <span class="product-detail-badge">Ver detalles</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
 
 
             <!-------------------------------------->
@@ -1560,7 +1584,9 @@
                 const btnText = btn.textContent.toLowerCase().trim();
                 if (brand === 'todos' && btnText.includes('todos')) {
                     btn.classList.add('active');
-                } else if (brand === 'dior' && btnText.includes('dior')) {
+                } else if (brand === 'alexander mcqueen' && btnText.includes('alexander mcqueen')) {
+                    btn.classList.add('active');
+                }else if (brand === 'dior' && btnText.includes('dior')) {
                     btn.classList.add('active');
                 } else if (brand === 'nike' && btnText.includes('nike')) {
                     btn.classList.add('active');
