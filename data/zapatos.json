@@ -1,5 +1,24 @@
 {
   "productos": [
+      {
+      "numero": "226",
+      "nombre": "Alexander McQueen Triple Black.jpg",
+      "precio": "$48.00",
+      "badge": "Nuevo",
+      "categoria": "Triple A",
+      "marca": "Alexander McQueen",
+      "genero": "Unisex",
+      "material": "Silicon + Algodon + Gamusa",
+      "origen": "Caracas",
+      "descripcion": "El mejor calzado.",
+      "stock": "4",
+      "imagenes": [
+        "imagenes/Alexander McQueen Triple Black.jpg.jpg"
+      ],
+      "tallas": [ 40, 41, 42, 43, 44, 45],
+      "tallas_agotadas": [36, 37, 38, 39],
+      "categoria_link": "Triple_A.html"  
+    },
     {
       "numero": "225",
       "nombre": "Alexander McQueen Black Crystal",
